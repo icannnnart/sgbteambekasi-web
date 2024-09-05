@@ -1,5 +1,7 @@
 <link rel="stylesheet" href="<?=base_url('assets/dashboard')?>/vendors/select2/select2.min.css">
 <link rel="stylesheet" href="<?=base_url('assets/dashboard')?>/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="<?=base_url('assets/dashboard')?>/vendors/sweetalert/sweetalert.min.js"></script>
 <div class="content-wrapper">
    <div class="row">
       <div class="col-md-12 grid-margin stretch-card">
