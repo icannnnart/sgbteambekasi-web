@@ -53,6 +53,15 @@ class App extends CI_Controller {
 			$address = $this->input->post('address');
 			$link_fb = $this->input->post('link_fb');
 			$number = $this->input->post('number');
+			$datasmember = array(
+				'name' => ,
+				'email' => ,
+				'password' => password_hash($password, PASSWORD_DEFAULT),
+				'address' => $address,
+				'linkfb' => $link_fb,
+				'nowa' => $number,
+				'role' => 2,
+				 );
 		} else {
 			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
 			$data['title'] = 'Master';
