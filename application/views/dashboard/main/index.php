@@ -64,35 +64,6 @@
             </div>
          </div>
       </div>
-      <div class="col-md-2 transparent">
-         <div class="card text-center" style="background-color: #00000000;">
-            <div class="card-body">
-               <div class="clock">
-                  <div class="circle" style="--cir: #04fc43" id="second-hand">
-                     <i></i>
-                  </div>
-                  <div class="circle circle2" style="--cir: #fee800" id="minute-hand">
-                     <i></i>
-                  </div>
-                  <div class="circle circle3" style="--cir: #ff2972" id="hour-hand">
-                     <i></i>
-                  </div>
-                  <span style="--i: 1"><b>1</b></span>
-                  <span style="--i: 2"><b>2</b></span>
-                  <span style="--i: 3"><b>3</b></span>
-                  <span style="--i: 4"><b>4</b></span>
-                  <span style="--i: 5"><b>5</b></span>
-                  <span style="--i: 6"><b>6</b></span>
-                  <span style="--i: 7"><b>7</b></span>
-                  <span style="--i: 8"><b>8</b></span>
-                  <span style="--i: 9"><b>9</b></span>
-                  <span style="--i: 10"><b>10</b></span>
-                  <span style="--i: 11"><b>11</b></span>
-                  <span style="--i: 12"><b>12</b></span>
-               </div>
-            </div>
-         </div>
-      </div>
    </div>
    <div class="row">
       <div class="col-md-12 grid-margin stretch-card">
