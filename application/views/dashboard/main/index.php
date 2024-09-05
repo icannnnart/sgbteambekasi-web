@@ -92,7 +92,7 @@
                                     <td><?=$datascash['created_at']?></td>
                                     <td><?=$datascash['id_user']?></td>
                                     <td><?=$datascash['nominal']?></td>
-                                    <td>$1500</td>
+                                    <td><?=$datascash['desc_cash']?></td>
                                     <td>$3200</td>
                                     <?php if ($datascash['status'] == 1){?>
                                     <td>
