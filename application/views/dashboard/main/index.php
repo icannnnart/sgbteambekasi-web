@@ -58,7 +58,7 @@
       <div class="col-md-9 grid-margin stretch-card" style="max-height: 50%;">
          <div class="card">
             <div class="card-body">
-               <h6 class="card-title">Total Trafik Website</h6>
+               <h6 class="card-title">Report Uang KAS Tahun <?=date('Y')?></h6>
                <p class="font-weight-500">Total trafik pada tahun <?=date('Y')?></p>
                <canvas id="areaChart"></canvas>
             </div>
