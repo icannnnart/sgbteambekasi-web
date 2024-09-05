@@ -9,12 +9,14 @@
                <h4 class="card-title">New Member Form</h4>
                <form id="registermember" class="forms-sample">
                   <div class="row">
-                     <div class="col-md-4"></div>
+                     <div class="col-md-4">
+                        <div class="form-group">
+                           <label for="exampleInputUsername1">Nama</label>
+                           <input type="text" name="names" class="form-control" id="name" placeholder="e.G Jhon Doe">
+                        </div>
+                     </div>
                   </div>
-                  <div class="form-group">
-                     <label for="exampleInputUsername1">Nama</label>
-                     <input type="text" name="names" class="form-control" id="name" placeholder="e.G Jhon Doe">
-                  </div>
+                  
                   <div class="form-group">
                      <label for="exampleInputEmail1">Email</label>
                      <input type="email" name="emails" class="form-control" id="email" placeholder="Email">
