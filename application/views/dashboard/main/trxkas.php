@@ -85,7 +85,7 @@
                         Swal.fire({
                             icon: 'error',
                             title: 'Oops...',
-                            text: 'Gausah hek hek ente!!',
+                            text: objsx.message,
                         });
                     }
             },
