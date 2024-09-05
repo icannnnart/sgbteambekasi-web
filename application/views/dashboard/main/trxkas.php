@@ -33,3 +33,4 @@
                         </div>
 	</div>
 </div>
+<script src="<?=base_url('assets/dashboard')?>/js/file-upload.js"></script>
