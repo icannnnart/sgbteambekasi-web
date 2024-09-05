@@ -41,7 +41,6 @@
                      <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
                   </div>
                   <button type="submit" class="btn btn-primary me-2">Submit</button>
-                  <button class="btn btn-light">Cancel</button>
                </form>
             </div>
          </div>
