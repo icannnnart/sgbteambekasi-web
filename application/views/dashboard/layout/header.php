@@ -104,13 +104,13 @@
                   </li>
                   <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
                      <a class="nav-link" href="#charts">
-                     <i class="lab la-cc-amazon-pay"></i>
+                     <i class="lab la-cc-amazon-pay menu-icon"></i>
                      <span class="menu-title">Bayar KAS</span>
                      </a>
                   </li>
                   <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
                      <a class="nav-link" href="#charts">
-                     <i class="las la-file-invoice-dollar"></i>
+                     <i class="las la-file-invoice-dollar menu-icon"></i>
                      <span class="menu-title">Report</span>
                      </a>
                   </li>
