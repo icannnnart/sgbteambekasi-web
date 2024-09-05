@@ -27,9 +27,6 @@
 						                        <span class="input-group-text bg-primary text-white">IDR</span>
 						                      </div>
 						                      <input type="text" class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)">
-						                      <div class="input-group-append">
-						                        <span class="input-group-text">.00</span>
-						                      </div>
 						                    </div>
 						                  </div>
                                         <div class="form-group">
