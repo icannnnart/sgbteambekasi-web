@@ -130,7 +130,7 @@ class App extends CI_Controller {
 		    	$nominal = $this->input->post('nominal');
 		    	$fixnominal = str_replace('.', '', $nominal);
 		    	print_r($fixnominal);
-		    	exit;
+		    	die();
 		        $allowedExtensions = ['jpg', 'jpeg', 'png'];
 		        $fileName = $_FILES['img']['name'];
 		        $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
