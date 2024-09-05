@@ -9,37 +9,37 @@
                <h4 class="card-title">New Member Form</h4>
                <form id="registermember" class="forms-sample">
                   <div class="row">
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputUsername1">Nama</label>
                            <input type="text" name="names" class="form-control" id="name" placeholder="e.G Jhon Doe">
                         </div>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputEmail1">Email</label>
                            <input type="email" name="emails" class="form-control" id="email" placeholder="Email">
                         </div>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputPassword1">Password</label>
                            <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                         </div>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputConfirmPassword1">Alamat</label>
                            <input type="text" name="address" class="form-control" id="address" placeholder="Alamat Lengkap">
                         </div>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputConfirmPassword1">Link FB</label>
                            <input type="text" name="link_fb" class="form-control" id="fb" placeholder="htpss://facebook.com/xxxxx">
                         </div>
                      </div>
-                     <div class="col-md-4">
+                     <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputConfirmPassword1">No Whatsapp</label>
                            <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
