@@ -8,9 +8,9 @@ try {
     $db['default'] = array(
         'dsn'      => '',
         'hostname' => '101.255.105.10',
-        'username' => 'pamdi',
-        'password' => 'm62KPBeEBfZFPmHW',
-        'database' => 'pamdi',
+        'username' => 'sgbihsan',
+        'password' => '3P7bbrZA6YHNspAG',
+        'database' => 'sgbihsan',
         'dbdriver' => 'mysqli',
         'dbprefix' => '',
         'pconnect' => FALSE,
