@@ -240,7 +240,7 @@
 <script type="text/javascript">
    var dataarea = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
    var datatarget =<?=$grafik?>
-   console.log(datatarget)
+   //console.log(datatarget)
 </script>
 <script src="<?=base_url('assets/dashboard')?>/js/dashboard.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/chart.js"></script>
