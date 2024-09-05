@@ -67,7 +67,13 @@
             processData: false,
             success: function(response) {
                 // Tampilkan notifikasi SweetAlert2 jika berhasil
-               showSwal('success-message')
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil!',
+                    text: 'Pembayaran Anda berhasil dikirim!',
+                    showConfirmButton: false,
+                    timer: 2000
+                });
             },
             error: function(xhr, status, error) {
                 // Tampilkan notifikasi SweetAlert2 jika gagal
