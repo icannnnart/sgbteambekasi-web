@@ -47,7 +47,7 @@ class App extends CI_Controller {
 	public function masterUser()
 	{
 		$roless = $this->session->userdata('role');
-		print_r($roless)
+		print_r($roless);
 		// if (==2) {
 		// 	redirect((site_url()));
 
