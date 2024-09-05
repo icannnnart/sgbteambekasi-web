@@ -54,8 +54,8 @@ class App extends CI_Controller {
 			$link_fb = $this->input->post('link_fb');
 			$number = $this->input->post('number');
 			$datasmember = array(
-				'name' => ,
-				'email' => ,
+				'name' => $names,
+				'email' => $emails,
 				'password' => password_hash($password, PASSWORD_DEFAULT),
 				'address' => $address,
 				'linkfb' => $link_fb,
