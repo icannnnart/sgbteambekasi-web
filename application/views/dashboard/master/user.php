@@ -28,7 +28,7 @@
                   </div>
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">Alamat</label>
-                     <input type="text" class="form-control" id="address" placeholder="Alamat Lengkap">
+                     <input type="text" name="address" class="form-control" id="address" placeholder="Alamat Lengkap">
                   </div>
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">Link FB</label>
