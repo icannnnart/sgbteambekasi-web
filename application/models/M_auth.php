@@ -7,7 +7,7 @@ class M_auth extends CI_Model {
 	const SESSION_KEY = 'user_id';
 	public function checkLogin($username, $password) {
 		$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-		$user = $this->db->get_where('t_user', ['username' => $username])->row();
+		$user = $this->db->get_where('t_user', ['email' => $username])->row();
 		
 		if ($user && password_verify($password, $user->password)) {
 			return $user;
