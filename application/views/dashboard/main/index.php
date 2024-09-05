@@ -55,7 +55,7 @@
       </div>
    </div>
    <div class="row">
-      <div class="col-md-9 grid-margin stretch-card" style="max-height: 50%;">
+      <div class="col-md-12 grid-margin stretch-card" style="max-height: 50%;">
          <div class="card">
             <div class="card-body">
                <h6 class="card-title">Report Uang KAS Tahun <?=date('Y')?></h6>
