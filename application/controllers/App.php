@@ -20,7 +20,7 @@ class App extends CI_Controller {
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
 		$data['title'] = 'Dashboard';
 		$data['sub_menu'] = '';
-		$data['counallmember'] = $this->M_db->Countdb('t_user');
+		// $data['counallmember'] = $this->M_db->Countdb('t_member');
 		// $data['counactivemember'] = $this->M_db->Countdbbyid('t_member','status',1);
 		// $data['countinactivemember'] = $this->M_db->Countdbbyid('t_member','status',2);;
 		$data['counuser'] = $this->M_db->Countdb('t_user');
