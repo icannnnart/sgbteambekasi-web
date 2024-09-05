@@ -48,7 +48,7 @@
                <div class="card card-light-danger">
                   <div class="card-body">
                      <p class="mb-4">Total User</p>
-                     <p class="fs-30 mb-2"><?=$counuser?></p>
+                     <p class="fs-30 mb-2"><?=number_format($counuser)?></p>
                   </div>
                </div>
             </div>
