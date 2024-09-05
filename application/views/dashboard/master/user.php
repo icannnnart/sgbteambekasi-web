@@ -10,6 +10,13 @@
                                         Basic form layout
                                     </p>
                                     <form class="forms-sample">
+                                       <div class="form-group">
+                                           <label>Level</label>
+                                           <select class="js-example-basic-single w-100">
+                                               <option value="AL">Alabama</option>
+                                               <option value="WY">Wyoming</option>
+                                           </select>
+                                       </div>
                                         <div class="form-group">
                                             <label for="exampleInputUsername1">Nama</label>
                                             <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
@@ -34,13 +41,7 @@
                                             <label for="exampleInputConfirmPassword1">No Whatsapp</label>
                                             <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="62xxxxxxx">
                                         </div>
-                                        <div class="form-group">
-                                           <label>Level</label>
-                                           <select class="js-example-basic-single w-100">
-                                               <option value="AL">Alabama</option>
-                                               <option value="WY">Wyoming</option>
-                                           </select>
-                                       </div>
+                                        
                                         <button type="submit" class="btn btn-primary me-2">Submit</button>
                                         <button class="btn btn-light">Cancel</button>
                                     </form>
