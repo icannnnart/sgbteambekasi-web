@@ -12,7 +12,7 @@
 						                      <div class="input-group-prepend">
 						                        <span class="input-group-text bg-primary text-white">IDR</span>
 						                      </div>
-						                      <input type="text" class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)">
+						                      <input type="text" class="form-control form-control-sm" inputmode="numeric" aria-label="Amount (to the nearest dollar)">
 						                    </div>
 						                  </div>
                                         <div class="form-group">
@@ -33,4 +33,24 @@
                         </div>
 	</div>
 </div>
+<script>
+    // Fungsi untuk memformat angka menjadi format mata uang (1.000.000)
+    function formatCurrency(value) {
+        const numberString = value.replace(/\D/g, ''); // Menghapus semua karakter non-digit
+        const formattedValue = new Intl.NumberFormat('id-ID').format(numberString);
+        return formattedValue;
+    }
+
+    document.getElementById('currencyInput').addEventListener('input', function(e) {
+        let input = e.target.value;
+        e.target.value = formatCurrency(input);
+    });
+
+    // Hanya menerima input angka
+    document.getElementById('currencyInput').addEventListener('keydown', function(e) {
+        if (!/[0-9]/.test(e.key) && e.key !== 'Backspace' && e.key !== 'Delete') {
+            e.preventDefault(); // Mencegah input selain angka
+        }
+    });
+</script>
 <script src="<?=base_url('assets/dashboard')?>/js/file-upload.js"></script>
