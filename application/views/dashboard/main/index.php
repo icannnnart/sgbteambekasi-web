@@ -93,7 +93,7 @@
                                     <td><?=$datascash['id_user']?></td>
                                     <td><?=$datascash['nominal']?></td>
                                     <td><?=$datascash['desc_cash']?></td>
-                                    <td>$3200</td>
+                                    <td><?=$datascash['img_cash']?></td>
                                     <?php if ($datascash['status'] == 1){?>
                                     <td>
                                        <label class="badge badge-info">Pemasukan</label>
