@@ -87,21 +87,24 @@
                      <span class="menu-title">Dashboard</span>
                      </a>
                   </li>
-                  <li class="nav-item <?php echo ($title == 'Master') ? 'active' : ''; ?>">
-                     <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="<?php echo ($title == 'Master') ? 'true' : 'false'; ?>" aria-controls="ui-basic">
-                     <i class="las la-table menu-icon"></i>
-                     <span class="menu-title">Master Data</span>
-                     <i class="menu-arrow"></i>
-                     </a>
-                     <div class="collapse <?php echo ($title == 'Master') ? 'show' : ''; ?>" id="ui-basic">
-                        <ul class="nav flex-column sub-menu">
-                           <li class="nav-item <?php echo ($sub_menu == 'User') ? 'active' : ''; ?>"> <a class="nav-link" href="<?=site_url('app/master/user')?>">User</a></li>
-                           <li class="nav-item <?php echo ($sub_menu == 'Form') ? 'active' : ''; ?>"> <a class="nav-link" href="../ui-features/buttons.html">Request Email SGB</a></li>
-                           <li class="nav-item <?php echo ($sub_menu == 'Registrasi Form') ? 'active' : ''; ?>"> <a class="nav-link" href="<?=site_url('app/master/register-pamdi')?>">Cashflow KAS</a></li>
-                           <!-- <li class="nav-item <?php echo ($sub_menu == 'Member') ? 'active' : ''; ?>"> <a class="nav-link" href="../ui-features/buttons.html">Member</a></li> -->
-                        </ul>
-                     </div>
-                  </li>
+                  <?php if ($user->role == 9) { ?>
+                     <li class="nav-item <?php echo ($title == 'Master') ? 'active' : ''; ?>">
+                        <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="<?php echo ($title == 'Master') ? 'true' : 'false'; ?>" aria-controls="ui-basic">
+                        <i class="las la-table menu-icon"></i>
+                        <span class="menu-title">Master Data</span>
+                        <i class="menu-arrow"></i>
+                        </a>
+                        <div class="collapse <?php echo ($title == 'Master') ? 'show' : ''; ?>" id="ui-basic">
+                           <ul class="nav flex-column sub-menu">
+                              <li class="nav-item <?php echo ($sub_menu == 'User') ? 'active' : ''; ?>"> <a class="nav-link" href="<?=site_url('app/master/user')?>">User</a></li>
+                              <li class="nav-item <?php echo ($sub_menu == 'Form') ? 'active' : ''; ?>"> <a class="nav-link" href="../ui-features/buttons.html">Request Email SGB</a></li>
+                              <li class="nav-item <?php echo ($sub_menu == 'Registrasi Form') ? 'active' : ''; ?>"> <a class="nav-link" href="<?=site_url('app/master/register-pamdi')?>">Cashflow KAS</a></li>
+                              <!-- <li class="nav-item <?php echo ($sub_menu == 'Member') ? 'active' : ''; ?>"> <a class="nav-link" href="../ui-features/buttons.html">Member</a></li> -->
+                           </ul>
+                        </div>
+                     </li>
+                  <?php }?>
+                  
                   <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
                      <a class="nav-link" href="#charts">
                      <i class="lab la-cc-amazon-pay menu-icon"></i>
