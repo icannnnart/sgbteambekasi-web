@@ -33,7 +33,7 @@
                                             <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="62xxxxxxx">
                                         </div>
                                         <div class="form-group">
-                                           <label>Single select box using select 2</label>
+                                           <label>Level</label>
                                            <select class="js-example-basic-single w-100">
                                                <option value="AL">Alabama</option>
                                                <option value="WY">Wyoming</option>
