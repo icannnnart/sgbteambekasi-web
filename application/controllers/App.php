@@ -140,7 +140,7 @@ class App extends CI_Controller {
 		            $fixfilename = md5(date('hsdmY').$fileName).'.'.$fileExtension;
 		            $uploadFile = $uploadDir . basename($fixfilename);
 		            if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
-		            	$datas = array(
+		            	$datascashflow = array(
 		                	'id_user' => $this->session->userdata('logged_in'),
 		                	'nominal' => $nominal,
 		                	'desc_cash' => "Bayar Uang Kas ".date('d-m-Y'),
@@ -149,16 +149,15 @@ class App extends CI_Controller {
 		                $response['status'] = 200;
 		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            } else {
-		            	$datas = array(
+		            	$datascashflow = array(
 		                	'id_user' => $this->session->userdata('logged_in'),
 		                	'nominal' => $nominal,
 		                	'desc_cash' => "Bayar Uang Kas ".date('d-m-Y'),
-		                	'status' => 3,
-		                	'img_cash' => $fixfilename, );
+		                	'status' => 3, );
 		            	$response['status'] = 200;
 		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            }
-
+		            $this->M_db->insert_All('t_cashflow',$datascashflow)
 		        }
 		    } else {
 		    	$response['status'] = 403;
