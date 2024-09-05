@@ -126,6 +126,27 @@ class App extends CI_Controller {
 		        echo json_encode($response);
 		        exit;
 		    }
+		    if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
+		        $allowedExtensions = ['jpg', 'jpeg', 'png'];
+		        $fileName = $_FILES['img']['name'];
+		        $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
+
+		        if (!in_array($fileExtension, $allowedExtensions)) {
+		            $response['message'] = 'Invalid file type. Only JPG, JPEG, and PNG are allowed.';
+		        } else {
+		            $uploadDir = 'uploads/';
+		            $uploadFile = $uploadDir . basename($fileName);
+
+		            if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
+		                $response['status'] = 'success';
+		                $response['message'] = 'File uploaded successfully!';
+		            } else {
+		                $response['message'] = 'Failed to move uploaded file.';
+		            }
+		        }
+		    } else {
+		        $response['message'] = 'No file uploaded or there was an upload error.';
+		    }
 			$nominal = $this->input->post('nominal');
 			print_r($nominal);
 		} else {
