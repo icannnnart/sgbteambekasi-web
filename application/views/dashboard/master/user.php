@@ -101,8 +101,7 @@
 <script src="<?=base_url('assets/dashboard')?>/vendors/select2/select2.min.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/data-table.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/select2.js"></script>
-<script type="text/javascript">
-   <script>
+<script>
     $('#registermember').on('submit', function(e) {
         e.preventDefault(); // Mencegah form submit secara normal
 
@@ -145,5 +144,4 @@
             }
         });
     });
-</script>
 </script>
