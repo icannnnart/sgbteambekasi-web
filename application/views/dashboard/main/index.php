@@ -20,7 +20,7 @@
             <div class="col-md-6 mb-4 stretch-card transparent">
                <div class="card card-tale">
                   <div class="card-body">
-                     <p class="mb-4">Total Member</p>
+                     <p class="mb-4">Total Uang KAS</p>
                      <p class="fs-30 mb-2"><?=$counallmember?></p>
                   </div>
                </div>
@@ -28,7 +28,7 @@
             <div class="col-md-6 mb-4 stretch-card transparent">
                <div class="card card-dark-blue">
                   <div class="card-body">
-                     <p class="mb-4">Total Member Aktif</p>
+                     <p class="mb-4">Pemasukan Uang KAS</p>
                      <p class="fs-30 mb-2"><?=$counactivemember?></p>
                   </div>
                </div>
@@ -38,7 +38,7 @@
             <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
                <div class="card card-light-blue">
                   <div class="card-body">
-                     <p class="mb-4">Total Member Pending/Reject</p>
+                     <p class="mb-4">Pengeluaran Uang KAS</p>
                      <p class="fs-30 mb-2"><?=$countinactivemember?></p>
                   </div>
                </div>
