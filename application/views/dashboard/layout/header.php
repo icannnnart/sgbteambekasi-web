@@ -105,7 +105,7 @@
                      </li>
                      <li class="nav-item <?php echo ($title == 'Payment') ? 'active' : ''; ?>">
                         <a class="nav-link" href="#charts">
-                        <i class="lab la-cc-amazon-pay menu-icon"></i>
+                        <i class="las la-donate menu-icon"></i>
                         <span class="menu-title">Transaksi KAS</span>
                         </a>
                      </li>
