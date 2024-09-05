@@ -48,6 +48,7 @@ class App extends CI_Controller {
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$names = $this->input->post('names');
+			$level = $this->input->post('level');
 			$emails = $this->input->post('emails');
 			$password = $this->input->post('password');
 			$address = $this->input->post('address');
