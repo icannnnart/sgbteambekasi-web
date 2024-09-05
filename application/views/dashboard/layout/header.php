@@ -105,7 +105,6 @@
                      <a class="nav-link" href="#charts">
                      <i class="icon-bar-graph menu-icon"></i>
                      <span class="menu-title">Report</span>
-                     <i class="menu-arrow"></i>
                      </a>
                   </li>
                   <li class="nav-item <?php echo ($title == 'Setting') ? 'active' : ''; ?>">
