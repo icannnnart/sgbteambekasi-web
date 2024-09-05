@@ -45,9 +45,6 @@
                            <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
                         </div>
                      </div>
-                     <div class="col-md-4">
-                        
-                     </div>
                   </div>
                   
                   
