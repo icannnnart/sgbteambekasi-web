@@ -57,7 +57,7 @@
     });
 </script>
 <script>
-	 $('#paymentForm').on('submit', function(e) {
+	 $('#registermember').on('submit', function(e) {
         e.preventDefault(); // Mencegah form submit secara normal
 
         var formData = new FormData(this); // Mengambil data dari form
