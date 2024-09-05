@@ -1,3 +1,4 @@
+<script src="<?=base_url('assets/dashboard/')?>vendors/lightgallery/js/lightgallery-all.min.js"></script>
 <div class="content-wrapper">
    <div class="row">
       <div class="col-md-12 grid-margin">
