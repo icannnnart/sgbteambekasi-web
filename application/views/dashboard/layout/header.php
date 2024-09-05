@@ -101,7 +101,7 @@
                         </ul>
                      </div>
                   </li>
-                  <!-- <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
+                  <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
                      <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="<?php echo ($title == 'Report') ? 'true' : 'false'; ?>" aria-controls="charts">
                      <i class="icon-bar-graph menu-icon"></i>
                      <span class="menu-title">Report</span>
@@ -127,7 +127,7 @@
                            <li class="nav-item <?php echo ($sub_menu == 'Account') ? 'active' : ''; ?>"> <a class="nav-link" href="../tables/basic-table.html">Setting Profile</a></li>
                         </ul>
                      </div>
-                  </li> -->
+                  </li>
                   <li class="nav-item">
                      <a class="nav-link" href="<?=site_url('auth/logout')?>">
                      <i class="icon-open menu-icon"></i>
