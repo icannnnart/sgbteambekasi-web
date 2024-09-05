@@ -46,8 +46,10 @@ class App extends CI_Controller {
 	}
 	public function masterUser()
 	{
-		if ($this->session->userdata('role')==2) {
+		$roless = $this->session->userdata('role');
+		if (==2) {
 			redirect((site_url()));
+
 		}
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$names = $this->input->post('names');
