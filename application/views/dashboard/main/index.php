@@ -91,7 +91,7 @@
                                     <td><?=$aa?></td>
                                     <td><?=$datascash['created_at']?></td>
                                     <td><?=$datascash['id_user']?></td>
-                                    <td><?=$datascash['nominal']?></td>
+                                    <td>IDR <?=number_format($datascash['nominal'])?></td>
                                     <td><?=$datascash['desc_cash']?></td>
                                     <td><?=$datascash['img_cash']?></td>
                                     <?php if ($datascash['status'] == 1){?>
