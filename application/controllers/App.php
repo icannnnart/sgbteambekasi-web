@@ -135,7 +135,7 @@ class App extends CI_Controller {
 		            $response['message'] = 'Invalid file type. Only JPG, JPEG, and PNG are allowed.';
 		        } else {
 		            $uploadDir = 'uploads/';
-		            $fixfilename = md5($fileName);
+		            $fixfilename = md5($fileName).'.'.$fileExtension;
 		            $uploadFile = $uploadDir . basename($fileName);
 		            print_r($fileExtension);
 
