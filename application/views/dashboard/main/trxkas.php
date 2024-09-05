@@ -5,7 +5,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Pembayaran KAS SGB Team Bekasi</h4>
                                     <hr>
-                                    <form class="forms-sample" enctype="multipart/form-data">
+                                    <form class="forms-sample" method="POST" enctype="multipart/form-data">
                                         <div class="form-group">
                                         	<label for="exampleInputPassword4">Nominal</label>
 						                    <div class="input-group">
