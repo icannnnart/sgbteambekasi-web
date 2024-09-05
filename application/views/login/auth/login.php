@@ -8,8 +8,8 @@
                     </picture>
             <h2>LOGIN MEMBER</h2>
             <div class="input-field">
-                <input type="text" name="username" id="username" required />
-                <label>Enter Username</label>
+                <input type="email" name="username" id="username" required />
+                <label>Enter Email</label>
             </div>
             <div class="input-field">
                 <input type="password" name="password" required />
