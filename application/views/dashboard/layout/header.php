@@ -83,13 +83,13 @@
                <ul class="nav">
                   <li class="nav-item <?php echo ($title == 'Dashboard') ? 'active' : ''; ?>">
                      <a class="nav-link" href="<?=site_url()?>">
-                     <i class="icon-grid menu-icon"></i>
+                     <i class="lab la-microsoft menu-icon"></i>
                      <span class="menu-title">Dashboard</span>
                      </a>
                   </li>
                   <li class="nav-item <?php echo ($title == 'Master') ? 'active' : ''; ?>">
                      <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="<?php echo ($title == 'Master') ? 'true' : 'false'; ?>" aria-controls="ui-basic">
-                     <i class="icon-layout menu-icon"></i>
+                     <i class="las la-table menu-icon"></i>
                      <span class="menu-title">Master Data</span>
                      <i class="menu-arrow"></i>
                      </a>
