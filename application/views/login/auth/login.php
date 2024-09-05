@@ -6,7 +6,7 @@
                     <source media="(min-width:465px)" srcset="<?=base_url('assets/login/')?>image/pamdi.png">
                         <img src="<?=base_url('assets/login/')?>image/pamdi.png" alt="Logo PAMDI" style="width:210px;">
                     </picture>
-            <h2>LOGIN PANEL</h2>
+            <h2>LOGIN MEMBER</h2>
             <div class="input-field">
                 <input type="text" name="username" id="username" required />
                 <label>Enter username</label>
