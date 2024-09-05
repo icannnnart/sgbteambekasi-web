@@ -28,7 +28,10 @@
                         </div>
                      </div>
                      <div class="col-md-4">
-                        
+                        <div class="form-group">
+                           <label for="exampleInputConfirmPassword1">Alamat</label>
+                           <input type="text" name="address" class="form-control" id="address" placeholder="Alamat Lengkap">
+                        </div>
                      </div>
                      <div class="col-md-4">
                         
@@ -43,10 +46,7 @@
                   
                   
                   
-                  <div class="form-group">
-                     <label for="exampleInputConfirmPassword1">Alamat</label>
-                     <input type="text" name="address" class="form-control" id="address" placeholder="Alamat Lengkap">
-                  </div>
+                  
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">Link FB</label>
                      <input type="text" name="link_fb" class="form-control" id="fb" placeholder="htpss://facebook.com/xxxxx">
