@@ -145,7 +145,7 @@ class App extends CI_Controller {
 		            if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
 		            	$datascashflow = array(
 		                	'id_user' => $this->session->userdata('logged_in'),
-		                	'nominal' => $nominal,
+		                	'nominal' => $fixnominal,
 		                	'desc_cash' => "Bayar Uang Kas ".date('d-m-Y'),
 		                	'status' => 3,
 		                	'img_cash' => $fixfilename, );
@@ -154,7 +154,7 @@ class App extends CI_Controller {
 		            } else {
 		            	$datascashflow = array(
 		                	'id_user' => $this->session->userdata('logged_in'),
-		                	'nominal' => 123,
+		                	'nominal' => $fixnominal,
 		                	'desc_cash' => "Bayar Uang Kas ".date('d-m-Y'),
 		                	'status' => 3, );
 		            	$response['status'] = 200;
