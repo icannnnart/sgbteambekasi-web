@@ -40,7 +40,10 @@
                         </div>
                      </div>
                      <div class="col-md-4">
-                        
+                        <div class="form-group">
+                           <label for="exampleInputConfirmPassword1">No Whatsapp</label>
+                           <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
+                        </div>
                      </div>
                      <div class="col-md-4">
                         
@@ -51,10 +54,7 @@
                   
                   
                   
-                  <div class="form-group">
-                     <label for="exampleInputConfirmPassword1">No Whatsapp</label>
-                     <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
-                  </div>
+                  
                   <button type="submit" class="btn btn-primary me-2">Submit</button>
                </form>
             </div>
