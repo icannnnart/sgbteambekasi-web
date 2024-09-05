@@ -59,7 +59,7 @@
          <div class="card">
             <div class="card-body">
                <h6 class="card-title">Report Uang KAS Tahun <?=date('Y')?></h6>
-               <p class="font-weight-500">Total trafik pada tahun <?=date('Y')?></p>
+               <p class="font-weight-500">Total pada tahun <?=date('Y')?></p>
                <canvas id="areaChart"></canvas>
             </div>
          </div>
