@@ -71,7 +71,7 @@
             success: function(response) {
             	
             	const objsx = JSON.parse(response);
-            	console.log(objsx.status)
+            	//console.log(objsx.status)
                 if (objsx.status == 200) {
                         Swal.fire({
                             icon: 'success',
