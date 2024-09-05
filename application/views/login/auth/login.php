@@ -9,11 +9,11 @@
             <h2>LOGIN MEMBER</h2>
             <div class="input-field">
                 <input type="text" name="username" id="username" required />
-                <label>Enter username</label>
+                <label>Enter Username</label>
             </div>
             <div class="input-field">
                 <input type="password" name="password" required />
-                <label>Enter password</label>
+                <label>Enter Password</label>
             </div>
             <button type="submit">Log In</button>
             <div class="Create-account">
