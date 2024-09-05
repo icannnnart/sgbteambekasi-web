@@ -89,7 +89,7 @@
                               <?php $aa=0; foreach ($datacashflow as $datascash){ $aa++;?>
                                  <tr>
                                     <td><?=$aa?></td>
-                                    <td>2012/08/03</td>
+                                    <td><?=$datascash['created_at']?></td>
                                     <td>Edinburgh</td>
                                     <td>New York</td>
                                     <td>$1500</td>
