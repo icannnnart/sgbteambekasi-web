@@ -13,6 +13,6 @@
       <meta name="msapplication-TileImage" content="https://pamdi.co.id/wp-content/uploads/2023/12/cropped-favicon-pamdi-270x270.png" />
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>PAMDI - <?=$title?></title>
+    <title>SGBTEAM BEKASI - <?=$title?></title>
     <link rel="stylesheet" href="<?=base_url('assets/login/')?>style.css" />
 </head>
