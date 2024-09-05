@@ -128,6 +128,7 @@ class App extends CI_Controller {
 		    }
 		    if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 		    	$nominal = $this->input->post('nominal');
+		    	$fixnominal = str_replace('.', '', $nominal)
 		        $allowedExtensions = ['jpg', 'jpeg', 'png'];
 		        $fileName = $_FILES['img']['name'];
 		        $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
@@ -151,7 +152,7 @@ class App extends CI_Controller {
 		            } else {
 		            	$datascashflow = array(
 		                	'id_user' => $this->session->userdata('logged_in'),
-		                	'nominal' => str_replace('.', '', $nominal),
+		                	'nominal' => ,
 		                	'desc_cash' => "Bayar Uang Kas ".date('d-m-Y'),
 		                	'status' => 3, );
 		            	$response['status'] = 200;
