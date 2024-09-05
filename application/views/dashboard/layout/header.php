@@ -19,11 +19,11 @@
       <!-- inject:css -->
       <link rel="stylesheet" href="<?=base_url('assets/dashboard/')?>css/vertical-layout-light/style.css">
       <!-- endinject -->
-      <link rel="shortcut icon" href="https://pamdi.co.id/wp-content/uploads/2023/12/cropped-favicon-pamdi-192x192.png" />
-      <link rel="icon" href="https://pamdi.co.id/wp-content/uploads/2023/12/cropped-favicon-pamdi-32x32.png" sizes="32x32" />
-      <link rel="icon" href="https://pamdi.co.id/wp-content/uploads/2023/12/cropped-favicon-pamdi-192x192.png" sizes="192x192" />
-      <link rel="apple-touch-icon" href="https://pamdi.co.id/wp-content/uploads/2023/12/cropped-favicon-pamdi-180x180.png" />
-      <meta name="msapplication-TileImage" content="https://pamdi.co.id/wp-content/uploads/2023/12/cropped-favicon-pamdi-270x270.png" />
+      <link rel="shortcut icon" href="<?=base_url('assets/login/')?>sgb.jpg" />
+      <link rel="icon" href="<?=base_url('assets/login/')?>sgb.jpg" sizes="32x32" />
+      <link rel="icon" href="<?=base_url('assets/login/')?>sgb.jpg" sizes="192x192" />
+      <link rel="apple-touch-icon" href="<?=base_url('assets/login/')?>sgb.jpg" />
+      <meta name="msapplication-TileImage" content="<?=base_url('assets/login/')?>sgb.jpg" />
       <script src="<?=base_url('assets/dashboard/')?>vendors/js/vendor.bundle.base.js"></script>
       <script src="<?=base_url('assets/dashboard')?>/vendors/chart.js/chart.umd.js"></script>
        <script src="<?=base_url('assets/dashboard')?>/vendors/datatables.net/jquery.dataTables.js"></script>
