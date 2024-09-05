@@ -116,7 +116,7 @@
                   </li>
                   <li class="nav-item <?php echo ($title == 'Setting') ? 'active' : ''; ?>">
                      <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="<?php echo ($title == 'Setting') ? 'true' : 'false'; ?>" aria-controls="tables">
-                     <i class="icon-grid-2 menu-icon"></i>
+                     <i class="las la-user-alt menu-icon"></i>
                      <span class="menu-title">Account</span>
                      <i class="menu-arrow"></i>
                      </a>
