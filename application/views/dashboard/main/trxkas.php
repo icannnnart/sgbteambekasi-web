@@ -72,7 +72,7 @@
                Swal.fire({
                         icon: 'success',
                         title: 'Berhasil!',
-                        text: response.message,
+                        text: 'Pembayaran kamu telah kami terima',
                         showConfirmButton: false,
                         timer: 2000
                     });
