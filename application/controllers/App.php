@@ -139,7 +139,7 @@ class App extends CI_Controller {
 		            $uploadFile = $uploadDir . basename($fixfilename);
 		            if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
 		                $response['status'] = 'success';
-		                $response['message'] = 'File uploaded successfully!';
+		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            } else {
 		                $response['message'] = 'Failed to move uploaded file.';
 		            }
