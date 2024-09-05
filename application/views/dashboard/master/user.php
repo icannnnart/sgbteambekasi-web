@@ -12,37 +12,37 @@
                      <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputUsername1">Nama</label>
-                           <input type="text" name="names" class="form-control" id="name" placeholder="e.G Jhon Doe">
+                           <input type="text" name="names" class="form-control" id="name" placeholder="e.G Jhon Doe" required>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputEmail1">Email</label>
-                           <input type="email" name="emails" class="form-control" id="email" placeholder="Email">
+                           <input type="email" name="emails" class="form-control" id="email" placeholder="Email" required>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputPassword1">Password</label>
-                           <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                           <input type="password" name="password" class="form-control" id="password" placeholder="Password" required>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputConfirmPassword1">Alamat</label>
-                           <input type="text" name="address" class="form-control" id="address" placeholder="Alamat Lengkap">
+                           <input type="text" name="address" class="form-control" id="address" placeholder="Alamat Lengkap" required>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputConfirmPassword1">Link FB</label>
-                           <input type="text" name="link_fb" class="form-control" id="fb" placeholder="htpss://facebook.com/xxxxx">
+                           <input type="text" name="link_fb" class="form-control" id="fb" placeholder="htpss://facebook.com/xxxxx" required>
                         </div>
                      </div>
                      <div class="col-md-6">
                         <div class="form-group">
                            <label for="exampleInputConfirmPassword1">No Whatsapp</label>
-                           <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
+                           <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx" required>
                         </div>
                      </div>
                   </div>
