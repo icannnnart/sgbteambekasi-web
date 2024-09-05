@@ -69,14 +69,23 @@
             contentType: false,
             processData: false,
             success: function(response) {
-               Swal.fire({
-                        icon: 'success',
-                        title: 'Berhasil!',
-                        text: 'Pembayaran kamu telah kami terima',
-                        showConfirmButton: false,
-                        timer: 10000
-                    });
-               //window.location.reload()
+
+                if (response.status === 'success') {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Berhasil!',
+                            text: response.message,
+                            showConfirmButton: false,
+                            timer: 2000
+                        });
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: response.message,
+                        });
+                    }
+               window.location.reload()
             },
             error: function(xhr, status, error) {
                 // Tampilkan notifikasi SweetAlert2 jika gagal
