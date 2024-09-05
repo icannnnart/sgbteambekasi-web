@@ -104,6 +104,12 @@
                   <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
                      <a class="nav-link" href="#charts">
                      <i class="icon-bar-graph menu-icon"></i>
+                     <span class="menu-title">Bayar KAS</span>
+                     </a>
+                  </li>
+                  <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
+                     <a class="nav-link" href="#charts">
+                     <i class="icon-bar-graph menu-icon"></i>
                      <span class="menu-title">Report</span>
                      </a>
                   </li>
