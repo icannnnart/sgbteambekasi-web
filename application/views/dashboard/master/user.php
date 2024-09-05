@@ -6,9 +6,6 @@
          <div class="card">
             <div class="card-body">
                <h4 class="card-title">New Member Form</h4>
-               <p class="card-description">
-                  Basic form layout
-               </p>
                <form class="forms-sample">
                   <div class="form-group">
                      <label>Level</label>
