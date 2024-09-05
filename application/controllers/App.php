@@ -132,23 +132,23 @@ class App extends CI_Controller {
 		        $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
 
 		        if (!in_array($fileExtension, $allowedExtensions)) {
-		        	$response['status'] = 'false';
+		        	$response['status'] = 403;
 		            $response['message'] = 'Gausah ngehek ngehek ente.';
 		        } else {
 		            $uploadDir = 'uploads/';
 		            $fixfilename = md5(date('hsdmY').$fileName).'.'.$fileExtension;
 		            $uploadFile = $uploadDir . basename($fixfilename);
 		            if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
-		                $response['status'] = 'success';
+		                $response['status'] = 200;
 		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            } else {
-		            	$response['status'] = 'false';
+		            	$response['status'] = 200;
 		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            }
 
 		        }
 		    } else {
-		    	$response['status'] = 'false';
+		    	$response['status'] = 403;
 		        $response['message'] = 'Bukti Pembayaran mohon diisi terlebih dahulu.';
 		    }
 		    print_r($response);
