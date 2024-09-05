@@ -10,13 +10,33 @@
                                         Basic form layout
                                     </p>
                                     <form class="forms-sample">
-                                       <div class="form-group">
-                                           <label>Level</label>
-                                           <select class="js-example-basic-single w-100">
-                                               <option value="2">Member</option>
-                                               <option value="9">Admin</option>
-                                           </select>
-                                       </div>
+                                       <div class="col-md-6 grid-margin stretch-card">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="card-title">Select 2</h4>
+                                    <div class="form-group">
+                                        <label>Single select box using select 2</label>
+                                        <select class="js-example-basic-single w-100">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="AM">America</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="RU">Russia</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Multiple select using select 2</label>
+                                        <select class="js-example-basic-multiple w-100" multiple="multiple">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="AM">America</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="RU">Russia</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                                         <div class="form-group">
                                             <label for="exampleInputUsername1">Nama</label>
                                             <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
