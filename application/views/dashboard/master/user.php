@@ -9,13 +9,6 @@
                <h4 class="card-title">New Member Form</h4>
                <form id="registermember" class="forms-sample">
                   <div class="form-group">
-                     <label for="exampleInputUsername1">Level</label>
-                     <select name="level" id="single" class="js-states form-control">
-                        <option value="2">Member</option>
-                        <option value="9">Admin</option>
-                     </select>
-                  </div>
-                  <div class="form-group">
                      <label for="exampleInputUsername1">Nama</label>
                      <input type="text" name="names" class="form-control" id="name" placeholder="e.G Jhon Doe">
                   </div>
