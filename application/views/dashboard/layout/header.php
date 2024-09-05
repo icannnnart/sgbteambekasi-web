@@ -64,13 +64,10 @@
                      </div>
                   </li>
                   <li class="nav-item nav-settings text-center">
-                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
                         <h6 style="padding-top: 1rem;"><?=$user->name?>
                         <br>
                         <p><?php $roles = $this->M_db->Get_user_by_id('t_role','id',$user->status); print_r($roles->name);?></p>
-
-                        </h6>
-                     </a>
+                     </h6>
                         
                   </li>
                </ul>
