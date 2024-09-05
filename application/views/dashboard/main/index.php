@@ -245,4 +245,3 @@
 <script src="<?=base_url('assets/dashboard')?>/js/dashboard.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/chart.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/data-table.js"></script>
-<script src="<?=base_url('assets/dashboard')?>/vendors/jam/jam.js"></script>
