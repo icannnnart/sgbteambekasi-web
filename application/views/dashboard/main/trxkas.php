@@ -4,9 +4,7 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">Pembayaran KAS SGB Team Bekasi</h4>
-                                    <p class="card-description">
-                                        Basic form elements
-                                    </p>
+                                    <img src="https://i.pinimg.com/564x/67/b9/4a/67b94abda90218b077da5762a0df0d2c.jpg">
                                     <form class="forms-sample">
                                         <div class="form-group">
                                             <label for="exampleInputName1">Name</label>
