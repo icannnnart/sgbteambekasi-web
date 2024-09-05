@@ -95,14 +95,14 @@
                                     <td>IDR <?=number_format($datascash['nominal'])?></td>
                                     <td><?=$datascash['desc_cash']?></td>
                                     <td>
-                                       <div id="lightgallery-without-thumb<?=$a?>" class="lightGallery">
+                                       <div id="lightgallery-without-thumb<?=$aa?>" class="lightGallery">
                                           <a href="<?=htmlspecialchars(base_url('uploads/').$datascash['img_cash'])?>" class="image-tile">
                                           <img src="https://cdn-icons-png.flaticon.com/512/4149/4149652.png" alt="BUKTI CASHFLOW"></a>
                                        </div>
                                     </td>
                                     <script type="text/javascript">
-                                       if ($("#lightgallery-without-thumb"+'<?=$a?>').length) {
-                                              $("#lightgallery-without-thumb"+'<?=$a?>').lightGallery({
+                                       if ($("#lightgallery-without-thumb"+'<?=$aa?>').length) {
+                                              $("#lightgallery-without-thumb"+'<?=$aa?>').lightGallery({
                                                 thumbnail: true,
                                                 animateThumb: false,
                                                 showThumbByDefault: false
