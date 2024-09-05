@@ -16,7 +16,7 @@
 						                    </div>
 						                  </div>
                                         <div class="form-group">
-                                            <label>Bukti</label>
+                                            <label>Bukti Pembayaran</label>
                                             <input type="file" name="img" class="file-upload-default">
                                             <div class="input-group col-xs-12 d-flex align-items-center">
                                                 <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
