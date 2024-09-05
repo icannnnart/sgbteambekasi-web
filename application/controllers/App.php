@@ -121,6 +121,11 @@ class App extends CI_Controller {
 	public function trxKas()
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			if (!isset($_POST['nominal']) || empty($_POST['nominal'])) {
+		        $response['message'] = 'Nominal is required.';
+		        echo json_encode($response);
+		        exit;
+		    }
 			$nominal = $this->input->post('nominal');
 			print_r($nominal);
 		} else {
