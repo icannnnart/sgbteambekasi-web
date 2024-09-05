@@ -61,3 +61,4 @@
       </div>
    </div>
 </div>
+<script src="<?=base_url('assets/dashboard')?>/js/data-table.js"></script>
