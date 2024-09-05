@@ -239,7 +239,7 @@
 </div>
 <script type="text/javascript">
    var dataarea = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-   var datatarget =[12, 19, 3, 5, 2, 3]
+   var datatarget =<?=$grafik?>
 </script>
 <script src="<?=base_url('assets/dashboard')?>/js/dashboard.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/chart.js"></script>
