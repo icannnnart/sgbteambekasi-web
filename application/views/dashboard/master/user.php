@@ -8,7 +8,7 @@
          <div class="card">
             <div class="card-body">
                <h4 class="card-title">New Member Form</h4>
-               <form class="forms-sample">
+               <form id="registermember" class="forms-sample">
                   <div class="form-group">
                      <label for="exampleInputUsername1">Level</label>
                      <select name="level"  class="form-control js-example-basic-single">
@@ -40,7 +40,7 @@
                      <label for="exampleInputConfirmPassword1">No Whatsapp</label>
                      <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
                   </div>
-                  <button type="button" class="btn btn-primary me-2">Submit</button>
+                  <button type="submit" class="btn btn-primary me-2">Submit</button>
                   <button class="btn btn-light">Cancel</button>
                </form>
             </div>
