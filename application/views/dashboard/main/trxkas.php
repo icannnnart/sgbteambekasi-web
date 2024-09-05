@@ -83,7 +83,7 @@
                         Swal.fire({
                             icon: 'error',
                             title: 'Oops...',
-                            text: 'Ada masalah saat mengirim pembayaran. Coba lagi!',
+                            text: 'Gausah hek hek ente!!',
                         });
                     }
             },
