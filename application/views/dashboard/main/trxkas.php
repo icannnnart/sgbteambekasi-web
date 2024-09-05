@@ -21,16 +21,16 @@
                                             <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
                                         </div>
                                         <div class="form-group">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text bg-primary text-white">$</span>
-                      </div>
-                      <input type="text" class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)">
-                      <div class="input-group-append">
-                        <span class="input-group-text">.00</span>
-                      </div>
-                    </div>
-                  </div>
+						                    <div class="input-group">
+						                      <div class="input-group-prepend">
+						                        <span class="input-group-text bg-primary text-white">$</span>
+						                      </div>
+						                      <input type="text" class="form-control form-control-sm" aria-label="Amount (to the nearest dollar)">
+						                      <div class="input-group-append">
+						                        <span class="input-group-text">.00</span>
+						                      </div>
+						                    </div>
+						                  </div>
                                         <div class="form-group">
                                             <label>File upload</label>
                                             <input type="file" name="img" class="file-upload-default">
