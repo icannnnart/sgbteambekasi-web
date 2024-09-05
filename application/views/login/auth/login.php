@@ -22,4 +22,7 @@
         </form>
     </div>
 </body>
+<script type="text/javascript">
+    var base
+</script>
 <script src="<?=base_url('assets/login/')?>gue.js"></script>
