@@ -61,6 +61,7 @@ $route['app/dashboard'] = 'App';
 $route['app/pembayaran-kas'] = 'App/trxKas';
 $route['app/action/pembayaran-kas']['post'] = 'App/trxKas';
 $route['app/master/user'] = 'App/masterUser';
+$route['app/add/member']['post'] = 'App/masterUser';
 $route['app/master/register-pamdi'] = 'App/masterRegform';
 
 $route['management/view/register/(:any)'] = 'Preview/previewRegister/$1';
