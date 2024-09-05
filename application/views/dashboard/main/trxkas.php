@@ -53,6 +53,39 @@
         }
     });
 </script>
+<script>
+	 $('#paymentForm').on('submit', function(e) {
+        e.preventDefault(); // Mencegah form submit secara normal
+
+        var formData = new FormData(this); // Mengambil data dari form
+
+        $.ajax({
+            url: '/path/to/your/server-side-script',  // Ganti dengan URL backend yang sesuai
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                // Tampilkan notifikasi SweetAlert2 jika berhasil
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil!',
+                    text: 'Pembayaran Anda berhasil dikirim!',
+                    showConfirmButton: false,
+                    timer: 2000
+                });
+            },
+            error: function(xhr, status, error) {
+                // Tampilkan notifikasi SweetAlert2 jika gagal
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ada masalah saat mengirim pembayaran. Coba lagi!',
+                });
+            }
+        });
+    });
+</script>
 <script src="<?=base_url('assets/dashboard')?>/js/file-upload.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/alerts.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/avgrund.js"></script>
