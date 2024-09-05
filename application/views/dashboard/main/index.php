@@ -21,7 +21,7 @@
                <div class="card card-tale">
                   <div class="card-body">
                      <p class="mb-4">Total Uang KAS</p>
-                     <p class="fs-30 mb-2"><?=$counallmember?></p>
+                     <p class="fs-30 mb-2"><span style="font-size: 12px;">IDR </span><?=number_format($sumcashflow)?></p>
                   </div>
                </div>
             </div>
