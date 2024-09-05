@@ -128,7 +128,7 @@
                   </li>
                   <li class="nav-item">
                      <a class="nav-link" href="<?=site_url('auth/logout')?>">
-                     <i class="icon-open menu-icon"></i>
+                     <i class="las la-sign-out-alt menu-icon"></i>
                      <span class="menu-title">Logout</span>
                      </a>
                   </li>
