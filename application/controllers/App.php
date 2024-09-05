@@ -136,6 +136,7 @@ class App extends CI_Controller {
 		        } else {
 		            $uploadDir = 'uploads/';
 		            $uploadFile = $uploadDir . basename($fileName);
+		            print_r($uploadFile);
 
 		            // if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
 		            //     $response['status'] = 'success';
