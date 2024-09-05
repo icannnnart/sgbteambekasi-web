@@ -1,55 +1,54 @@
 <link rel="stylesheet" href="<?=base_url('assets/dashboard')?>/vendors/select2/select2.min.css">
 <link rel="stylesheet" href="<?=base_url('assets/dashboard')?>/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
 <div class="content-wrapper">
-	<div class="row">
-	      <div class="col-md-12 grid-margin stretch-card">
-	         <div class="card">
-	            <div class="card-body">
-                                    <h4 class="card-title">Default form</h4>
-                                    <p class="card-description">
-                                        Basic form layout
-                                    </p>
-                                    <form class="forms-sample">
-                                       <div class="form-group">
-                                           <label>Level</label>
-                                           <select class="js-example-basic-single w-100">
-                                               <option value="2">Member</option>
-                                               <option value="9">Admin</option>
-                                           </select>
-                                       </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputUsername1">Nama</label>
-                                            <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail1">Email</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputPassword1">Password</label>
-                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputConfirmPassword1">Alamat</label>
-                                            <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="Alamat Lengkap">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputConfirmPassword1">Link FB</label>
-                                            <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="htpss://facebook.com/xxxxx">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputConfirmPassword1">No Whatsapp</label>
-                                            <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="62xxxxxxx">
-                                        </div>
-                                        
-                                        <button type="submit" class="btn btn-primary me-2">Submit</button>
-                                        <button class="btn btn-light">Cancel</button>
-                                    </form>
-                                </div>
-	         </div>
-	      </div>
-	</div>
-	<div class="row">
+   <div class="row">
+      <div class="col-md-12 grid-margin stretch-card">
+         <div class="card">
+            <div class="card-body">
+               <h4 class="card-title">Default form</h4>
+               <p class="card-description">
+                  Basic form layout
+               </p>
+               <form class="forms-sample">
+                  <div class="form-group">
+                     <label>Level</label>
+                     <select class="js-example-basic-single w-100">
+                        <option value="2">Member</option>
+                        <option value="9">Admin</option>
+                     </select>
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputUsername1">Nama</label>
+                     <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputEmail1">Email</label>
+                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputPassword1">Password</label>
+                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputConfirmPassword1">Alamat</label>
+                     <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="Alamat Lengkap">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputConfirmPassword1">Link FB</label>
+                     <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="htpss://facebook.com/xxxxx">
+                  </div>
+                  <div class="form-group">
+                     <label for="exampleInputConfirmPassword1">No Whatsapp</label>
+                     <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="62xxxxxxx">
+                  </div>
+                  <button type="submit" class="btn btn-primary me-2">Submit</button>
+                  <button class="btn btn-light">Cancel</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row">
       <div class="col-md-12 grid-margin stretch-card">
          <div class="card position-relative">
             <div class="card-body">
@@ -70,7 +69,7 @@
                               </tr>
                            </thead>
                            <tbody>
-                           	<?php $a=0; foreach($data_user as $datasuser){$a++;?>
+                              <?php $a=0; foreach($data_user as $datasuser){$a++;?>
                               <tr>
                                  <td><?=$a?></td>
                                  <td><?=$datasuser['name']?></td>
@@ -78,19 +77,19 @@
                                  <td><?=$datasuser['nowa']?></td>
                                  <td><?=$datasuser['address']?></td>
                                  <td>
-                                 	<?php $level = $this->M_db->Get_user_by_id('t_role','id',$datasuser['role']); if ($level->id == 9){?>
-                                    	<label class="badge badge-info"><?=$level->name?></label>
-	                                <?php }elseif ($level->id == 2){?>
-	                                	<label class="badge badge-warning "><?=$level->name?></label>
-	                                <?php }else{?>
-	                                	<label class="badge badge-warning "><?=$level->name?></label>
-	                                <?php }?>
+                                    <?php $level = $this->M_db->Get_user_by_id('t_role','id',$datasuser['role']); if ($level->id == 9){?>
+                                    <label class="badge badge-info"><?=$level->name?></label>
+                                    <?php }elseif ($level->id == 2){?>
+                                    <label class="badge badge-warning "><?=$level->name?></label>
+                                    <?php }else{?>
+                                    <label class="badge badge-warning "><?=$level->name?></label>
+                                    <?php }?>
                                  </td>
                                  <td>
                                     <button type="button" class="btn btn-primary btn-rounded btn-icon"><i class="ti-eye"></i></button>
                                  </td>
                               </tr>
-                          <?php }?>
+                              <?php }?>
                            </tbody>
                         </table>
                      </div>
