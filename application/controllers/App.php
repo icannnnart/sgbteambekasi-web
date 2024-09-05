@@ -151,7 +151,7 @@ class App extends CI_Controller {
 		    	$response['status'] = 403;
 		        $response['message'] = 'Bukti Pembayaran mohon diisi terlebih dahulu.';
 		    }
-		    print_r($response);
+		    print_r(json_encode($response));
 		} else {
 			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
 			$data['title'] = 'Pembayaran Kas';
