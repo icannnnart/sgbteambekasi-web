@@ -121,8 +121,8 @@ class App extends CI_Controller {
 	public function trxKas()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
-		$data['title'] = 'Setting';
-		$data['sub_menu'] = 'Account';
+		$data['title'] = 'Pembayaran Kas';
+		$data['sub_menu'] = 'BayarKas';
 		$this->load->view('dashboard/layout/header',$data);
 		$this->load->view('dashboard/main/trxkas');
 		$this->load->view('dashboard/layout/footer');
