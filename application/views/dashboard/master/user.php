@@ -120,7 +120,7 @@
         var formData = new FormData(this); // Mengambil data dari form
 
         $.ajax({
-            url: '<?=site_url('app/action/pembayaran-kas')?>',  // Ganti dengan URL backend yang sesuai
+            url: '<?=site_url('app/add/member')?>',  // Ganti dengan URL backend yang sesuai
             type: 'POST',
             data: formData,
             contentType: false,
