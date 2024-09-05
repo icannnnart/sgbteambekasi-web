@@ -120,7 +120,7 @@ class App extends CI_Controller {
 	}
 	public function trxKas()
 	{
-		if (isset($_POST['nominal'])) {
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$nominal = $this->input->post('nominal');
 			print_r($nominal);
 		} else {
