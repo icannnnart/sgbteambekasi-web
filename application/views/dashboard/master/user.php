@@ -10,7 +10,7 @@
                                         Basic form layout
                                     </p>
                                     <form class="forms-sample">
-                                       <div class="form-group">
+                                       <div class="form-group col-4">
                                            <label>Level</label>
                                            <select class="js-example-basic-single w-100">
                                                <option value="2">Member</option>
