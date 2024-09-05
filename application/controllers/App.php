@@ -22,7 +22,7 @@ class App extends CI_Controller {
 		$data['sub_menu'] = '';
 		$donebayar = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1')->row();
 		$keluarbayar = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=2')->row();
-		// $data['counallmember'] = $this->M_db->Countdb('t_member');
+		$data['sumkas'] = $donebayar;
 		// $data['counactivemember'] = $this->M_db->Countdbbyid('t_member','status',1);
 		// $data['countinactivemember'] = $this->M_db->Countdbbyid('t_member','status',2);;
 		$data['counuser'] = $this->M_db->Countdb('t_user');
