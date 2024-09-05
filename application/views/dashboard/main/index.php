@@ -87,7 +87,7 @@
                               </tr>
                            </thead>
                            <tbody>
-                              <?php foreach ($datacashflow as $datascash){?>
+                              <?php $aa=0; foreach ($datacashflow as $datascash){ $aa++;?>
                                  <tr>
                                     <td>1</td>
                                     <td>2012/08/03</td>
