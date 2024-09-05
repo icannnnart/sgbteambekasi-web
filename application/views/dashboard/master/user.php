@@ -36,7 +36,7 @@
                                  <td><?=$datasuser['name']?></td>
                                  <td><?=$datasuser['email']?></td>
                                  <td><?=$datasuser['nowa']?></td>
-                                 <td><?=$datasuser['alamat']?></td>
+                                 <td><?=$datasuser['address']?></td>
                                  <td>
                                  	<?php $level = $this->M_db->Get_user_by_id('t_role','id',$datasuser['role']); if ($level->role_id == 1){?>
                                     	<label class="badge badge-info"><?=$level->name?></label>
