@@ -132,7 +132,8 @@ class App extends CI_Controller {
 		        $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
 
 		        if (!in_array($fileExtension, $allowedExtensions)) {
-		            $response['message'] = 'Invalid file type. Only JPG, JPEG, and PNG are allowed.';
+		        	$response['status'] = 'false';
+		            $response['message'] = 'Gausah ngehek ngehek ente.';
 		        } else {
 		            $uploadDir = 'uploads/';
 		            $fixfilename = md5(date('hsdmY').$fileName).'.'.$fileExtension;
