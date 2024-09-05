@@ -90,8 +90,8 @@
                                  <tr>
                                     <td><?=$aa?></td>
                                     <td><?=$datascash['created_at']?></td>
-                                    <td>Edinburgh</td>
-                                    <td>New York</td>
+                                    <td><?=$datascash['id_user']?></td>
+                                    <td><?=$datascash['nominal']?></td>
                                     <td>$1500</td>
                                     <td>$3200</td>
                                     <?php if ($datascash['status'] == 1){?>
