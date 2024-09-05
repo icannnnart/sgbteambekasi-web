@@ -48,11 +48,10 @@
                </button>
 
                <ul class="navbar-nav navbar-nav-right">
-                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
                   <li class="nav-item nav-profile dropdown">
-                    
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
                      <img src="https://ui-avatars.com/api/?name=<?=$user->name?>&amp;background=random" alt="profile" />
-                     
+                     </a>
                      <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                         <a class="dropdown-item">
                         <i class="ti-settings text-primary"></i>
@@ -65,13 +64,15 @@
                      </div>
                   </li>
                   <li class="nav-item nav-settings text-center">
+                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
                         <h6 style="padding-top: 1rem;"><?=$user->name?>
                         <br>
                         <p><?php $roles = $this->M_db->Get_user_by_id('t_role','id',$user->status); print_r($roles->name);?></p>
-                     </h6>
+
+                        </h6>
+                     </a>
                         
                   </li>
-                  </a>
                </ul>
                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                     <span class="icon-menu"></span>
