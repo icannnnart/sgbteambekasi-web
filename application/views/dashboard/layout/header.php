@@ -111,7 +111,7 @@
                      </li>
                   <?php }?>
                   
-                  <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
+                  <li class="nav-item <?php echo ($title == 'BayarKas') ? 'active' : ''; ?>">
                      <a class="nav-link" href="#charts">
                      <i class="lab la-cc-amazon-pay menu-icon"></i>
                      <span class="menu-title">Pembayaran KAS</span>
