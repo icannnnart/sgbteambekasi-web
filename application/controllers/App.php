@@ -62,6 +62,14 @@ class App extends CI_Controller {
 				'nowa' => $number,
 				'role' => 2,
 				 );
+			if ($this->M_db->insert_All('t_user',$datasmember)) {
+				$response['status'] = 200;
+		        $response['message'] = 'Pendaftaran Member Berhasil!';
+			} else {
+				$response['status'] = 401;
+		        $response['message'] = 'Pendaftaran Member Gagal!';
+			}
+			
 		} else {
 			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
 			$data['title'] = 'Master';
