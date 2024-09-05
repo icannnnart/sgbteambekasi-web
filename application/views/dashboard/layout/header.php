@@ -38,9 +38,9 @@
          <!-- partial:../../partials/_navbar.html -->
          <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
             <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-start">
-               <a class="navbar-brand brand-logo me-5" href="<?=site_url()?>"><img src="<?=base_url('assets/dashboard/')?>images/logo-pamdi.png" class="me-2"
+               <a class="navbar-brand brand-logo me-5" href="<?=site_url()?>"><img src="<?=base_url('assets/dashboard/')?>images/item.png" class="me-2"
                   alt="logo" /></a>
-               <a class="navbar-brand brand-logo-mini" href="<?=site_url()?>"><img src="https://pamdi.co.id/wp-content/uploads/2023/12/cropped-favicon-pamdi-192x192.png"
+               <a class="navbar-brand brand-logo-mini" href="<?=site_url()?>"><img src="<?=base_url('assets/dashboard/')?>images/minilogo.png"
                   alt="logo" /></a>
             </div>
             <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
