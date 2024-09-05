@@ -20,6 +20,8 @@ class App extends CI_Controller {
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
 		$data['title'] = 'Dashboard';
 		$data['sub_menu'] = '';
+		$donebayar = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1')->row();
+		$keluarbayar = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=2')->row();
 		// $data['counallmember'] = $this->M_db->Countdb('t_member');
 		// $data['counactivemember'] = $this->M_db->Countdbbyid('t_member','status',1);
 		// $data['countinactivemember'] = $this->M_db->Countdbbyid('t_member','status',2);;
