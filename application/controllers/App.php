@@ -147,7 +147,7 @@ class App extends CI_Controller {
 
 		        }
 		    } else {
-		    	$response['status'] = 'success';
+		    	$response['status'] = 'false';
 		        $response['message'] = 'No file uploaded or there was an upload error.';
 		    }
 		    print_r($response);
