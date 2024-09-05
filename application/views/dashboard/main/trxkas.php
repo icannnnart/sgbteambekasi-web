@@ -69,21 +69,13 @@
             contentType: false,
             processData: false,
             success: function(response) {
-               if (response.status === 'success') {
-                    Swal.fire({
+               Swal.fire({
                         icon: 'success',
                         title: 'Berhasil!',
                         text: response.message,
                         showConfirmButton: false,
                         timer: 2000
                     });
-                } else {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Oops...',
-                        text: response.message,
-                    });
-                }
             },
             error: function(xhr, status, error) {
                 // Tampilkan notifikasi SweetAlert2 jika gagal
