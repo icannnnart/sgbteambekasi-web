@@ -17,7 +17,7 @@
             </div>
             <button type="submit">Log In</button>
             <div class="Create-account">
-                <p>© <?=date('Y')?> PAMDI. Powered by <a href="#">AIRTECHART</a></p>
+                <p>© <?=date('Y')?> SGBTEAM BEKASI. Powered by <a href="https://icanart.dev">ICANART</a></p>
             </div>
         </form>
     </div>
