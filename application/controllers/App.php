@@ -137,14 +137,12 @@ class App extends CI_Controller {
 		            $uploadDir = 'uploads/';
 		            $fixfilename = md5($fileName).'.'.$fileExtension;
 		            $uploadFile = $uploadDir . basename($fixfilename);
-		            print_r($uploadFile);
-
-		            // if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
-		            //     $response['status'] = 'success';
-		            //     $response['message'] = 'File uploaded successfully!';
-		            // } else {
-		            //     $response['message'] = 'Failed to move uploaded file.';
-		            // }
+		            if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
+		                $response['status'] = 'success';
+		                $response['message'] = 'File uploaded successfully!';
+		            } else {
+		                $response['message'] = 'Failed to move uploaded file.';
+		            }
 		        }
 		    } else {
 		        $response['message'] = 'No file uploaded or there was an upload error.';
