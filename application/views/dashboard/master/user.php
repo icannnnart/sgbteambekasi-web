@@ -10,7 +10,7 @@
                <form id="registermember" class="forms-sample">
                   <div class="form-group">
                      <label for="exampleInputUsername1">Level</label>
-                     <select name="level"  class="js-states form-control">
+                     <select name="level" id="single"  class="js-states form-control">
                         <option value="2">Member</option>
                         <option value="9">Admin</option>
                      </select>
