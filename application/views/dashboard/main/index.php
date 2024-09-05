@@ -91,7 +91,7 @@
                                  <tr>
                                     <td><?=$aa?></td>
                                     <td><?=$datascash['created_at']?></td>
-                                    <td><?=$datascash['id_user']?></td>
+                                    <td><?php $usernames = $this->M_db->Get_user_by_id('t_user','id',$datascash['id_user']); print_r($usernames->name);?></td>
                                     <td>IDR <?=number_format($datascash['nominal'])?></td>
                                     <td><?=$datascash['desc_cash']?></td>
                                     <td>
