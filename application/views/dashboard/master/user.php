@@ -38,7 +38,7 @@
                                  <td><?=$datasuser['nowa']?></td>
                                  <td><?=$datasuser['address']?></td>
                                  <td>
-                                 	<?php $level = $this->M_db->Get_user_by_id('t_role','id',$datasuser['role']); if ($level->role_id == 1){?>
+                                 	<?php $level = $this->M_db->Get_user_by_id('t_role','id',$datasuser['role']); if ($level->role_id == 9){?>
                                     	<label class="badge badge-info"><?=$level->name?></label>
 	                                <?php }elseif ($level->role_id == 2){?>
 	                                	<label class="badge badge-secondary "><?=$level->name?></label>
