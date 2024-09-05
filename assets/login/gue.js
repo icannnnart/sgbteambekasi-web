@@ -14,7 +14,7 @@ $(document).ready(function() {
                                     $('#preloader').hide();
                                    
                                     if (result.isConfirmed) {
-                                        window.location.href = "<?=site_url('/app/dashboard')?>";
+                                        window.location.href = baseurl;
                                     }
                                 });
                             } else if(response.status == 2) {
