@@ -151,7 +151,7 @@ class App extends CI_Controller {
 		            } else {
 		            	$datascashflow = array(
 		                	'id_user' => $this->session->userdata('logged_in'),
-		                	'nominal' => $nominal,
+		                	'nominal' => str_replace('.', '', $nominal),
 		                	'desc_cash' => "Bayar Uang Kas ".date('d-m-Y'),
 		                	'status' => 3, );
 		            	$response['status'] = 200;
