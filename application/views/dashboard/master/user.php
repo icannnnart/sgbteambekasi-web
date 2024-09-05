@@ -100,3 +100,49 @@
 <script src="<?=base_url('assets/dashboard')?>/vendors/select2/select2.min.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/data-table.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/select2.js"></script>
+<script type="text/javascript">
+   <script>
+    $('#paymentForm').on('submit', function(e) {
+        e.preventDefault(); // Mencegah form submit secara normal
+
+        var formData = new FormData(this); // Mengambil data dari form
+
+        $.ajax({
+            url: '<?=site_url('app/action/pembayaran-kas')?>',  // Ganti dengan URL backend yang sesuai
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+               
+               const objsx = JSON.parse(response);
+               //console.log(objsx.status)
+                if (objsx.status == 200) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Berhasil!',
+                            text: objsx.message,
+                            showConfirmButton: false,
+                            timer: 10000
+                        });
+                        //window.location.reload()
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: objsx.message,
+                        });
+                    }
+            },
+            error: function(xhr, status, error) {
+                // Tampilkan notifikasi SweetAlert2 jika gagal
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ada masalah saat mengirim pembayaran. Coba lagi!',
+                });
+            }
+        });
+    });
+</script>
+</script>
