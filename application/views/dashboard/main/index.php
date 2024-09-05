@@ -77,13 +77,12 @@
                            <thead>
                               <tr>
                                  <th>No</th>
+                                 <th>Tanggal</th>
                                  <th>Nama</th>
-                                 <th>Jenis Kelamin</th>
-                                 <th>Agama</th>
-                                 <th>Email</th>
-                                 <th>No Whatsapp</th>
+                                 <th>Nominal</th>
+                                 <th>Keterangan</th>
+                                 <th>Bukti</th>
                                  <th>Status</th>
-                                 <th>Actions</th>
                               </tr>
                            </thead>
                            <tbody>
