@@ -36,7 +36,7 @@
                                         </div>
                                         <div class="form-group">
                                            <label>Level</label>
-                                           <select class="js-example-basic-single w-100">
+                                           <select class="js-example-basic-single">
                                                <option value="AL">Alabama</option>
                                                <option value="WY">Wyoming</option>
                                                <option value="AM">America</option>
