@@ -149,7 +149,7 @@ class App extends CI_Controller {
 		        }
 		    } else {
 		    	$response['status'] = 'false';
-		        $response['message'] = 'No file uploaded or there was an upload error.';
+		        $response['message'] = 'Bukti Pembayaran mohon diisi terlebih dahulu.';
 		    }
 		    print_r($response);
 		} else {
