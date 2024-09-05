@@ -49,16 +49,14 @@ class App extends CI_Controller {
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			// code...
 		} else {
-			// code...
+			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
+			$data['title'] = 'Master';
+			$data['sub_menu'] = 'User';
+			$data['data_user'] = $this->M_db->get_All_data('t_user');
+			$this->load->view('dashboard/layout/header',$data);
+			$this->load->view('dashboard/master/user');
+			$this->load->view('dashboard/layout/footer');
 		}
-		
-		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
-		$data['title'] = 'Master';
-		$data['sub_menu'] = 'User';
-		$data['data_user'] = $this->M_db->get_All_data('t_user');
-		$this->load->view('dashboard/layout/header',$data);
-		$this->load->view('dashboard/master/user');
-		$this->load->view('dashboard/layout/footer');
 	}
 	public function masterForm()
 	{
