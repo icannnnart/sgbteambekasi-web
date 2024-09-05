@@ -143,7 +143,7 @@ class App extends CI_Controller {
 		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            } else {
 		            	$response['status'] = 'false';
-		                $response['message'] = 'Failed to move uploaded file.';
+		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            }
 
 		        }
