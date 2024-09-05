@@ -239,7 +239,7 @@
 </div>
 <script type="text/javascript">
    var dataarea = ["Januari", "Febuari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-   var datatarget =<?=$grafik?>
+   var datatarget =<?=json_encode($grafik)?>
    //console.log(datatarget)
 </script>
 <script src="<?=base_url('assets/dashboard')?>/js/dashboard.js"></script>
