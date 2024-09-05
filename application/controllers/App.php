@@ -26,8 +26,8 @@ class App extends CI_Controller {
 		$data['sumkeluar'] = $keluarbayar->total_keluar;
 		$data['sumcashflow'] = $donebayar->total_valid-$keluarbayar->total_keluar;
 		$data['counuser'] = $this->M_db->Countdb('t_user');
-		$jan = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'")->row();
-		$feb = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-02%'")->row();
+		$jan = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%".date('Y')."-01%'")->row();
+		$feb = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%".date('Y')."-02%'")->row();
 		$mar = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-03%'")->row();
 		$apr = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-04%'")->row();
 		$mei = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-05%'")->row();
