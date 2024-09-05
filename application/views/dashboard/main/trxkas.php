@@ -69,7 +69,7 @@
             contentType: false,
             processData: false,
             success: function(response) {
-            	console.log(response.status)
+            	console.log(response)
                 if (response.status == 200) {
                         Swal.fire({
                             icon: 'success',
