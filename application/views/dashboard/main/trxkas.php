@@ -76,7 +76,7 @@
                         showConfirmButton: false,
                         timer: 10000
                     });
-               window.location.reload()
+               //window.location.reload()
             },
             error: function(xhr, status, error) {
                 // Tampilkan notifikasi SweetAlert2 jika gagal
