@@ -94,11 +94,20 @@
                                     <td>New York</td>
                                     <td>$1500</td>
                                     <td>$3200</td>
+                                    <?php if ($datascash['status'] == 1){?>
                                     <td>
-                                       <label class="badge badge-info">On hold</label>
+                                       <label class="badge badge-info">Pemasukan</label>
+                                    </td>
+                                 <?php }elseif ($datascash['status'] == 2) { ?>
+                                    <td>
+                                       <label class="badge badge-danger">Pengeluaran</label>
+                                    </td>
+                                 <?php }else{?>
+                                    <td>
+                                       <label class="badge badge-warning">Pending</label>
                                     </td>
                                  </tr>
-                              <?php }?>
+                              <?php }}?>
                            </tbody>
                         </table>
                      </div>
