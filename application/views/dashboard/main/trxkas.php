@@ -72,7 +72,7 @@
             	
             	const objsx = JSON.parse(response);
             	console.log(objsx.status)
-                if (response.status == 200) {
+                if (objsx.status == 200) {
                         Swal.fire({
                             icon: 'success',
                             title: 'Berhasil!',
