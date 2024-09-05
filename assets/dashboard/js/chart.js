@@ -177,7 +177,7 @@ $(function () {
   var areaData = {
     labels: dataarea,
     datasets: [{
-      label: 'Visitor',
+      label: 'IDR',
       data: datatarget,
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
