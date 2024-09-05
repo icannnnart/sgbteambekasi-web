@@ -29,7 +29,7 @@
                <div class="card card-dark-blue">
                   <div class="card-body">
                      <p class="mb-4">Pemasukan Uang KAS</p>
-                     <p class="fs-30 mb-2"><span>IDR</span><?=number_format($sumkas)?></p>
+                     <p class="fs-30 mb-2"><span>IDR </span><?=number_format($sumkas)?></p>
                   </div>
                </div>
             </div>
