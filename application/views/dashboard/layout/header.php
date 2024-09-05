@@ -102,19 +102,11 @@
                      </div>
                   </li>
                   <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
-                     <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="<?php echo ($title == 'Report') ? 'true' : 'false'; ?>" aria-controls="charts">
+                     <a class="nav-link" href="#charts">
                      <i class="icon-bar-graph menu-icon"></i>
                      <span class="menu-title">Report</span>
                      <i class="menu-arrow"></i>
                      </a>
-                     <div class="collapse <?php echo ($title == 'Report') ? 'show' : ''; ?>" id="charts">
-                        <ul class="nav flex-column sub-menu">
-                           <li class="nav-item <?php echo ($sub_menu == 'Visitor') ? 'active' : ''; ?>"> <a class="nav-link" href="../charts/chartjs.html">Visitor</a></li>
-                           <li class="nav-item <?php echo ($sub_menu == 'Registrasi Form') ? 'active' : ''; ?>"> <a class="nav-link" href="../charts/morris.html">Register Form</a></li>
-                           <li class="nav-item <?php echo ($sub_menu == 'DPD') ? 'active' : ''; ?>"> <a class="nav-link" href="../charts/morris.html">DPD</a></li>
-                           <li class="nav-item <?php echo ($sub_menu == 'DPC') ? 'active' : ''; ?>"> <a class="nav-link" href="../charts/morris.html">DPC</a></li>
-                        </ul>
-                     </div>
                   </li>
                   <li class="nav-item <?php echo ($title == 'Setting') ? 'active' : ''; ?>">
                      <a class="nav-link" data-bs-toggle="collapse" href="#tables" aria-expanded="<?php echo ($title == 'Setting') ? 'true' : 'false'; ?>" aria-controls="tables">
