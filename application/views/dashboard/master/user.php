@@ -34,7 +34,10 @@
                         </div>
                      </div>
                      <div class="col-md-4">
-                        
+                        <div class="form-group">
+                           <label for="exampleInputConfirmPassword1">Link FB</label>
+                           <input type="text" name="link_fb" class="form-control" id="fb" placeholder="htpss://facebook.com/xxxxx">
+                        </div>
                      </div>
                      <div class="col-md-4">
                         
@@ -47,10 +50,7 @@
                   
                   
                   
-                  <div class="form-group">
-                     <label for="exampleInputConfirmPassword1">Link FB</label>
-                     <input type="text" name="link_fb" class="form-control" id="fb" placeholder="htpss://facebook.com/xxxxx">
-                  </div>
+                  
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">No Whatsapp</label>
                      <input type="text" name="number" class="form-control" id="nope" placeholder="62xxxxxxx">
