@@ -96,7 +96,7 @@
                      <div class="collapse <?php echo ($title == 'Master') ? 'show' : ''; ?>" id="ui-basic">
                         <ul class="nav flex-column sub-menu">
                            <li class="nav-item <?php echo ($sub_menu == 'User') ? 'active' : ''; ?>"> <a class="nav-link" href="<?=site_url('app/master/user')?>">User</a></li>
-                           <li class="nav-item <?php echo ($sub_menu == 'Form') ? 'active' : ''; ?>"> <a class="nav-link" href="../ui-features/buttons.html">Form PAMDI</a></li>
+                           <li class="nav-item <?php echo ($sub_menu == 'Form') ? 'active' : ''; ?>"> <a class="nav-link" href="../ui-features/buttons.html">Request Email SGB</a></li>
                            <li class="nav-item <?php echo ($sub_menu == 'Registrasi Form') ? 'active' : ''; ?>"> <a class="nav-link" href="<?=site_url('app/master/register-pamdi')?>">Cashflow KAS</a></li>
                            <!-- <li class="nav-item <?php echo ($sub_menu == 'Member') ? 'active' : ''; ?>"> <a class="nav-link" href="../ui-features/buttons.html">Member</a></li> -->
                         </ul>
