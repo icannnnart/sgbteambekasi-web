@@ -34,7 +34,7 @@ class App extends CI_Controller {
 		$jun = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-06%'")->row();
 		$jul = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-07%'")->row();
 		$agu = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-08%'")->row();
-		$sep = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-09%'")->row();
+		$sep = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%".date('Y')."-09%'")->row();
 		$okt = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-10%'")->row();
 		$nov = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-11%'")->row();
 		$des = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-12%'")->row();
