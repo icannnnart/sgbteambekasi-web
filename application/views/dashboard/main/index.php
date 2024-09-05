@@ -96,7 +96,7 @@
                                     <td><?=$datascash['desc_cash']?></td>
                                     <td>
                                        <div id="lightgallery-without-thumb<?=$a?>" class="lightGallery">
-                                          <a href="<?=htmlspecialchars(base_url('uploads/')$datascash['img_cash'])?>" class="image-tile">
+                                          <a href="<?=htmlspecialchars(base_url('uploads/').$datascash['img_cash'])?>" class="image-tile">
                                           <img src="https://cdn-icons-png.flaticon.com/512/4149/4149652.png" alt="BUKTI CASHFLOW"></a>
                                        </div>
                                     </td>
