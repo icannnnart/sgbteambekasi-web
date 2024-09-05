@@ -76,7 +76,7 @@
                         Swal.fire({
                             icon: 'success',
                             title: 'Berhasil!',
-                            text: response.message,
+                            text: objsx.message,
                             showConfirmButton: false,
                             timer: 10000
                         });
