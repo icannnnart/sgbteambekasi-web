@@ -17,7 +17,7 @@
             </div>
             <button type="submit">Log In</button>
             <div class="Create-account">
-                <p>© <?=date('Y')?> SGBTEAM BEKASI. Powered by <a href="https://icanart.dev">ICANART</a></p>
+                <p>© <?=date('Y')?> SGBTEAM BEKASI.</p>
             </div>
         </form>
     </div>
