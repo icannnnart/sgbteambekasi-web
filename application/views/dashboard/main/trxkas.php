@@ -54,3 +54,5 @@
     });
 </script>
 <script src="<?=base_url('assets/dashboard')?>/js/file-upload.js"></script>
+<script src="<?=base_url('assets/dashboard')?>/js/alerts.js"></script>
+<script src="<?=base_url('assets/dashboard')?>/js/avgrund.js"></script>
