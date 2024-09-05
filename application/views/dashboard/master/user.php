@@ -16,11 +16,11 @@
                   </div>
                   <div class="form-group">
                      <label for="exampleInputUsername1">Nama</label>
-                     <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                     <input type="text" class="form-control" id="name" placeholder="e.G Jhon Doe">
                   </div>
                   <div class="form-group">
                      <label for="exampleInputEmail1">Email</label>
-                     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                     <input type="email" class="form-control" id="email" placeholder="Email">
                   </div>
                   <div class="form-group">
                      <label for="exampleInputPassword1">Password</label>
