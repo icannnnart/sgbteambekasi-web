@@ -12,7 +12,7 @@
 						                      <div class="input-group-prepend">
 						                        <span class="input-group-text bg-primary text-white">IDR</span>
 						                      </div>
-						                      <input type="text" class="form-control form-control-sm" inputmode="numeric" aria-label="Amount (to the nearest dollar)">
+						                      <input type="text" class="form-control form-control-sm" id="currencyInput" inputmode="numeric" aria-label="Amount (to the nearest dollar)">
 						                    </div>
 						                  </div>
                                         <div class="form-group">
