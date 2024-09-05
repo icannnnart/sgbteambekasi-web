@@ -21,7 +21,7 @@
                                             <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
                                         </div>
                                         <div class="form-group">
-                                        	<label for="exampleInputPassword4">Password</label>
+                                        	<label for="exampleInputPassword4">Nominal</label>
 						                    <div class="input-group">
 						                      <div class="input-group-prepend">
 						                        <span class="input-group-text bg-primary text-white">$</span>
