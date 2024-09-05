@@ -102,7 +102,7 @@
                   </li>
                   <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
                      <a class="nav-link" href="#charts">
-                     <i class="icon-bar-graph menu-icon"></i>
+                     <i class="lab la-cc-amazon-pay"></i>
                      <span class="menu-title">Bayar KAS</span>
                      </a>
                   </li>
