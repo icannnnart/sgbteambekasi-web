@@ -5,7 +5,7 @@
                                 <div class="card-body">
                                     <h4 class="card-title">Pembayaran KAS SGB Team Bekasi</h4>
                                     <hr>
-                                    <form class="forms-sample">
+                                    <form class="forms-sample" enctype="multipart/form-data">
                                         <div class="form-group">
                                         	<label for="exampleInputPassword4">Nominal</label>
 						                    <div class="input-group">
@@ -17,7 +17,7 @@
 						                  </div>
                                         <div class="form-group">
                                             <label>Bukti Pembayaran</label>
-                                            <input type="file" name="img[]" class="file-upload-default">
+                                            <input type="file" name="img" class="file-upload-default">
                                             <div class="input-group col-xs-12 d-flex align-items-center">
                                                 <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Image">
                                                 <span class="input-group-append ms-2">
