@@ -157,7 +157,7 @@ class App extends CI_Controller {
 		            	$response['status'] = 200;
 		                $response['message'] = 'Pembayaran kamu berhasil!';
 		            }
-		            $this->M_db->insert_All('t_cashflow',$datascashflow)
+		            $this->M_db->insert_All('t_cashflow',$datascashflow);
 		        }
 		    } else {
 		    	$response['status'] = 403;
