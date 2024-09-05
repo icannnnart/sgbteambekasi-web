@@ -66,7 +66,7 @@
                   <li class="nav-item nav-settings text-center">
                         <h6 style="padding-top: 1rem;"><?=$user->name?>
                         <br>
-                        <p><?php $roles = $this->M_db->Get_user_by_id('t_role','id',$user->status); print_r($roles->name);?></p>
+                        <p><?php $roles = $this->M_db->Get_user_by_id('t_role','id',$user->role); print_r($roles->name);?></p>
                      </h6>
                         
                   </li>
