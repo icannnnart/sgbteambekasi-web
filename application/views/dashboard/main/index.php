@@ -39,7 +39,7 @@
                <div class="card card-light-blue">
                   <div class="card-body">
                      <p class="mb-4">Pengeluaran Uang KAS</p>
-                     <p class="fs-30 mb-2"><?=$countinactivemember?></p>
+                     <p class="fs-30 mb-2"><?=$sumkeluar?></p>
                   </div>
                </div>
             </div>
