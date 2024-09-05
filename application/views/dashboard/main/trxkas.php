@@ -74,7 +74,7 @@
                         title: 'Berhasil!',
                         text: 'Pembayaran kamu telah kami terima',
                         showConfirmButton: false,
-                        timer: 2000
+                        timer: 5000
                     });
                window.location.reload()
             },
