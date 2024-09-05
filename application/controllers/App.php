@@ -128,7 +128,9 @@ class App extends CI_Controller {
 		    }
 		    if (isset($_FILES['img']) && $_FILES['img']['error'] == UPLOAD_ERR_OK) {
 		    	$nominal = $this->input->post('nominal');
-		    	$fixnominal = str_replace('.', '', $nominal)
+		    	$fixnominal = str_replace('.', '', $nominal);
+		    	print_r($fixnominal);
+		    	exit;
 		        $allowedExtensions = ['jpg', 'jpeg', 'png'];
 		        $fileName = $_FILES['img']['name'];
 		        $fileExtension = pathinfo($fileName, PATHINFO_EXTENSION);
