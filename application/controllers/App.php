@@ -26,6 +26,18 @@ class App extends CI_Controller {
 		$data['sumkeluar'] = $keluarbayar->total_keluar;
 		$data['sumcashflow'] = $donebayar->total_valid-$keluarbayar->total_keluar;
 		$data['counuser'] = $this->M_db->Countdb('t_user');
+		$jan = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$feb = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$mar = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$apr = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$mei = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$jun = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$jul = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$agu = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$sep = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$okt = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$nov = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
+		$des = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-01%'')->row();
 		$this->load->view('dashboard/layout/header',$data);
 		$this->load->view('dashboard/main/index');
 		$this->load->view('dashboard/layout/footer');
