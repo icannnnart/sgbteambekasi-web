@@ -10,30 +10,30 @@
                                         Basic form layout
                                     </p>
                                     <form class="forms-sample">
-                                       <div class="form-group col-4">
+                                       <div class="form-group col-6">
                                            <label>Level</label>
                                            <select class="js-example-basic-single w-100">
                                                <option value="2">Member</option>
                                                <option value="9">Admin</option>
                                            </select>
                                        </div>
-                                        <div class="form-group">
+                                        <div class="form-group col-6">
                                             <label for="exampleInputUsername1">Nama</label>
                                             <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group col-6">
                                             <label for="exampleInputEmail1">Email</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group col-6">
                                             <label for="exampleInputPassword1">Password</label>
                                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group col-6">
                                             <label for="exampleInputConfirmPassword1">Alamat</label>
                                             <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="Alamat Lengkap">
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group col-6">
                                             <label for="exampleInputConfirmPassword1">Link FB</label>
                                             <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="htpss://facebook.com/xxxxx">
                                         </div>
