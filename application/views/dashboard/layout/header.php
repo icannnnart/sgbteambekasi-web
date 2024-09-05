@@ -48,10 +48,11 @@
                </button>
 
                <ul class="navbar-nav navbar-nav-right">
+                   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
                   <li class="nav-item nav-profile dropdown">
-                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+                    
                      <img src="https://ui-avatars.com/api/?name=<?=$user->name?>&amp;background=random" alt="profile" />
-                     </a>
+                     
                      <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
                         <a class="dropdown-item">
                         <i class="ti-settings text-primary"></i>
@@ -70,6 +71,7 @@
                      </h6>
                         
                   </li>
+                  </a>
                </ul>
                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
                     <span class="icon-menu"></span>
