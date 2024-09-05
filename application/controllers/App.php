@@ -142,6 +142,12 @@ class App extends CI_Controller {
 		            if (move_uploaded_file($_FILES['img']['tmp_name'], $uploadFile)) {
 		                $response['status'] = 200;
 		                $response['message'] = 'Pembayaran kamu berhasil!';
+		                $datas = array(
+		                	'id_user' => ,
+		                	'nominal' => $nominal,
+		                	'desc_cash' => "Bayar Uang Kas ".date('d-m-Y'),
+		                	'status' => 3,
+		                	'img_cash' => $fixfilename, );
 		            } else {
 		            	$response['status'] = 200;
 		                $response['message'] = 'Pembayaran kamu berhasil!';
