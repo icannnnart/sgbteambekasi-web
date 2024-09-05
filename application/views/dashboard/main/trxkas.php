@@ -70,7 +70,7 @@
             processData: false,
             success: function(response) {
 
-                if (response.status === 200) {
+                if (response.status == 200) {
                         Swal.fire({
                             icon: 'success',
                             title: 'Berhasil!',
