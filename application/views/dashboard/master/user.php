@@ -21,13 +21,28 @@
                            <input type="email" name="emails" class="form-control" id="email" placeholder="Email">
                         </div>
                      </div>
+                     <div class="col-md-4">
+                        <div class="form-group">
+                           <label for="exampleInputPassword1">Password</label>
+                           <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        
+                     </div>
+                     <div class="col-md-4">
+                        
+                     </div>
+                     <div class="col-md-4">
+                        
+                     </div>
+                     <div class="col-md-4">
+                        
+                     </div>
                   </div>
                   
                   
-                  <div class="form-group">
-                     <label for="exampleInputPassword1">Password</label>
-                     <input type="password" name="password" class="form-control" id="password" placeholder="Password">
-                  </div>
+                  
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">Alamat</label>
                      <input type="text" name="address" class="form-control" id="address" placeholder="Alamat Lengkap">
