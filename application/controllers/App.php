@@ -147,8 +147,6 @@ class App extends CI_Controller {
 		    } else {
 		        $response['message'] = 'No file uploaded or there was an upload error.';
 		    }
-			$nominal = $this->input->post('nominal');
-			print_r($nominal);
 		} else {
 			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
 			$data['title'] = 'Pembayaran Kas';
