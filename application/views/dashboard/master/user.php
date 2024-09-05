@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="<?=base_url('assets/dashboard')?>/vendors/select2/select2.min.css">
+<link rel="stylesheet" href="<?=base_url('assets/dashboard')?>/vendors/select2-bootstrap-theme/select2-bootstrap.min.css">
 <div class="content-wrapper">
 	<div class="row">
 	      <div class="col-md-12 grid-margin stretch-card">
