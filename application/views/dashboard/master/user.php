@@ -28,15 +28,15 @@
                   </div>
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">Alamat</label>
-                     <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="Alamat Lengkap">
+                     <input type="text" class="form-control" id="address" placeholder="Alamat Lengkap">
                   </div>
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">Link FB</label>
-                     <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="htpss://facebook.com/xxxxx">
+                     <input type="text" class="form-control" id="fb" placeholder="htpss://facebook.com/xxxxx">
                   </div>
                   <div class="form-group">
                      <label for="exampleInputConfirmPassword1">No Whatsapp</label>
-                     <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="62xxxxxxx">
+                     <input type="text" class="form-control" id="nope" placeholder="62xxxxxxx">
                   </div>
                   <button type="submit" class="btn btn-primary me-2">Submit</button>
                   <button class="btn btn-light">Cancel</button>
