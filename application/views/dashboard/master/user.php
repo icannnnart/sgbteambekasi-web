@@ -13,8 +13,8 @@
                                        <div class="form-group">
                                            <label>Level</label>
                                            <select class="js-example-basic-single w-100">
-                                               <option value="AL">Alabama</option>
-                                               <option value="WY">Wyoming</option>
+                                               <option value="2">Member</option>
+                                               <option value="9">Admin</option>
                                            </select>
                                        </div>
                                         <div class="form-group">
