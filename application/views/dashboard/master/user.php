@@ -9,7 +9,7 @@
                <form class="forms-sample">
                   <div class="form-group">
                      <label>Level</label>
-                     <select class="js-example-basic-single w-100">
+                     <select  class="js-example-basic-single w-100 form-control">
                         <option value="2">Member</option>
                         <option value="9">Admin</option>
                      </select>
