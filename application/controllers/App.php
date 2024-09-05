@@ -39,6 +39,7 @@ class App extends CI_Controller {
 		$nov = $this->db->query("SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-11%'")->row();
 		$des = $this->db->query("SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%2024-12%'")->row();
 		$data['grafik'] = [$jan->total_valid,$feb->total_valid,$mar->total_valid,$apr->total_valid,$mei->total_valid,$jun->total_valid,$jul->total_valid,$agu->total_valid,$sep->total_valid,$okt->total_valid,$nov->total_valid,$des->total_valid];
+		var_dump($data['grafik']);
 		$this->load->view('dashboard/layout/header',$data);
 		$this->load->view('dashboard/main/index');
 		$this->load->view('dashboard/layout/footer');
