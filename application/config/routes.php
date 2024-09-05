@@ -59,6 +59,7 @@ $route['auth/login/verification'] = 'Login/Otp';
 
 $route['app/dashboard'] = 'App';
 $route['app/pembayaran-kas'] = 'App/trxKas';
+$route['app/action/pembayaran-kas']['post'] = 'App/trxKas';
 $route['app/master/user'] = 'App/masterUser';
 $route['app/master/register-pamdi'] = 'App/masterRegform';
 
