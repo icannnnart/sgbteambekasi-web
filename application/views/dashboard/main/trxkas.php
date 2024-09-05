@@ -12,12 +12,12 @@
 						                      <div class="input-group-prepend">
 						                        <span class="input-group-text bg-primary text-white">IDR</span>
 						                      </div>
-						                      <input type="text" name="nominal" class="form-control form-control-sm" id="currencyInput" inputmode="numeric" aria-label="Amount (to the nearest dollar)">
+						                      <input type="text" name="nominal" class="form-control form-control-sm" id="currencyInput" inputmode="numeric" aria-label="Amount (to the nearest dollar)" required>
 						                    </div>
 						                  </div>
                                         <div class="form-group">
                                             <label>Bukti Pembayaran</label>
-                                            <input type="file" name="img" class="file-upload-default" accept=".jpg, .jpeg, .png">
+                                            <input type="file" name="img" class="file-upload-default" accept=".jpg, .jpeg, .png" required>
                                             <div class="input-group col-xs-12 d-flex align-items-center">
                                                 <input type="text" class="form-control file-upload-info" disabled placeholder="Upload Bukti Pembayaran">
                                                 <span class="input-group-append ms-2">
