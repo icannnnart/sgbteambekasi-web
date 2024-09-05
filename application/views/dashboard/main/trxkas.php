@@ -76,8 +76,9 @@
                             title: 'Berhasil!',
                             text: response.message,
                             showConfirmButton: false,
-                            timer: 2000
+                            timer: 10000
                         });
+                        window.location.reload()
                     } else {
                         Swal.fire({
                             icon: 'error',
@@ -85,7 +86,6 @@
                             text: response.message,
                         });
                     }
-               window.location.reload()
             },
             error: function(xhr, status, error) {
                 // Tampilkan notifikasi SweetAlert2 jika gagal
