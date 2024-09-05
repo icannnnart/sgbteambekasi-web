@@ -97,7 +97,7 @@
                                     <td>
                                        <div id="lightgallery-without-thumb<?=$a?>" class="lightGallery">
                                           <a href="<?=htmlspecialchars($datasregis['file_img'])?>" class="image-tile">
-                                          <img src="https://i.pinimg.com/originals/ec/c0/8b/ecc08b6a0f8294402b8186a25b47cbe4.jpg" alt="FOTO"></a>
+                                          <img src="https://i.pinimg.com/originals/ec/c0/8b/ecc08b6a0f8294402b8186a25b47cbe4.jpg" alt="BUKTI CASHFLOW"></a>
                                        </div>
                                     </td>
                                     <script type="text/javascript">
