@@ -46,6 +46,12 @@ class App extends CI_Controller {
 	}
 	public function masterUser()
 	{
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			// code...
+		} else {
+			// code...
+		}
+		
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('logged_in'));
 		$data['title'] = 'Master';
 		$data['sub_menu'] = 'User';
