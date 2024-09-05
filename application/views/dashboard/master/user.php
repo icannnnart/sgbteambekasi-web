@@ -9,11 +9,11 @@
                                     </p>
                                     <form class="forms-sample">
                                         <div class="form-group">
-                                            <label for="exampleInputUsername1">Username</label>
+                                            <label for="exampleInputUsername1">Nama</label>
                                             <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputEmail1">Email address</label>
+                                            <label for="exampleInputEmail1">Email</label>
                                             <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                                         </div>
                                         <div class="form-group">
@@ -21,15 +21,27 @@
                                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                                         </div>
                                         <div class="form-group">
-                                            <label for="exampleInputConfirmPassword1">Confirm Password</label>
-                                            <input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Password">
+                                            <label for="exampleInputConfirmPassword1">Alamat</label>
+                                            <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="Alamat Lengkap">
                                         </div>
-                                        <div class="form-check">
-                                            <label class="form-check-label text-muted">
-                                                <input type="checkbox" class="form-check-input" required>
-                                                <a href="#">Remember me</a>
-                                                <i class="input-helper"></i></label>
+                                        <div class="form-group">
+                                            <label for="exampleInputConfirmPassword1">Link FB</label>
+                                            <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="htpss://facebook.com/xxxxx">
                                         </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputConfirmPassword1">No Whatsapp</label>
+                                            <input type="text" class="form-control" id="exampleInputConfirmPassword1" placeholder="62xxxxxxx">
+                                        </div>
+                                        <div class="form-group">
+                                        <label>Single select box using select 2</label>
+                                        <select class="js-example-basic-single w-100">
+                                            <option value="AL">Alabama</option>
+                                            <option value="WY">Wyoming</option>
+                                            <option value="AM">America</option>
+                                            <option value="CA">Canada</option>
+                                            <option value="RU">Russia</option>
+                                        </select>
+                                    </div>
                                         <button type="submit" class="btn btn-primary me-2">Submit</button>
                                         <button class="btn btn-light">Cancel</button>
                                     </form>
