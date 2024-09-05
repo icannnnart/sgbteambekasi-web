@@ -108,7 +108,7 @@
                   </li>
                   <li class="nav-item <?php echo ($title == 'Report') ? 'active' : ''; ?>">
                      <a class="nav-link" href="#charts">
-                     <i class="icon-bar-graph menu-icon"></i>
+                     <i class="las la-file-invoice-dollar"></i>
                      <span class="menu-title">Report</span>
                      </a>
                   </li>
