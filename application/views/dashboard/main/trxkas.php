@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="<?=base_url('assets/dashboard')?>/vendors/sweetalert/sweetalert.min.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/vendors/jquery.avgrund/jquery.avgrund.min.js"></script>
 <div class="content-wrapper">
