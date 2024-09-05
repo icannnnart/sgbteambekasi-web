@@ -60,7 +60,7 @@
         var formData = new FormData(this); // Mengambil data dari form
 
         $.ajax({
-            url: '/path/to/your/server-side-script',  // Ganti dengan URL backend yang sesuai
+            url: '<?=site_url('App/trxKas')?>',  // Ganti dengan URL backend yang sesuai
             type: 'POST',
             data: formData,
             contentType: false,
