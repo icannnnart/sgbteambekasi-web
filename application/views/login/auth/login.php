@@ -17,7 +17,7 @@
             </div>
             <button type="submit">Log In</button>
             <div class="Create-account">
-                <a href="#">Register Member</a>
+                <a href="<?=site_url('auth/register/member')?>">Register Member</a>
                 <p>© <?=date('Y')?> SGBTEAM BEKASI.</p>
             </div>
         </form>
