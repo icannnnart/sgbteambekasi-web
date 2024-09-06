@@ -61,7 +61,7 @@ class Login extends CI_Controller {
 	{
 	    if (isset($_POST['emails'])) {
 	        $recaptchaResponse = $this->input->post('g-recaptcha-response');
-	        $secretKey = 'YOUR_SECRET_KEY'; // Ganti dengan secret key Anda
+	        $secretKey = '6LeXLTgqAAAAACtJkpH7O1GFuGw7zDR6kslw4tJS'; // Ganti dengan secret key Anda
 	        $userIp = $this->input->ip_address();
 
 	        // Verifikasi Google reCAPTCHA
