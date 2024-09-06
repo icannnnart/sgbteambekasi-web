@@ -24,7 +24,7 @@
                 <label>Enter Address</label>
             </div>
             <div class="input-field">
-                <input type="email" name="nomer" id="nomer" required />
+                <input type="email" name="nomer" id="nomer" placeholder="62xxxxx" required />
                 <label>Enter No Whatsapp</label>
             </div>
             <div class="input-field">
