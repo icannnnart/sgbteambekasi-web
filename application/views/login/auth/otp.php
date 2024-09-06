@@ -15,9 +15,9 @@
                 <input type="password" name="password" required />
                 <label>Enter Password</label>
             </div>
-            <button type="submit">Log In</button>
+            <button type="submit">Register</button>
             <div class="Create-account">
-                <p>Sudah punya akun? <a href="<?=site_url()?>">Register</a></p>
+                <p>Sudah punya akun? <a href="<?=site_url()?>">Login</a></p>
                 <p>© <?=date('Y')?> SGBTEAM BEKASI.</p>
             </div>
         </form>
