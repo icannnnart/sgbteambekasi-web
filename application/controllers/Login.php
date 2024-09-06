@@ -89,6 +89,7 @@ class Login extends CI_Controller {
 		                'linkfb' => $link_fb,
 		                'nowa' => $number,
 		                'lastlogin_ip'=> $userIp,
+		                'is_active'=> 1,
 		                'role' => 2,
 		            );
 
