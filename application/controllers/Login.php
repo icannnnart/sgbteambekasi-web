@@ -59,42 +59,59 @@ class Login extends CI_Controller {
 
 	public function registerMemberbang()
 	{
-		
-		if (isset($_POST['emails'])) {
-			$names = $this->input->post('names');
-			$emails = $this->input->post('emails');
-			$password = $this->input->post('password');
-			$address = $this->input->post('address');
-			$link_fb = $this->input->post('link_fb');
-			$number = $this->input->post('number');
-			$datasmember = array(
-				'name' => $names,
-				'email' => $emails,
-				'password' => password_hash($password, PASSWORD_DEFAULT),
-				'address' => $address,
-				'linkfb' => $link_fb,
-				'nowa' => $number,
-				'role' => 2,
-				 );
-			if ($this->M_db->insert_All('t_user',$datasmember)) {
-				$response['status'] = 1;
-		        $response['message'] = 'Pendaftaran Member Berhasil!';
-			} else {
-				$response['status'] = 401;
-		        $response['message'] = 'Pendaftaran Member Gagal!';
-			}
-			print_r(json_encode($response));
-			
-		} else {
-			$a = $this->session->userdata('logged_in');
-			if($a == 1){
-				redirect(site_url('app/dashboard'));
-			}
-			$data['title'] = 'Register Member';
-			$this->load->view('login/layout/header',$data);
-			$this->load->view('login/auth/otp');
-			$this->load->view('login/layout/footer');
-		}	
+	    if (isset($_POST['otpku'])) {
+	        $recaptchaResponse = $this->input->post('g-recaptcha-response');
+	        $secretKey = 'YOUR_SECRET_KEY'; // Ganti dengan secret key Anda
+	        $userIp = $this->input->ip_address();
+
+	        // Verifikasi Google reCAPTCHA
+	        $verifyResponse = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$recaptchaResponse&remoteip=$userIp");
+	        $responseData = json_decode($verifyResponse);
+
+	        if ($responseData->success) {
+	            // Jika reCAPTCHA valid, lanjutkan proses registrasi
+	            $names = $this->input->post('names');
+	            $emails = $this->input->post('emails');
+	            $password = $this->input->post('password');
+	            $address = $this->input->post('address');
+	            $link_fb = $this->input->post('link_fb');
+	            $number = $this->input->post('number');
+
+	            $datasmember = array(
+	                'name' => $names,
+	                'email' => $emails,
+	                'password' => password_hash($password, PASSWORD_DEFAULT),
+	                'address' => $address,
+	                'linkfb' => $link_fb,
+	                'nowa' => $number,
+	                'role' => 2,
+	            );
+
+	            if ($this->M_db->insert_All('t_user', $datasmember)) {
+	                $response['status'] = 1;
+	                $response['message'] = 'Pendaftaran Member Berhasil!';
+	            } else {
+	                $response['status'] = 401;
+	                $response['message'] = 'Pendaftaran Member Gagal!';
+	            }
+	        } else {
+	            // Jika reCAPTCHA tidak valid
+	            $response['status'] = 401;
+	            $response['message'] = 'Verifikasi reCAPTCHA gagal. Silakan coba lagi.';
+	        }
+
+	        print_r(json_encode($response));
+
+	    } else {
+	        $a = $this->session->userdata('logged_in');
+	        if ($a == 1) {
+	            redirect(site_url('app/dashboard'));
+	        }
+	        $data['title'] = 'Register Member';
+	        $this->load->view('login/layout/header', $data);
+	        $this->load->view('login/auth/otp');
+	        $this->load->view('login/layout/footer');
+	    }
 	}
 
 	public function Logout()
