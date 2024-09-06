@@ -44,4 +44,4 @@
 <script type="text/javascript">
     var baseurl = '<?=site_url('/app/dashboard')?>'
 </script>
-<script src="<?=base_url('assets/login/')?>gue.js"></script>
+<script src="<?=base_url('assets/login/')?>reg.js"></script>
