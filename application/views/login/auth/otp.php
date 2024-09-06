@@ -42,6 +42,6 @@
     </div>
 </body>
 <script type="text/javascript">
-    var baseurl = '<?=site_url('/app/dashboard')?>'
+    var baseurl = '<?=site_url('')?>'
 </script>
 <script src="<?=base_url('assets/login/')?>reg.js"></script>
