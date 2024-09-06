@@ -57,7 +57,7 @@ class Login extends CI_Controller {
 		}
 	}
 
-	public function Otp()
+	public function registerMemberbang()
 	{
 		if($this->session->userdata('logged_in') != 2){
 			redirect(site_url('app/dashboard'));
