@@ -28,7 +28,7 @@
                 <label>Enter No Whatsapp</label>
 
             </div>
-            <code style="color: #fff;">*Example : 62xxxxxx</code>
+            <code style="color: #ef9191;">*Diawali dengan 62xxxxxx</code>
             <div class="input-field">
                 <input type="email" name="username" id="username" required />
                 <label>Enter Link Fb</label>
