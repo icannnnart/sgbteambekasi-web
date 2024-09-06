@@ -10,6 +10,24 @@
       </div>
    </div>
    <div class="row">
+            <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
+               <div class="card card-light-blue">
+                  <div class="card-body">
+                     <p class="mb-4">Pengeluaran Uang KAS</p>
+                     <p class="fs-30 mb-2"><span style="font-size: 12px;">IDR </span><?=number_format($sumkeluar)?></p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 stretch-card transparent">
+               <div class="card card-light-danger">
+                  <div class="card-body">
+                     <p class="mb-4">Total User</p>
+                     <p class="fs-30 mb-2"><?=number_format($counuser)?></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+   <div class="row">
       <div class="col-md-6 grid-margin stretch-card">
          <div class="card tale-bg">
             <iframe class="card tale-bg" src="https://www.meteoblue.com/en/weather/widget/three?geoloc=detect&nocurrent=0&noforecast=0&days=1&tempunit=CELSIUS&windunit=KILOMETER_PER_HOUR&layout=image"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 100%; height: 450px"></iframe>
