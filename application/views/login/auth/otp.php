@@ -1,3 +1,9 @@
+<style>
+    .scale-recaptcha {
+        transform: scale(0.85); /* Menyesuaikan skala */
+        transform-origin: 0 0; /* Tetapkan asal skala */
+    }
+</style>
 <body>
     <div class="container">
         <form id="regisForm" action="" method="POST">
