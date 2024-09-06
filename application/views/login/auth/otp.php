@@ -26,6 +26,7 @@
             <div class="input-field">
                 <input type="email" name="nomer" id="nomer" required />
                 <label>Enter No Whatsapp</label>
+                <code>Example : 62xxxxxx</code>
             </div>
             <div class="input-field">
                 <input type="email" name="username" id="username" required />
