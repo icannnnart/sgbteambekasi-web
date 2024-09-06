@@ -17,7 +17,7 @@
             </div>
             <button type="submit">Log In</button>
             <div class="Create-account">
-                <button type="button">Register</button>
+                <a type="button">Register</a>
                 <p>© <?=date('Y')?> SGBTEAM BEKASI.</p>
             </div>
         </form>
