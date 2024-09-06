@@ -6,7 +6,7 @@
                     <source media="(min-width:465px)" srcset="<?=base_url('assets/dashboard/')?>images/putih.png">
                         <img src="<?=base_url('assets/dashboard/')?>images/putih.png" alt="Logo SGB Team Bekasi" style="width:210px;">
                     </picture>
-            <h2>LOGIN MEMBER</h2>
+            <h2>REGISTER MEMBER</h2>
             <div class="input-field">
                 <input type="email" name="username" id="username" required />
                 <label>Enter Email</label>
