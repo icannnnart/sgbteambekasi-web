@@ -70,12 +70,12 @@ class Login extends CI_Controller {
 
 	        if ($responseData->success) {
 	            $names = $this->input->post('names');
+	            $emails = $this->input->post('emails');
 	            $cekmail = $this->db->get_where('t_user', ['email' => $names])->row();
 	            if ($cekmail) {
 	            	$response['status'] = 409; // Conflict HTTP status code
                 	$response['message'] = 'Email sudah digunakan. Silakan gunakan email lain.';
 	            }else{
-	            	$emails = $this->input->post('emails');
 		            $password = $this->input->post('password');
 		            $address = $this->input->post('address');
 		            $link_fb = $this->input->post('link_fb');
