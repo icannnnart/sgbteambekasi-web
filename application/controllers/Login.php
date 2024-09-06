@@ -59,7 +59,7 @@ class Login extends CI_Controller {
 
 	public function registerMemberbang()
 	{
-	    if (isset($_POST['otpku'])) {
+	    if (isset($_POST['emails'])) {
 	        $recaptchaResponse = $this->input->post('g-recaptcha-response');
 	        $secretKey = 'YOUR_SECRET_KEY'; // Ganti dengan secret key Anda
 	        $userIp = $this->input->ip_address();
