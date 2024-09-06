@@ -60,7 +60,7 @@ class Login extends CI_Controller {
 	public function registerMemberbang()
 	{
 		
-		if (isset($_POST['otpku'])) {
+		if (isset($_POST['emails'])) {
 			$names = $this->input->post('names');
 			$emails = $this->input->post('emails');
 			$password = $this->input->post('password');
