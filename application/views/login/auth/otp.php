@@ -12,7 +12,7 @@
                 <label>Enter Email</label>
             </div>
             <div class="input-field">
-                <input type="email" name="name" id="name" required />
+                <input type="text" name="names" id="name" required />
                 <label>Enter Name</label>
             </div>
             <div class="input-field">
@@ -20,17 +20,17 @@
                 <label>Enter Password</label>
             </div>
             <div class="input-field">
-                <input type="email" name="address" id="address" required />
+                <input type="text" name="address" id="address" required />
                 <label>Enter Address</label>
             </div>
             <div class="input-field">
-                <input type="email" name="nomer" id="nomer" required />
+                <input type="text" name="nomer" id="nomer" required />
                 <label>Enter No Whatsapp</label>
 
             </div>
             <code style="color: #ef9191;">*Diawali dengan 62xxxxxx</code>
             <div class="input-field">
-                <input type="email" name="username" id="username" required />
+                <input type="text" name="username" id="username" required />
                 <label>Enter Link Fb</label>
             </div>
             <button type="submit">Register</button>
