@@ -11,22 +11,20 @@
       </div>
    </div>
    <div class="row">
-            <div class="col-md-6 mb-4 mb-lg-0 stretch-card transparent">
-               <div class="card card-light-blue">
-                  <div class="card-body">
-                     <p class="mb-4">Pengeluaran Uang KAS</p>
-                     <p class="fs-30 mb-2"><span style="font-size: 12px;">IDR </span><?=number_format($sumkeluar)?></p>
-                  </div>
-               </div>
-            </div>
-            <div class="col-md-6 stretch-card transparent">
-               <div class="card card-light-danger">
-                  <div class="card-body">
-                     <p class="mb-4">Total User</p>
-                     <p class="fs-30 mb-2"><?=number_format($counuser)?></p>
-                  </div>
-               </div>
-            </div>
+   <div class="card data-icon-card-primary">
+                                        <div class="card-body">
+                                            <p class="card-title text-white">Number of Meetings</p>
+                                            <div class="row">
+                                                <div class="col-8 text-white">
+                                                    <h3>34040</h3>
+                                                    <p class="text-white font-weight-500 mb-0">The total number of sessions within the date
+                                                        range.It is calculated as the sum . </p>
+                                                </div>
+                                                <div class="col-4 background-icon">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
          </div><br>
    <div class="row">
       <div class="col-md-6 grid-margin stretch-card">
