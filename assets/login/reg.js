@@ -30,6 +30,7 @@ $(document).ready(function() {
                                 $('#preloader').hide();
                                 $('#content').css('visibility', 'visible');
                                 Swal.fire('Error', response.message, 'error');
+                                window.location.reload()
                             }
                         }
                     });
