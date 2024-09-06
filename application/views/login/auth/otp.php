@@ -41,7 +41,7 @@
                 <label>Enter Link Fb</label>
             </div>
             <div class="g-recaptcha scale-recaptcha" data-sitekey="6LeXLTgqAAAAAKrhJwz8A6GZKYZ1d1q4fxbGsLRx" data-theme="dark"></div>
-            <button type="submit" style="width 1rem">Register</button>
+            <button type="submit" style="width:1rem;">Register</button>
             <div class="Create-account">
                 <p>Sudah punya akun? <a href="<?=site_url()?>">Login</a></p>
                 <p>© <?=date('Y')?> SGBTEAM BEKASI.</p>
