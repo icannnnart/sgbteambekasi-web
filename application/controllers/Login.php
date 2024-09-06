@@ -71,28 +71,33 @@ class Login extends CI_Controller {
 	        if ($responseData->success) {
 	            $names = $this->input->post('names');
 	            $cekmail = $this->db->get_where('t_user', ['email' => $username])->row();
-	            $emails = $this->input->post('emails');
-	            $password = $this->input->post('password');
-	            $address = $this->input->post('address');
-	            $link_fb = $this->input->post('link_fb');
-	            $number = $this->input->post('number');
+	            if ($cekmail) {
+	            	$response['status'] = 409; // Conflict HTTP status code
+                	$response['message'] = 'Email sudah digunakan. Silakan gunakan email lain.';
+	            }else{
+	            	$emails = $this->input->post('emails');
+		            $password = $this->input->post('password');
+		            $address = $this->input->post('address');
+		            $link_fb = $this->input->post('link_fb');
+		            $number = $this->input->post('number');
 
-	            $datasmember = array(
-	                'name' => $names,
-	                'email' => $emails,
-	                'password' => password_hash($password, PASSWORD_DEFAULT),
-	                'address' => $address,
-	                'linkfb' => $link_fb,
-	                'nowa' => $number,
-	                'role' => 2,
-	            );
+		            $datasmember = array(
+		                'name' => $names,
+		                'email' => $emails,
+		                'password' => password_hash($password, PASSWORD_DEFAULT),
+		                'address' => $address,
+		                'linkfb' => $link_fb,
+		                'nowa' => $number,
+		                'role' => 2,
+		            );
 
-	            if ($this->M_db->insert_All('t_user', $datasmember)) {
-	                $response['status'] = 1;
-	                $response['message'] = 'Pendaftaran Member Berhasil!';
-	            } else {
-	                $response['status'] = 401;
-	                $response['message'] = 'Pendaftaran Member Gagal!';
+		            if ($this->M_db->insert_All('t_user', $datasmember)) {
+		                $response['status'] = 1;
+		                $response['message'] = 'Pendaftaran Member Berhasil!';
+		            } else {
+		                $response['status'] = 401;
+		                $response['message'] = 'Pendaftaran Member Gagal!';
+		            }
 	            }
 	        } else {
 	            // Jika reCAPTCHA tidak valid
