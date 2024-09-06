@@ -61,22 +61,30 @@ class Login extends CI_Controller {
 	{
 		
 		if (isset($_POST['otpku'])) {
-			$otp_code = $this->input->post('otpku');
-			$user_id = $this->session->userdata('user_id');
-
-			$verified = $this->M_auth->verifyOTP($user_id, $otp_code);
-			if ($verified) {
-				$user = $this->M_db->Get_user_by_id('t_user','id',$user_id);
-				$ip_address = $this->input->ip_address();
-				$dt = array('lastlogin_ip' => $ip_address, );
-				$this->M_db->update_Data('t_user','id',$user_id,$dt);
-				$this->M_auth->Logout();
-				$this->session->set_userdata([self::SESSION_KEY => $user->id,'role' => $user->status,'logged_in' => 1,'session_expiration' => time() + 3600]);
-				echo json_encode(['status' => 1, 'message' => 'Success']);
+			$names = $this->input->post('names');
+			$emails = $this->input->post('emails');
+			$password = $this->input->post('password');
+			$address = $this->input->post('address');
+			$link_fb = $this->input->post('link_fb');
+			$number = $this->input->post('number');
+			$datasmember = array(
+				'name' => $names,
+				'email' => $emails,
+				'password' => password_hash($password, PASSWORD_DEFAULT),
+				'address' => $address,
+				'linkfb' => $link_fb,
+				'nowa' => $number,
+				'role' => 2,
+				 );
+			if ($this->M_db->insert_All('t_user',$datasmember)) {
+				$response['status'] = 200;
+		        $response['message'] = 'Pendaftaran Member Berhasil!';
 			} else {
-	            // Tampilkan notifikasi verifikasi OTP gagal
-				echo json_encode(['status' => 3, 'message' => 'Invalid OTP']);
+				$response['status'] = 401;
+		        $response['message'] = 'Pendaftaran Member Gagal!';
 			}
+			print_r(json_encode($response));
+			
 		} else {
 			$a = $this->session->userdata('logged_in');
 			if($a == 1){
