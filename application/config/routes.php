@@ -55,7 +55,7 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['auth/login'] = 'Login';
 $route['auth/logout'] = 'Login/Logout';
-$route['auth/login/verification'] = 'Login/Otp';
+$route['auth/register/member'] = 'Login/registerMemberbang';
 
 $route['app/dashboard'] = 'App';
 $route['app/pembayaran-kas'] = 'App/trxKas';
