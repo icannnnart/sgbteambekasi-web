@@ -7,7 +7,7 @@
 </style>
 <body>
     <div class="container">
-        <form id="regisForm" action="" method="POST">
+        <form id="regisForm" style="display: flow;" action="" method="POST">
             <picture>
                 <source media="(min-width:650px)" srcset="<?=base_url('assets/dashboard/')?>images/putih.png">
                     <source media="(min-width:465px)" srcset="<?=base_url('assets/dashboard/')?>images/putih.png">
