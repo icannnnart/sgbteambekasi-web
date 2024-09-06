@@ -29,8 +29,14 @@ $(document).ready(function() {
                             } else {
                                 $('#preloader').hide();
                                 $('#content').css('visibility', 'visible');
-                                Swal.fire('Error', response.message, 'error',timer: 10000);
-                                window.location.reload()
+                                Swal.fire('Error', response.message, 'error').then((result) => {
+                                    $('#preloader').hide();
+                                   
+                                    if (result.isConfirmed) {
+                                        window.location.reload()
+                                    }
+                                });
+                                
                             }
                         }
                     });
