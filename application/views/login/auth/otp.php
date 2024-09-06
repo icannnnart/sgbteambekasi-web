@@ -8,12 +8,28 @@
                     </picture>
             <h2>REGISTER MEMBER</h2>
             <div class="input-field">
-                <input type="email" name="username" id="username" required />
+                <input type="email" name="email" id="username" required />
                 <label>Enter Email</label>
+            </div>
+            <div class="input-field">
+                <input type="email" name="name" id="name" required />
+                <label>Enter Name</label>
             </div>
             <div class="input-field">
                 <input type="password" name="password" required />
                 <label>Enter Password</label>
+            </div>
+            <div class="input-field">
+                <input type="email" name="address" id="address" required />
+                <label>Enter Address</label>
+            </div>
+            <div class="input-field">
+                <input type="email" name="nomer" id="nomer" required />
+                <label>Enter No Whatsapp</label>
+            </div>
+            <div class="input-field">
+                <input type="email" name="username" id="username" required />
+                <label>Enter Link Fb</label>
             </div>
             <button type="submit">Register</button>
             <div class="Create-account">
