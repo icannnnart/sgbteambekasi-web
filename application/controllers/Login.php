@@ -21,7 +21,9 @@ class Login extends CI_Controller {
 			$password = $this->input->post('password');
 			$user = $this->M_auth->checkLogin($username, $password);
 			if ($user) {
-				if ($user->lastlogin_ip !== $ip_address) {
+				if ($user->is_active == 1) {
+					echo json_encode(['status' => 3, 'message' => 'Akun kamu belum aktif. Silahkan hubungi admin!']);
+				}elseif ($user->lastlogin_ip !== $ip_address) {
 					//$this->_sendOTP($user->username, $user->id);
 					$this->session->set_userdata([self::SESSION_KEY => $user->id,'role' => $user->role,'logged_in' => 1,'session_expiration' => time() + 3600]);
 					echo json_encode(['status' => 1, 'message' => 'Success']);
