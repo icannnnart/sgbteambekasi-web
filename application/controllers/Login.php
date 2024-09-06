@@ -86,7 +86,7 @@ class Login extends CI_Controller {
 			}elseif($this->session->userdata('logged_in') == null){
 				redirect(site_url());
 			}
-			$data['title'] = 'Verification Login';
+			$data['title'] = 'Register Member';
 			$this->load->view('login/layout/header',$data);
 			$this->load->view('login/auth/otp');
 			$this->load->view('login/layout/footer');
