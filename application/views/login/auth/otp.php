@@ -1,6 +1,6 @@
 <style>
     .scale-recaptcha {
-        margin-left: -15px;
+        margin-left: 40px;
         transform: scale(0.85); /* Menyesuaikan skala */
         transform-origin: 0 0; /* Tetapkan asal skala */
     }
