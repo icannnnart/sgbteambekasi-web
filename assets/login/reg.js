@@ -29,7 +29,7 @@ $(document).ready(function() {
                             } else {
                                 $('#preloader').hide();
                                 $('#content').css('visibility', 'visible');
-                                Swal.fire('Error', response.message, 'error');
+                                Swal.fire('Error', response.message, 'error',timer: 10000);
                                 window.location.reload()
                             }
                         }
