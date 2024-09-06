@@ -45,4 +45,5 @@
 <script type="text/javascript">
     var baseurl = '<?=site_url('')?>'
 </script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="<?=base_url('assets/login/')?>reg.js"></script>
