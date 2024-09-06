@@ -1,6 +1,6 @@
 $(document).ready(function() {
                 document.getElementById('username').focus();
-                $('#loginForm').submit(function(e) {
+                $('#regisForm').submit(function(e) {
                     e.preventDefault();
                     $.ajax({
                         type: 'POST',
