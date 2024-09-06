@@ -17,7 +17,7 @@
                      <div class="d-flex flex-row align-items-center">
                        <i class="ti-twitter-alt text-white icon-md"></i>
                        <div class="ms-3">
-                         <h5 class="text-white">Top Rank Kontribusi Uang KAS Terakhir</h5>
+                         <h4 class="text-white">Top Rank Kontribusi Uang KAS Terakhir</h4>
                          <p class="fs-30 mb-2 text-white"><span style="font-size: 12px;">IDR </span><?=number_format($sumcashflow)?></p>
                        </div>
                      </div>
