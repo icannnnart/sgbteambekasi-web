@@ -33,7 +33,7 @@
                 <input type="text" name="link_fb" id="link_fb" required />
                 <label>Enter Link Fb</label>
             </div>
-            <div class="g-recaptcha" data-sitekey="6LeXLTgqAAAAAKrhJwz8A6GZKYZ1d1q4fxbGsLRx" style="width: 10px;"></div>
+            <div class="g-recaptcha" data-sitekey="6LeXLTgqAAAAAKrhJwz8A6GZKYZ1d1q4fxbGsLRx" data-size="compact"></div>
             <button type="submit">Register</button>
             <div class="Create-account">
                 <p>Sudah punya akun? <a href="<?=site_url()?>">Login</a></p>
