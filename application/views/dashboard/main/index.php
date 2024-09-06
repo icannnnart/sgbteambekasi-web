@@ -15,7 +15,7 @@
                  <div class="card bg-twitter d-flex align-items-center">
                    <div class="card-body">
                      <div class="d-flex flex-row align-items-center">
-                        <i class="las la-funnel-dollar text-white icon-md"></i>
+                        <i class="las la-funnel-dollar text-white icon-md" style="font-size:1rem;"></i>
                        
                        <div class="ms-3">
                          <h4 class="text-white">Top Rank Kontribusi Uang KAS Terakhir</h4>
