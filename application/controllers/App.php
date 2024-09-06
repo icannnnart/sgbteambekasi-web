@@ -40,6 +40,7 @@ class App extends CI_Controller {
 		$des = $this->db->query("SELECT IFNULL(SUM(nominal), 0) AS total_valid FROM t_cashflow WHERE status=1 AND created_at LIKE '%".date('Y')."-12%'")->row();
 		$data['grafik'] = [$jan->total_valid,$feb->total_valid,$mar->total_valid,$apr->total_valid,$mei->total_valid,$jun->total_valid,$jul->total_valid,$agu->total_valid,$sep->total_valid,$okt->total_valid,$nov->total_valid,$des->total_valid];
 		$data['datacashflow'] = $this->db->query("SELECT * FROM `t_cashflow` WHERE created_at LIKE '%".date('Y')."%' ORDER BY `t_cashflow`.`created_at` DESC")->result_array();
+		$data['topspend'] = $this->db->query("SELECT id_user, nominal FROM t_cashflow WHERE status=1 ORDER BY created_at ASC, nominal DESC LIMIT 1")->row();
 		$this->load->view('dashboard/layout/header',$data);
 		$this->load->view('dashboard/main/index');
 		$this->load->view('dashboard/layout/footer');
