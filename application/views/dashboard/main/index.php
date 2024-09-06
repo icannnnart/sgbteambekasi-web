@@ -11,7 +11,7 @@
       </div>
    </div>
    <div class="row">
-   <div class="card data-icon-card-primary">
+   <div class="col-md-12 stretch-card grid-margin grid-margin-md-0">
                                         <div class="card-body">
                                             <p class="card-title text-white">Number of Meetings</p>
                                             <div class="row">
