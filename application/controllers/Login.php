@@ -71,7 +71,7 @@ class Login extends CI_Controller {
 	        if ($responseData->success) {
 	            $names = $this->input->post('names');
 	            $emails = $this->input->post('emails');
-	            $cekmail = $this->db->get_where('t_user', ['email' => $names])->row();
+	            $cekmail = $this->db->get_where('t_user', ['email' => $emails])->row();
 	            if ($cekmail) {
 	            	$response['status'] = 409; // Conflict HTTP status code
                 	$response['message'] = 'Email sudah digunakan. Silakan gunakan email lain.';
