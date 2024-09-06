@@ -8,7 +8,7 @@
                     </picture>
             <h2>REGISTER MEMBER</h2>
             <div class="input-field">
-                <input type="email" name="email" id="username" required />
+                <input type="email" name="emails" id="username" required />
                 <label>Enter Email</label>
             </div>
             <div class="input-field">
