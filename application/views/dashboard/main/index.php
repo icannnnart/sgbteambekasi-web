@@ -15,7 +15,8 @@
                  <div class="card bg-twitter d-flex align-items-center">
                    <div class="card-body">
                      <div class="d-flex flex-row align-items-center">
-                       <i class="ti-twitter-alt text-white icon-md"></i>
+                        <i class="las la-funnel-dollar text-white icon-md"></i>
+                       
                        <div class="ms-3">
                          <h4 class="text-white">Top Rank Kontribusi Uang KAS Terakhir</h4>
                          <p class="fs-30 mb-2 text-white"><span style="font-size: 12px;">IDR </span><?=number_format($sumcashflow)?></p>
