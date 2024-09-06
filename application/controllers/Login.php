@@ -83,8 +83,6 @@ class Login extends CI_Controller {
 			$a = $this->session->userdata('logged_in');
 			if($a == 1){
 				redirect(site_url('app/dashboard'));
-			}elseif($this->session->userdata('logged_in') == null){
-				redirect(site_url());
 			}
 			$data['title'] = 'Register Member';
 			$this->load->view('login/layout/header',$data);
