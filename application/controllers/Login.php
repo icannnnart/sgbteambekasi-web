@@ -69,8 +69,8 @@ class Login extends CI_Controller {
 	        $responseData = json_decode($verifyResponse);
 
 	        if ($responseData->success) {
-	            // Jika reCAPTCHA valid, lanjutkan proses registrasi
 	            $names = $this->input->post('names');
+	            $cekmail = $this->db->get_where('t_user', ['email' => $username])->row();
 	            $emails = $this->input->post('emails');
 	            $password = $this->input->post('password');
 	            $address = $this->input->post('address');
