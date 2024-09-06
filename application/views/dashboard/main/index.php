@@ -19,7 +19,7 @@
                        
                        <div class="ms-3">
                          <h4 class="text-white">Top Rank Kontribusi Uang KAS Terakhir</h4>
-                         <p class="fs-30 mb-2 text-white"><?php $topname = $this->M_db->Get_user_by_id('t_user','id',$datascash['id_user']); print_r($topname->name);?> <span style="font-size: 12px;">IDR </span><?=number_format($sumcashflow)?></p>
+                         <p class="fs-30 mb-2 text-white"><?php $topname = $this->M_db->Get_user_by_id('t_user','id',$topspend->id_user); print_r($topname->name);?> <span style="font-size: 12px;">IDR </span><?=number_format($sumcashflow)?></p>
                        </div>
                      </div>
                    </div>
