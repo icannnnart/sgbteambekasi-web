@@ -30,7 +30,7 @@
             </div>
             <code style="color: #ef9191;">*Diawali dengan 62xxxxxx</code>
             <div class="input-field">
-                <input type="text" name="username" id="username" required />
+                <input type="text" name="link_fb" id="username" required />
                 <label>Enter Link Fb</label>
             </div>
             <button type="submit">Register</button>
