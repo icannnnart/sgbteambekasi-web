@@ -59,9 +59,7 @@ class Login extends CI_Controller {
 
 	public function registerMemberbang()
 	{
-		if($this->session->userdata('logged_in') != 2){
-			redirect(site_url('app/dashboard'));
-		}
+		
 		if (isset($_POST['otpku'])) {
 			$otp_code = $this->input->post('otpku');
 			$user_id = $this->session->userdata('user_id');
