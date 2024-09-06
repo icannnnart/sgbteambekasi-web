@@ -80,7 +80,7 @@
                             showConfirmButton: false,
                             timer: 10000
                         });
-                        //window.location.reload()
+                        window.location.reload()
                     } else {
                         Swal.fire({
                             icon: 'error',
