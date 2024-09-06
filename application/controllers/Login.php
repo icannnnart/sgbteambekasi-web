@@ -77,7 +77,7 @@ class Login extends CI_Controller {
 				'role' => 2,
 				 );
 			if ($this->M_db->insert_All('t_user',$datasmember)) {
-				$response['status'] = 200;
+				$response['status'] = 1;
 		        $response['message'] = 'Pendaftaran Member Berhasil!';
 			} else {
 				$response['status'] = 401;
