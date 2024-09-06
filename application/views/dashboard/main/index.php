@@ -11,22 +11,19 @@
       </div>
    </div>
    <div class="row">
-   <div class="col-md-12 stretch-card grid-margin grid-margin-md-0">
-                                    <div class="card data-icon-card-primary">
-                                        <div class="card-body">
-                                            <p class="card-title text-white">Number of Meetings</p>
-                                            <div class="row">
-                                                <div class="col-8 text-white">
-                                                    <h3>34040</h3>
-                                                    <p class="text-white font-weight-500 mb-0">The total number of sessions within the date
-                                                        range.It is calculated as the sum . </p>
-                                                </div>
-                                                <div class="col-4 background-icon">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+      <div class="col-md-4 grid-margin">
+                 <div class="card bg-twitter d-flex align-items-center">
+                   <div class="card-body">
+                     <div class="d-flex flex-row align-items-center">
+                       <i class="ti-twitter-alt text-white icon-md"></i>
+                       <div class="ms-3">
+                         <h6 class="text-white">3k followers</h6>
+                         <p class="mt-2 text-white card-text">You main list growing</p>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
          </div><br>
    <div class="row">
       <div class="col-md-6 grid-margin stretch-card">
