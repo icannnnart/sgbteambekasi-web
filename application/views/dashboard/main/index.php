@@ -17,7 +17,7 @@
                      <div class="d-flex flex-row align-items-center">
                        <i class="ti-twitter-alt text-white icon-md"></i>
                        <div class="ms-3">
-                         <h6 class="text-white">3k followers</h6>
+                         <h6 class="text-white">Top Kontribusi Uang KAS Terakhir</h6>
                          <p class="mt-2 text-white card-text">You main list growing</p>
                        </div>
                      </div>
