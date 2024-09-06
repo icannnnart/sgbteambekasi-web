@@ -24,13 +24,13 @@
                 <label>Enter Address</label>
             </div>
             <div class="input-field">
-                <input type="text" name="nomer" id="nomer" required />
+                <input type="text" name="number" id="number" required />
                 <label>Enter No Whatsapp</label>
 
             </div>
             <code style="color: #ef9191;">*Diawali dengan 62xxxxxx</code>
             <div class="input-field">
-                <input type="text" name="link_fb" id="username" required />
+                <input type="text" name="link_fb" id="link_fb" required />
                 <label>Enter Link Fb</label>
             </div>
             <button type="submit">Register</button>
