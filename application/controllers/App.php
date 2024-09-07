@@ -41,6 +41,7 @@ class App extends CI_Controller {
 		$data['grafik'] = [$jan->total_valid,$feb->total_valid,$mar->total_valid,$apr->total_valid,$mei->total_valid,$jun->total_valid,$jul->total_valid,$agu->total_valid,$sep->total_valid,$okt->total_valid,$nov->total_valid,$des->total_valid];
 		$data['datacashflow'] = $this->db->query("SELECT * FROM `t_cashflow` WHERE created_at LIKE '%".date('Y')."%' ORDER BY `t_cashflow`.`created_at` DESC")->result_array();
 		$data['topspend'] = $this->db->query("SELECT id_user, SUM(nominal) as total_spend FROM t_cashflow WHERE status = 1 GROUP BY id_user ORDER BY total_spend DESC LIMIT 1")->row();
+		//SELECT t_user.id,t_user.name FROM t_user LEFT JOIN t_cashflow c ON t_user.id = c.id_user AND c.created_at LIKE '%2024%' WHERE c.id_user IS NULL
 		$this->load->view('dashboard/layout/header',$data);
 		$this->load->view('dashboard/main/index');
 		$this->load->view('dashboard/layout/footer');
