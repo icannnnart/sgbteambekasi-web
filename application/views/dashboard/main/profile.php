@@ -32,7 +32,7 @@
                            <li class="nav-item">
                               <a class="nav-link active" href="#">
                               <i class="ti-user"></i>
-                              Info
+                              Informasi Akun
                               </a>
                            </li>
                         </ul>
