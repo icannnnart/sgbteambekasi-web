@@ -91,9 +91,6 @@
                                  <td><?=$dataspending['nowa']?></td>
                                  <td><?=$dataspending['address']?></td>
                                  <td><?=$dataspending['linkfb']?></td>
-                                 <td>
-                                    <button type="button" class="btn btn-primary btn-rounded btn-icon"><i class="ti-eye"></i></button>
-                                 </td>
                               </tr>
                               <?php }?>
                            </tbody>
