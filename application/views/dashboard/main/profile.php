@@ -57,8 +57,9 @@
                                         <div class="form-group row">
                                             <label for="exampleInputMobile" class="col-sm-3 col-form-label">Password</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="password" id="password" placeholder="Mobile number">
+                                                <input type="text" class="form-control" name="password" id="password">
                                             </div>
+                                            <code>*Kosongkan jika tidak ingin diubah</code>
                                         </div>
                                         <div class="form-group row">
                                             <label for="exampleInputPassword2" class="col-sm-3 col-form-label">No Whatsapp</label>
