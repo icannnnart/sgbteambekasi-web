@@ -39,7 +39,7 @@
                      </div>
                      <div class="profile-feed">
                         <div class="d-flex align-items-start profile-feed-item">
-                           <form class="forms-sample">
+                           <form class="forms-sample col-sm-10">
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-4 col-form-label">Email</label>
                                             <div class="col-sm-9">
