@@ -18,7 +18,7 @@
                   <ul class="bullet-line-list">
                      <?php foreach($update_informasi as $datasinformasi){?>
                        <li>
-                         <h6>User confirmation</h6>
+                         <h6><?=$datasinformasi['headline']?></h6>
                          <p>Lorem Ipsum is simply dummy text of the printing </p>
                          <p class="text-muted mb-4">
                            <i class="ti-time"></i>
