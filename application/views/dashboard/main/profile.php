@@ -25,18 +25,6 @@
                            <label class="badge badge-outline-dark my-1">Web Design</label>
                         </div>
                      </div>
-                     <div class="border-bottom py-4">
-                        <div class="d-flex mb-3">
-                           <div class="progress progress-md flex-grow">
-                              <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="55" style="width: 55%" aria-valuemin="0" aria-valuemax="100"></div>
-                           </div>
-                        </div>
-                        <div class="d-flex">
-                           <div class="progress progress-md flex-grow">
-                              <div class="progress-bar bg-success" role="progressbar" aria-valuenow="75" style="width: 75%" aria-valuemin="0" aria-valuemax="100"></div>
-                           </div>
-                        </div>
-                     </div>
                   </div>
                   <div class="col-lg-8">
                      <div class="mt-4 py-2 border-top border-bottom">
