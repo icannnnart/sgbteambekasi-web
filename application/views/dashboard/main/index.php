@@ -19,10 +19,10 @@
                      <?php foreach($update_informasi as $datasinformasi){?>
                        <li>
                          <h6><?=$datasinformasi['headline']?></h6>
-                         <p>Lorem Ipsum is simply dummy text of the printing </p>
+                         <p><?=$datasinformasi['msg']?></p>
                          <p class="text-muted mb-4">
                            <i class="ti-time"></i>
-                           7 months ago.
+                           <?=$datasinformasi['created_at']?>
                          </p>
                        </li>
                      <?php }?>
