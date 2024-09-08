@@ -108,7 +108,7 @@
             </div>
          </div>
       </div>
-      <div class="col-md-6 grid-margin stretch-card">
+      <div class="col-md-8 grid-margin stretch-card">
          <div class="card position-relative">
             <div class="card-body">
                <h6 class="card-title">LIST USER SGB BEKASI</h6>
