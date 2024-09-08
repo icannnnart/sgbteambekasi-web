@@ -11,6 +11,39 @@
       </div>
    </div>
    <div class="row">
+      <div class="col-md-4 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Updates</h4>
+                  <ul class="bullet-line-list">
+                    <li>
+                      <h6>User confirmation</h6>
+                      <p>Lorem Ipsum is simply dummy text of the printing </p>
+                      <p class="text-muted mb-4">
+                        <i class="ti-time"></i>
+                        7 months ago.
+                      </p>
+                    </li>
+                    <li>
+                      <h6>Continuous evaluation</h6>
+                      <p>Lorem Ipsum is simply dummy text of the printing </p>
+                      <p class="text-muted mb-4">
+                        <i class="ti-time"></i>
+                        7 months ago.
+                      </p>
+                    </li>
+                    <li>
+                      <h6>Promotion</h6>
+                      <p>Lorem Ipsum is simply dummy text of the printing </p>
+                      <p class="text-muted">
+                        <i class="ti-time"></i>
+                        7 months ago.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
       <div class="col-md-12 grid-margin">
                  <div class="card bg-twitter d-flex align-items-center">
                    <div class="card-body">
