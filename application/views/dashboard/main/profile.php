@@ -100,7 +100,7 @@
                                                 <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
                                             </div>
                                         </div>
-                                        <div class="form-group row">
+                                        <div class="form-group">
                                           <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
