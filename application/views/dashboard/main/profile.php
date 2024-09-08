@@ -45,7 +45,7 @@
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nama</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="nama" id="nama" placeholder="Username">
+                                                <input type="text" class="form-control" name="nama" id="nama" value="<?=$user->name?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">
