@@ -64,17 +64,17 @@
                                         <div class="form-group row">
                                             <label for="exampleInputPassword2" class="col-sm-3 col-form-label">No Whatsapp</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="nowa" id="nowa" inputmode="numeric">
+                                                <input type="text" class="form-control" name="nowa" id="nowa" inputmode="numeric" value="<?=$user->nowa?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Alamat</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="Alamat" id="Alamat">
+                                                <input type="text" class="form-control" name="Alamat" id="Alamat" value="<?=$user->address?>">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Link Facebook</label>
+                                            <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label" value="<?=$user->linkfb?>">Link Facebook</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" name="linkfb" id="linkfb">
                                             </div>
