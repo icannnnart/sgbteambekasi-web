@@ -45,25 +45,25 @@
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nama</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
+                                                <input type="text" class="form-control" name="nama" id="nama" placeholder="Username">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Email</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="exampleInputMobile" class="col-sm-3 col-form-label">Password</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="exampleInputMobile" placeholder="Mobile number">
+                                                <input type="text" class="form-control" name="password" id="password" placeholder="Mobile number">
                                             </div>
                                         </div>
                                         <div class="form-group row">
                                             <label for="exampleInputPassword2" class="col-sm-3 col-form-label">No Whatsapp</label>
                                             <div class="col-sm-9">
-                                                <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                                                <input type="password" class="form-control" name="nowa" id="nowa" inputmode="numeric">
                                             </div>
                                         </div>
                                         <div class="form-group row">
