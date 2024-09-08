@@ -104,7 +104,7 @@ class App extends CI_Controller {
 		$this->load->view('dashboard/master/index');
 		$this->load->view('dashboard/layout/footer');
 	}
-	public function masterForm()
+	public function uProfile()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
 		$data['title'] = 'Master';
