@@ -81,7 +81,7 @@
                                     </form>
                         </div>
                         <div class="d-flex col-sm-10 align-items-start profile-feed-item">
-                           <div class="card ">
+                           <div class="card">
                                 <div class="card-body">
                                     <h4 class="card-title">Request Email Official SGB BEKASI</h4>
                                     <form class="forms-sample">
