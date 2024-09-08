@@ -84,7 +84,7 @@
                               <tr>
                                  <td><?=$aa?></td>
                                  <td>
-                                    <a class="badge badge-success" href="#">APPROVE</a>
+                                    <a class="badge badge-success" href="<?=site_url('app/acc/user/newmember/'.$dataspending['id'])?>">APPROVE</a>
                                  </td>
                                  <td><?=$dataspending['name']?></td>
                                  <td><?=$dataspending['email']?></td>
