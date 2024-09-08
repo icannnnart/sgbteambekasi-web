@@ -97,8 +97,9 @@
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
                                             <div class="col-sm-9">
-                                              <a href="#" class="input-group-text bg-primary text-white">$</a>
+                                              <div class="input-group">
                                                 <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
+                                              </div>
                                             </div>
                                         </div>
                                         <div class="form-group row">
