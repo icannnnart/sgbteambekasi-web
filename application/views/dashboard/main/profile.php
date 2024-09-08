@@ -48,27 +48,9 @@
                      <div class="mt-4 py-2 border-top border-bottom">
                         <ul class="nav profile-navbar">
                            <li class="nav-item">
-                              <a class="nav-link" href="#">
+                              <a class="nav-link active" href="#">
                               <i class="ti-user"></i>
                               Info
-                              </a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link active" href="#">
-                              <i class="ti-receipt"></i>
-                              Feed
-                              </a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="#">
-                              <i class="ti-calendar"></i>
-                              Agenda
-                              </a>
-                           </li>
-                           <li class="nav-item">
-                              <a class="nav-link" href="#">
-                              <i class="ti-clip"></i>
-                              Resume
                               </a>
                            </li>
                         </ul>
