@@ -103,10 +103,10 @@
                                         <div class="form-group row">
                                           <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
                                         <div class="input-group">
-                                            <div class="col-sm-9 input-group-prepend">
+                                            <div class="input-group-prepend">
                                                 <span class="input-group-text bg-primary text-white">$</span>
                                             </div>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="col-sm-9 form-control">
                                         </div>
                                     </div>
                                         <button type="submit" class="btn btn-primary me-2">Submit</button>
