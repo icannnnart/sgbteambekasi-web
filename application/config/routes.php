@@ -57,7 +57,8 @@ $route['auth/login'] = 'Login';
 $route['auth/logout'] = 'Login/Logout';
 $route['auth/register/member'] = 'Login/registerMemberbang';
 
-$route['app/dashboard'] = 'App';
+$route['app/dashboard'] = 'App';uProfile
+$route['app/setting/profile'] = 'App/uProfile';
 $route['app/pembayaran-kas'] = 'App/trxKas';
 $route['app/action/pembayaran-kas']['post'] = 'App/trxKas';
 $route['app/master/user'] = 'App/masterUser';
