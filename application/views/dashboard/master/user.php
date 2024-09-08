@@ -79,9 +79,9 @@
                               </tr>
                            </thead>
                            <tbody>
-                              <?php $a=0; foreach($pending_user as $datasuser){$a++;?>
+                              <?php $aa=0; foreach($pending_user as $dataspending){$aa++;?>
                               <tr>
-                                 <td><?=$a?></td>
+                                 <td><?=$aa?></td>
                                  <td><?=$datasuser['name']?></td>
                                  <td><?=$datasuser['email']?></td>
                                  <td><?=$datasuser['nowa']?></td>
