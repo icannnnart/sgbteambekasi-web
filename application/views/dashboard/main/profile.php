@@ -63,7 +63,7 @@
                                         <div class="form-group row">
                                             <label for="exampleInputPassword2" class="col-sm-3 col-form-label">No Whatsapp</label>
                                             <div class="col-sm-9">
-                                                <input type="password" class="form-control" name="nowa" id="nowa" inputmode="numeric">
+                                                <input type="text" class="form-control" name="nowa" id="nowa" inputmode="numeric">
                                             </div>
                                         </div>
                                         <div class="form-group row">
