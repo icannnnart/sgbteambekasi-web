@@ -67,17 +67,18 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Re Password</label>
+                                            <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Alamat</label>
                                             <div class="col-sm-9">
                                                 <input type="password" class="form-control" id="exampleInputConfirmPassword2" placeholder="Password">
                                             </div>
                                         </div>
-                                        <div class="form-check form-check-flat form-check-primary">
-                                            <label class="form-check-label">
-                                                <input type="checkbox" class="form-check-input">
-                                                Remember me
-                                            <i class="input-helper"></i></label>
+                                        <div class="form-group row">
+                                            <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Link Facebook</label>
+                                            <div class="col-sm-9">
+                                                <input type="password" class="form-control" id="exampleInputConfirmPassword2" placeholder="Password">
+                                            </div>
                                         </div>
+
                                         <button type="submit" class="btn btn-primary me-2">Update</button>
                                     </form>
                                 </div>
