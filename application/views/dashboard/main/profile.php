@@ -104,7 +104,7 @@
                                           <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <a class="input-group-text bg-primary text-white">$</a>
+                                                <a href="#" class="input-group-text bg-primary text-white">$</a>
                                             </div>
                                             <input type="text" class="form-control form-control-s">
                                         </div>
