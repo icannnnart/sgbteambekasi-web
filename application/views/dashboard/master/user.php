@@ -59,7 +59,7 @@
       </div>
    </div>
    <div class="row">
-      <div class="col-md-2 grid-margin stretch-card">
+      <div class="col-md-4 grid-margin stretch-card">
          <div class="card position-relative">
             <div class="card-body">
                <h6 class="card-title">LIST USER SGB BEKASI</h6>
@@ -108,7 +108,7 @@
             </div>
          </div>
       </div>
-      <div class="col-md-12 grid-margin stretch-card">
+      <div class="col-md-6 grid-margin stretch-card">
          <div class="card position-relative">
             <div class="card-body">
                <h6 class="card-title">LIST USER SGB BEKASI</h6>
