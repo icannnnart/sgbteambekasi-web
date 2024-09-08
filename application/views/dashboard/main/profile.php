@@ -18,7 +18,7 @@
                         </p>
                      </div>
                      <div class="border-bottom py-4">
-                        <p>Skills</p>
+                        <p>Badge</p>
                         <div>
                            <label class="badge badge-outline-dark my-1">Chalk</label>
                            <label class="badge badge-outline-dark my-1">Hand lettering</label>
