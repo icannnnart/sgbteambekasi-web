@@ -43,49 +43,6 @@
                            </div>
                         </div>
                      </div>
-                     <div class="py-4">
-                        <p class="clearfix">
-                           <span class="float-left">
-                           Status
-                           </span>
-                           <span class="float-right text-muted">
-                           Active
-                           </span>
-                        </p>
-                        <p class="clearfix">
-                           <span class="float-left">
-                           Phone
-                           </span>
-                           <span class="float-right text-muted">
-                           006 3435 22
-                           </span>
-                        </p>
-                        <p class="clearfix">
-                           <span class="float-left">
-                           Mail
-                           </span>
-                           <span class="float-right text-muted">
-                           Jacod@testmail.com
-                           </span>
-                        </p>
-                        <p class="clearfix">
-                           <span class="float-left">
-                           Facebook
-                           </span>
-                           <span class="float-right text-muted">
-                           <a href="#">David Grey</a>
-                           </span>
-                        </p>
-                        <p class="clearfix">
-                           <span class="float-left">
-                           Twitter
-                           </span>
-                           <span class="float-right text-muted">
-                           <a href="#">@davidgrey</a>
-                           </span>
-                        </p>
-                     </div>
-                     <button class="btn btn-primary btn-block mb-2">Preview</button>
                   </div>
                   <div class="col-lg-8">
                      <div class="d-block d-md-flex justify-content-between mt-4 mt-md-0">
