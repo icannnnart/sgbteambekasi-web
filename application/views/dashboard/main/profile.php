@@ -13,9 +13,7 @@
                               <h5 class="mb-0 me-2 text-muted">Canada</h5>
                            </div>
                         </div>
-                        <p class="w-75 mx-auto mb-3">Bureau Oberhaeuser is a design bureau focused on Information- and
-                           Interface Design. 
-                        </p>
+                        <p class="w-75 mx-auto mb-3"><?=$user->address?></p>
                      </div>
                      <div class="border-bottom py-4">
                         <p>Badge</p>
