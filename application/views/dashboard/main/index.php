@@ -44,7 +44,7 @@
                 </div>
               </div>
             </div>
-      <div class="col-md-12 grid-margin">
+      <div class="col-md-8 grid-margin">
                  <div class="card bg-twitter d-flex align-items-center">
                    <div class="card-body">
                      <div class="d-flex flex-row align-items-center">
