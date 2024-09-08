@@ -70,12 +70,13 @@
                            <thead>
                               <tr>
                                  <th>No</th>
+                                 <th>Action</th>
                                  <th>Nama</th>
                                  <th>Email</th>
                                  <th>No Whatsapp</th>
                                  <th>Alamat</th>
                                  <th>Level</th>
-                                 <th>Action</th>
+                                 
                               </tr>
                            </thead>
                            <tbody>
