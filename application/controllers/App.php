@@ -104,6 +104,15 @@ class App extends CI_Controller {
 		$this->load->view('dashboard/master/index');
 		$this->load->view('dashboard/layout/footer');
 	}
+	public function masterForm()
+	{
+		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
+		$data['title'] = 'Master';
+		$data['sub_menu'] = 'Form';
+		$this->load->view('dashboard/layout/header',$data);
+		$this->load->view('dashboard/main/profile');
+		$this->load->view('dashboard/layout/footer');
+	}
 	public function masterRegform()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
