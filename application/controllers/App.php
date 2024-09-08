@@ -81,7 +81,7 @@ class App extends CI_Controller {
 			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
 			$data['title'] = 'Master';
 			$data['sub_menu'] = 'User';
-			$data['data_user'] = $this->M_db->get_All_data('t_user');
+			$data['data_user'] = $this->M_db->Get_All_byid('t_user','is_active',0);
 			$data['pending_user'] = $this->M_db->Get_All_byid('t_user','is_active',1);
 			$this->load->view('dashboard/layout/header',$data);
 			$this->load->view('dashboard/master/user');
