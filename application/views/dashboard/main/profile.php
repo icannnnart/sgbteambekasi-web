@@ -39,7 +39,7 @@
                      </div>
                      <div class="profile-feed">
                         <div class="d-flex align-items-start profile-feed-item">
-                           <div class="card col-sm-3">
+                           <div class="card col-sm-12">
                                 <div class="card-body">
                                     <h4 class="card-title">Horizontal Form</h4>
                                     <p class="card-description">
