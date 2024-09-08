@@ -106,7 +106,7 @@
                                             <div class="input-group-prepend">
                                                 <span class="input-group-text bg-primary text-white">$</span>
                                             </div>
-                                            <input type="text" class="col-sm-9 form-control">
+                                            <input type="text" class="form-control form-control-sm">
                                         </div>
                                     </div>
                                         <button type="submit" class="btn btn-primary me-2">Submit</button>
