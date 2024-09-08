@@ -88,6 +88,11 @@ class App extends CI_Controller {
 			$this->load->view('dashboard/layout/footer');
 		}
 	}
+	public function approveMember($id)
+	{
+		$reg = array('is_active' => 0, );
+		$this->M_db->update_Data('t_user','id',$id,$reg);
+	}
 	public function masterForm()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
