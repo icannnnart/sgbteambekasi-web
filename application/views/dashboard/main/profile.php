@@ -6,7 +6,7 @@
                <div class="row">
                   <div class="col-lg-4">
                      <div class="border-bottom text-center pb-4">
-                        <img src="../../../assets/images/faces/face12.jpg" alt="profile" class="img-lg rounded-circle mb-3">
+                        <img src="https://ui-avatars.com/api/?name=<?=$user->name?>&amp;background=random" alt="profile" class="img-lg rounded-circle mb-3">
                         <div class="mb-3">
                            <h3>David Grey. H</h3>
                            <div class="d-flex align-items-center justify-content-center">
