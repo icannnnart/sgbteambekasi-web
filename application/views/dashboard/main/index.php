@@ -24,22 +24,6 @@
                         7 months ago.
                       </p>
                     </li>
-                    <li>
-                      <h6>Continuous evaluation</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing </p>
-                      <p class="text-muted mb-4">
-                        <i class="ti-time"></i>
-                        7 months ago.
-                      </p>
-                    </li>
-                    <li>
-                      <h6>Promotion</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing </p>
-                      <p class="text-muted">
-                        <i class="ti-time"></i>
-                        7 months ago.
-                      </p>
-                    </li>
                   </ul>
                 </div>
               </div>
