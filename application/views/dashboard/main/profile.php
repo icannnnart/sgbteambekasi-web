@@ -78,8 +78,7 @@
                                                 Remember me
                                             <i class="input-helper"></i></label>
                                         </div>
-                                        <button type="submit" class="btn btn-primary me-2">Submit</button>
-                                        <button class="btn btn-light">Cancel</button>
+                                        <button type="submit" class="btn btn-primary me-2">Update</button>
                                     </form>
                                 </div>
                             </div>
