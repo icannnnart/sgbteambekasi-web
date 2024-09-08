@@ -8,7 +8,7 @@
                      <div class="border-bottom text-center pb-4">
                         <img src="https://ui-avatars.com/api/?name=<?=$user->name?>&amp;background=random" alt="profile" class="img-lg rounded-circle mb-3">
                         <div class="mb-3">
-                           <h3>David Grey. H</h3>
+                           <h3><?=$user->name?></h3>
                            <div class="d-flex align-items-center justify-content-center">
                               <h5 class="mb-0 me-2 text-muted">Canada</h5>
                            </div>
