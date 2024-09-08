@@ -95,6 +95,12 @@
                                                 <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
                                             </div>
                                         </div>
+                                        <div class="form-group row">
+                                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
+                                            <div class="col-sm-9">
+                                                <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
+                                            </div>
+                                        </div>
                                         <button type="submit" class="btn btn-primary me-2">Submit</button>
                                     </form>
                                 </div>
