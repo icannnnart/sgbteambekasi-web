@@ -69,7 +69,7 @@
                                         <div class="form-group row">
                                             <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Alamat</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" id="exampleInputConfirmPassword2" placeholder="Password">
+                                                <input type="text" class="form-control" name="Alamat" id="Alamat" placeholder="Password">
                                             </div>
                                         </div>
                                         <div class="form-group row">
