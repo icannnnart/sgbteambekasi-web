@@ -43,7 +43,7 @@
                                 <div class="card-body">
                                     <form class="forms-sample">
                                         <div class="form-group row">
-                                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
+                                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nama</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
                                             </div>
@@ -55,13 +55,13 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="exampleInputMobile" class="col-sm-3 col-form-label">Mobile</label>
+                                            <label for="exampleInputMobile" class="col-sm-3 col-form-label">Password</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="exampleInputMobile" placeholder="Mobile number">
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label for="exampleInputPassword2" class="col-sm-3 col-form-label">Password</label>
+                                            <label for="exampleInputPassword2" class="col-sm-3 col-form-label">No Whatsapp</label>
                                             <div class="col-sm-9">
                                                 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
                                             </div>
