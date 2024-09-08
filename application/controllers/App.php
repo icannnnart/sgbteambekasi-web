@@ -92,6 +92,7 @@ class App extends CI_Controller {
 	{
 		$reg = array('is_active' => 0, );
 		$this->M_db->update_Data('t_user','id',$id,$reg);
+		redirect(site_url('app/master/user'))
 	}
 	public function masterForm()
 	{
