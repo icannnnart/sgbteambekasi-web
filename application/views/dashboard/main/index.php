@@ -16,14 +16,16 @@
                 <div class="card-body">
                   <h4 class="card-title">Announcement</h4>
                   <ul class="bullet-line-list">
-                    <li>
-                      <h6>User confirmation</h6>
-                      <p>Lorem Ipsum is simply dummy text of the printing </p>
-                      <p class="text-muted mb-4">
-                        <i class="ti-time"></i>
-                        7 months ago.
-                      </p>
-                    </li>
+                     <?php foreach($update_informasi as $datasinformasi){?>
+                       <li>
+                         <h6>User confirmation</h6>
+                         <p>Lorem Ipsum is simply dummy text of the printing </p>
+                         <p class="text-muted mb-4">
+                           <i class="ti-time"></i>
+                           7 months ago.
+                         </p>
+                       </li>
+                     <?php }?>
                   </ul>
                 </div>
               </div>
