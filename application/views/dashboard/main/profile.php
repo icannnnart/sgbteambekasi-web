@@ -78,7 +78,6 @@
                                                 <input type="password" class="form-control" id="exampleInputConfirmPassword2" placeholder="Password">
                                             </div>
                                         </div>
-
                                         <button type="submit" class="btn btn-primary me-2">Update</button>
                                     </form>
                                 </div>
