@@ -10,7 +10,7 @@
                         <div class="mb-3">
                            <h3><?=$user->name?></h3>
                            <div class="d-flex align-items-center justify-content-center">
-                              <h5 class="mb-0 me-2 text-muted">Canada</h5>
+                              <h5 class="mb-0 me-2 text-muted"><?=$user->email?></h5>
                            </div>
                         </div>
                         <p class="w-75 mx-auto mb-3"><?=$user->address?></p>
