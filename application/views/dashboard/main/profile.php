@@ -45,12 +45,6 @@
                      </div>
                   </div>
                   <div class="col-lg-8">
-                     <div class="d-block d-md-flex justify-content-between mt-4 mt-md-0">
-                        <div class="text-center mt-4 mt-md-0">
-                           <button class="btn btn-outline-primary">Message</button>
-                           <button class="btn btn-primary">Request</button>
-                        </div>
-                     </div>
                      <div class="mt-4 py-2 border-top border-bottom">
                         <ul class="nav profile-navbar">
                            <li class="nav-item">
