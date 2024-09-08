@@ -39,7 +39,13 @@
                      </div>
                      <div class="profile-feed">
                         <div class="d-flex align-items-start profile-feed-item">
-                           <form class="forms-sample col-sm-10">
+                           <div class="card col-sm-3">
+                                <div class="card-body">
+                                    <h4 class="card-title">Horizontal Form</h4>
+                                    <p class="card-description">
+                                        Horizontal form layout
+                                    </p>
+                                    <form class="forms-sample">
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
                                             <div class="col-sm-9">
@@ -76,8 +82,11 @@
                                                 Remember me
                                             <i class="input-helper"></i></label>
                                         </div>
-                                        <button type="submit" class="btn btn-primary me-2">Update</button>
+                                        <button type="submit" class="btn btn-primary me-2">Submit</button>
+                                        <button class="btn btn-light">Cancel</button>
                                     </form>
+                                </div>
+                            </div>
                         </div>
                         <div class="d-flex align-items-start profile-feed-item">
                            <div class="card col-sm-10">
