@@ -92,7 +92,7 @@
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="exampleInputUsername2" placeholder="Request Email">
+                                                <input type="email" class="form-control" name="emailsgb" id="emailsgb" placeholder="Request Email">
                                             </div>
                                         </div>
                                         <div class="form-group row">
@@ -100,7 +100,7 @@
                                             <div class="col-sm-9">
                                               <div class="input-group">
                                                 <a href="#" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
-                                                <input type="text" class="form-control" id="exampleInputUsername2" placeholder="<-- Generate Apikey">
+                                                <input type="text" class="form-control" name="apikey" id="apikey" placeholder="<-- Generate Apikey">
                                               </div>
                                             </div>
                                         </div>
