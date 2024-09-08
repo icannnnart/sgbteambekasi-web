@@ -75,7 +75,7 @@
                                         <div class="form-group row">
                                             <label for="exampleInputConfirmPassword2" class="col-sm-3 col-form-label">Link Facebook</label>
                                             <div class="col-sm-9">
-                                                <input type="text" class="form-control" name="linkfb" id="linkfb" placeholder="Password">
+                                                <input type="text" class="form-control" name="linkfb" id="linkfb">
                                             </div>
                                         </div>
                                         <button type="submit" class="btn btn-primary me-2">Update</button>
