@@ -81,7 +81,7 @@
                                     </form>
                         </div>
                         <div class="d-flex align-items-start profile-feed-item">
-                           <div class="card">
+                           <div class="card col-sm-10">
                                 <div class="card-body">
                                     <h4 class="card-title">Horizontal Form</h4>
                                     <p class="card-description">
