@@ -90,7 +90,7 @@
                                     <h4 class="card-title">Request Email Official SGB BEKASI</h4>
                                     <form class="forms-sample">
                                         <div class="form-group row">
-                                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email</label>
+                                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
                                             <div class="col-sm-9">
                                                 <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
                                             </div>
