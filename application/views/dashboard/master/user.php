@@ -75,7 +75,7 @@
                                  <th>Email</th>
                                  <th>No Whatsapp</th>
                                  <th>Alamat</th>
-                                 <th>Level</th>
+                                 <th>Link FB</th>
                                  
                               </tr>
                            </thead>
