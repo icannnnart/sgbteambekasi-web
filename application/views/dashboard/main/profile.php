@@ -92,7 +92,7 @@
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" id="exampleInputUsername2" placeholder="Username">
+                                                <input type="email" class="form-control" id="exampleInputUsername2" placeholder="Request Email">
                                             </div>
                                         </div>
                                         <div class="form-group row">
