@@ -20,7 +20,7 @@ class App extends CI_Controller {
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
 		$data['title'] = 'Dashboard';
 		$data['sub_menu'] = '';
-		$data['update_informasi'] = $this->db->query("SELECT * FROM `t_announcement` ORDER BY `t_announcement`.`created_at` DESC");
+		$data['update_informasi'] = $this->db->query("SELECT * FROM `t_announcement` ORDER BY `t_announcement`.`created_at` DESC")->result_array();
 		$donebayar = $this->db->query('SELECT SUM(nominal) AS total_valid FROM t_cashflow WHERE status=1')->row();
 		$keluarbayar = $this->db->query('SELECT SUM(nominal) AS total_keluar FROM t_cashflow WHERE status=2')->row();
 		$data['sumkas'] = $donebayar->total_valid;
