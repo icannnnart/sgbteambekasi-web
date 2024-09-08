@@ -51,7 +51,7 @@
                                         <div class="form-group row">
                                             <label for="exampleInputEmail2" class="col-sm-3 col-form-label">Email</label>
                                             <div class="col-sm-9">
-                                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                                                <input type="email" class="form-control" name="email" id="email" value="<?=$user->name?>" disabled>
                                             </div>
                                         </div>
                                         <div class="form-group row">
