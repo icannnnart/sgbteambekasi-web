@@ -79,7 +79,7 @@
                               </tr>
                            </thead>
                            <tbody>
-                              <?php $a=0; foreach($data_user as $datasuser){$a++;?>
+                              <?php $a=0; foreach($pending_user as $datasuser){$a++;?>
                               <tr>
                                  <td><?=$a?></td>
                                  <td><?=$datasuser['name']?></td>
