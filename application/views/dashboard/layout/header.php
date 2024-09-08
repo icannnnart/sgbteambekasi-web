@@ -131,7 +131,7 @@
                      </a>
                      <div class="collapse <?php echo ($title == 'Setting') ? 'show' : ''; ?>" id="tables">
                         <ul class="nav flex-column sub-menu">
-                           <li class="nav-item <?php echo ($sub_menu == 'Account') ? 'active' : ''; ?>"> <a class="nav-link" href="#tables">Setting Profile</a></li>
+                           <li class="nav-item <?php echo ($sub_menu == 'Account') ? 'active' : ''; ?>"> <a class="nav-link" href="<?=site_url('app/setting/profile')?>">Setting Profile</a></li>
                         </ul>
                      </div>
                   </li>
