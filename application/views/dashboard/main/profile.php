@@ -16,10 +16,6 @@
                         <p class="w-75 mx-auto mb-3">Bureau Oberhaeuser is a design bureau focused on Information- and
                            Interface Design. 
                         </p>
-                        <div class="d-flex justify-content-center">
-                           <button class="btn btn-success me-1">Hire Me</button>
-                           <button class="btn btn-success">Follow</button>
-                        </div>
                      </div>
                      <div class="border-bottom py-4">
                         <p>Skills</p>
