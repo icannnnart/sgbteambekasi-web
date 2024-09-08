@@ -106,7 +106,7 @@
                                             <div class="input-group-prepend">
                                                 <a href="#" class="input-group-text bg-primary text-white">$</a>
                                             </div>
-                                            <input type="text" class="form-control form-control-s">
+                                            <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
                                         </div>
                                     </div>
                                         <button type="submit" class="btn btn-primary me-2">Submit</button>
