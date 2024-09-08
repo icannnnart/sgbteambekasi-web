@@ -14,7 +14,7 @@
       <div class="col-md-4 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Updates</h4>
+                  <h4 class="card-title">Announcement</h4>
                   <ul class="bullet-line-list">
                     <li>
                       <h6>User confirmation</h6>
