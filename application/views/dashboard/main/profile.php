@@ -100,7 +100,7 @@
                                             <div class="col-sm-9">
                                               <div class="input-group">
                                                 <a href="#" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
-                                                <input type="text" class="form-control" id="exampleInputUsername2" placeholder="Username">
+                                                <input type="text" class="form-control" id="exampleInputUsername2" placeholder="<-- Generate Apikey">
                                               </div>
                                             </div>
                                         </div>
