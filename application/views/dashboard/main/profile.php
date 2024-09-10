@@ -85,29 +85,55 @@
                             </div>
                         </div>
                         <div class="d-flex align-items-start profile-feed-item">
-                           <div class="card col-sm-12">
-                                <div class="card-body">
-                                    <h4 class="card-title">Request Email Official SGB BEKASI</h4>
-                                    <form class="forms-sample">
-                                        <div class="form-group row">
-                                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
-                                            <div class="col-sm-9">
-                                                <input type="email" class="form-control" name="emailsgb" id="emailsgb" placeholder="Request Email">
+                            <?php if(empty($user->emailsgb)){?>
+                               <div class="card col-sm-12">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Request Email Official SGB BEKASI</h4>
+                                        <form class="forms-sample">
+                                            <div class="form-group row">
+                                                <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" name="emailsgb" id="emailsgb" placeholder="Request Email">
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="form-group row">
-                                            <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
-                                            <div class="col-sm-9">
-                                              <div class="input-group">
-                                                <a href="#" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
-                                                <input type="text" class="form-control" name="apikey" id="apikey" placeholder="<-- Generate Apikey" value="<?=$user->apikey?>" disabled>
-                                              </div>
+                                            <div class="form-group row">
+                                                <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
+                                                <div class="col-sm-9">
+                                                  <div class="input-group">
+                                                    <a href="#" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
+                                                    <input type="text" class="form-control" name="apikey" id="apikey" placeholder="<-- Generate Apikey" value="<?=$user->apikey?>" disabled>
+                                                  </div>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary me-2">Submit</button>
-                                    </form>
+                                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                                        </form>
+                                    </div>
                                 </div>
-                            </div>
+                            <?php }else{?>
+                                <div class="card col-sm-12">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Request Email Official SGB BEKASI</h4>
+                                        <form class="forms-sample">
+                                            <div class="form-group row">
+                                                <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
+                                                <div class="col-sm-9">
+                                                    <input type="email" class="form-control" name="emailsgb" id="emailsgb" disabled placeholder="Request Email">
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
+                                                <div class="col-sm-9">
+                                                  <div class="input-group">
+                                                    <a href="#" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
+                                                    <input type="text" class="form-control" name="apikey" id="apikey" placeholder="<-- Generate Apikey" value="<?=$user->apikey?>" disabled>
+                                                  </div>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary me-2" disabled>Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            <?php }?>
                         </div>
                      </div>
                   </div>
