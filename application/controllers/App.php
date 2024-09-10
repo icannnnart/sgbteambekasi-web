@@ -191,15 +191,22 @@ class App extends CI_Controller {
 	}
 	public function chApi()
 	{
-		$apikey = 'SGB'.$this->acakC(35);
-		$data = array('apikey' => $apikey, );
-		$stes = $this->M_db->update_Data('t_user','id',$this->session->userdata('user_id'),$data);
-		if ($stes) {
-			echo json_encode(['status' => 1, 'message' => 'Generate API Successfully']);
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			$emailsgb = $this->input->post('emailsgb');
+			$datareqemail = array('id_user' => , $this->session->userdata('user_id'),'email' => $emailsgb);
+			$this->M_db->insert_All('t_emailsgb',$datareqemail);
+			$data = array('emailsgb' => $emailsgb, );
+			$stes = $this->M_db->update_Data('t_user','id',$this->session->userdata('user_id'),$data);
 		} else {
-			echo json_encode(['status' => 2, 'message' => 'Generate API Unsuccessfully']);
-		}
-		
+			$apikey = 'SGB'.$this->acakC(35);
+			$data = array('apikey' => $apikey, );
+			$stes = $this->M_db->update_Data('t_user','id',$this->session->userdata('user_id'),$data);
+			if ($stes) {
+				echo json_encode(['status' => 1, 'message' => 'Generate API Successfully']);
+			} else {
+				echo json_encode(['status' => 2, 'message' => 'Generate API Unsuccessfully']);
+			}
+		}		
 	}
 	public function masterRegform()
 	{
