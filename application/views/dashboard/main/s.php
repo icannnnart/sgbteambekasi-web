@@ -15,7 +15,7 @@ $headers = array(
    "referer: https://t.fdcdn.xyz/",
    "sec-fetch-dest: empty",
    "sec-fetch-mode: cors",
-   "sec-fetch-site: cross-site",=
+   "sec-fetch-site: cross-site",
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 //for debug only!
