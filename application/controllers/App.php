@@ -193,7 +193,7 @@ class App extends CI_Controller {
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$emailsgb = $this->input->post('emailsgb');
-			$datareqemail = array('id_user' => , $this->session->userdata('user_id'),'email' => $emailsgb);
+			$datareqemail = array('id_user' => $this->session->userdata('user_id'),'email' => $emailsgb);
 			$this->M_db->insert_All('t_emailsgb',$datareqemail);
 			$data = array('emailsgb' => $emailsgb, );
 			$stes = $this->M_db->update_Data('t_user','id',$this->session->userdata('user_id'),$data);
