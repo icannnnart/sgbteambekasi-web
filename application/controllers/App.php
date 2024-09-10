@@ -157,6 +157,7 @@ class App extends CI_Controller {
 			$msghtml = str_replace('{{name}}', $infoakun->name, $msghtml);
 			$msghtml = str_replace('{{email}}', $infoakun->name, $msghtml);
 			$msghtml = str_replace('{{pwd}}', $this->acakC(12), $msghtml);
+			echo $msghtml;
 			
 		} else {
 			// code...
