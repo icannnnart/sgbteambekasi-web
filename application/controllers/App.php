@@ -193,6 +193,11 @@ class App extends CI_Controller {
 	{
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$emailsgb = $this->input->post('emailsgb');
+			$cek = $this->M_db->Get_user_by_id('t_emailsgb','email',$emailsgb);
+			if ($cek) {
+				echo json_encode(['status' => 2, 'message' => 'Email yang kamu minta sudah terdaftar. Gunakan email lain!']);
+				exit;
+			}
 			$datareqemail = array('id_user' => $this->session->userdata('user_id'),'email' => $emailsgb);
 			$this->M_db->insert_All('t_emailsgb',$datareqemail);
 			$data = array('emailsgb' => $emailsgb, );
