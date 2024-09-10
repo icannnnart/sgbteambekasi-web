@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
+<link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet" />
 <div class="content-wrapper">
    <div class="row">
       <div class="col-12 grid-margin stretch-card">
