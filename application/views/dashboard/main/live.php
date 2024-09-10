@@ -19,7 +19,7 @@
 
     <script>
         const video = document.getElementById('player');
-        const source = 'http://vjs.zencdn.net/v/oceans.mp4';
+        const source = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
