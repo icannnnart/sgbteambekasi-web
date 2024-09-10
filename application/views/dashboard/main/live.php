@@ -19,7 +19,7 @@
 
     <script>
         const video = document.getElementById('player');
-        const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
+        const source = 'http://vjs.zencdn.net/v/oceans.mp4';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
