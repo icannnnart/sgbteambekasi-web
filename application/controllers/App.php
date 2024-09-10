@@ -197,6 +197,7 @@ class App extends CI_Controller {
 			$this->M_db->insert_All('t_emailsgb',$datareqemail);
 			$data = array('emailsgb' => $emailsgb, );
 			$stes = $this->M_db->update_Data('t_user','id',$this->session->userdata('user_id'),$data);
+			echo json_encode(['status' => 1, 'message' => 'Request email berhasil. Silahkan cek berkala Mailbox kamu!']);
 		} else {
 			$apikey = 'SGB'.$this->acakC(35);
 			$data = array('apikey' => $apikey, );
