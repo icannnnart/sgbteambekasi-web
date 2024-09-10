@@ -13,6 +13,16 @@ class App extends CI_Controller {
 			redirect(site_url());
 		}
 	}
+	private function acakC($panjang)
+	{
+		$karakter= 'ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789';
+		$string = '';
+		for ($i = 0; $i < $panjang; $i++) {
+			$pos = rand(0, strlen($karakter)-1);
+			$string .= $karakter[$pos];
+		}
+		return $string;
+	}
 
 	public function index()
 	{
@@ -146,7 +156,7 @@ class App extends CI_Controller {
 			$msghtml = file_get_contents(base_url('assets/email/new-email.html'));
 			$msghtml = str_replace('{{name}}', $infoakun->name, $msghtml);
 			$msghtml = str_replace('{{email}}', $infoakun->name, $msghtml);
-			$msghtml = str_replace('{{pwd}}', $infoakun->name, $msghtml);
+			$msghtml = str_replace('{{pwd}}', $this->acakC(12), $msghtml);
 			
 		} else {
 			// code...
