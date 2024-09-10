@@ -20,7 +20,7 @@
     <script>
         const video = document.getElementById('player');
         //const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
-        const source = 'https://d37j5jg7ob6kji.cloudfront.net/index.m3u8';
+        const source = 'https://live.cdn.joj.sk/live/andromeda/joj_sport-1080.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
