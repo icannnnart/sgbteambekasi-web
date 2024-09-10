@@ -107,7 +107,7 @@ class App extends CI_Controller {
 	public function liveStream()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
-		$data['title'] = 'Master';
+		$data['title'] = 'LIVESTREAM';
 		$data['sub_menu'] = 'Form';
 		$this->load->view('dashboard/layout/header',$data);
 		$this->load->view('dashboard/main/live');
