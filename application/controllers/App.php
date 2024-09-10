@@ -165,7 +165,7 @@ class App extends CI_Controller {
 				if ($sts) {
 					$send = $this->_sendEmail($infoakun->email,$msghtml);
 					if ($send) {
-						echo "<script>if(confirm('Email berhasil di approve!')) {window.location.href = "site_url()"}</script>";
+						echo "<script>if(confirm('Email berhasil di approve!')) {window.location.href = ".site_url()."}</script>";
 					} else {
 						echo "<script>alert('Email berhasil di approve!');</script>";
 					}
