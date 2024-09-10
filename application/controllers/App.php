@@ -158,8 +158,8 @@ class App extends CI_Controller {
 				$msghtml = file_get_contents(base_url('assets/email/new-email.html'));
 				$msghtml = str_replace('{{name}}', $infoakun->name, $msghtml);
 				$msghtml = str_replace('{{email}}', $info->email, $msghtml);
-				$msghtml = str_replace('{{pwd}}', , $msghtml);
-				$dataregis = array('pwd' => $, );
+				$msghtml = str_replace('{{pwd}}', $pwdnya , $msghtml);
+				$dataregis = array('pwd' => $pwdnya,'is_active' => 0, );
 				echo $msghtml;
 			} else {
 				exit;
