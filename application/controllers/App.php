@@ -7,6 +7,7 @@ class App extends CI_Controller {
 		parent::__construct();
 		$this->load->model('M_auth');
 		$this->load->model('M_db');
+		$this->load->library('Email_lib');
 		if($this->session->userdata('logged_in') == 2){
 			redirect(site_url('auth/login/verification'));
 		}elseif($this->session->userdata('logged_in') == null){
