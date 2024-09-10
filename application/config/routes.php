@@ -61,6 +61,7 @@ $route['app/dashboard'] = 'App';
 $route['app/view/livestream'] = 'App/liveStream';
 $route['app/setting/profile'] = 'App/uProfile';
 $route['app/setting/change/api'] = 'App/chApi';
+$route['app/setting/request/email']['post'] = 'App/chApi';
 $route['app/pembayaran-kas'] = 'App/trxKas';
 $route['app/action/pembayaran-kas']['post'] = 'App/trxKas';
 $route['app/master/user'] = 'App/masterUser';
