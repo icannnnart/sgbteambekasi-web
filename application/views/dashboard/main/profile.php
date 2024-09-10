@@ -42,7 +42,7 @@
                         <div class="d-flex align-items-start profile-feed-item">
                            <div class="card col-sm-12">
                                 <div class="card-body">
-                                    <form class="forms-sample">
+                                    <form id="changeProfile" class="forms-sample">
                                         <div class="form-group row">
                                             <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Nama</label>
                                             <div class="col-sm-9">
@@ -144,6 +144,47 @@
       </div>
    </div>
 </div>
+<script>
+     $('#changeProfile').on('submit', function(e) {
+        e.preventDefault();
+
+        var formData = new FormData(this); 
+
+        $.ajax({
+            url: '<?=site_url('app/setting/request/email')?>',
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                
+                const objsx = JSON.parse(response);
+                //console.log(objsx.status)
+                if (objsx.status == 1) {
+                    Swal.fire('Berhasil!', objsx.message, 'success').then((result) => {
+                           if (result.isConfirmed) {
+                               window.location.reload()
+                           }
+                       });
+                    } else {
+                        Swal.fire('Oops...', objsx.message, 'error').then((result) => {
+                           if (result.isConfirmed) {
+                               window.location.reload()
+                           }
+                       });
+                    }
+            },
+            error: function(xhr, status, error) {
+                // Tampilkan notifikasi SweetAlert2 jika gagal
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ada masalah saat mengirim pembayaran. Coba lagi!',
+                });
+            }
+        });
+    });
+</script>
 <script>
      $('#reqEmail').on('submit', function(e) {
         e.preventDefault();
