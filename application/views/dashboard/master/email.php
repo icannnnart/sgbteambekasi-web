@@ -21,7 +21,7 @@
                               </tr>
                            </thead>
                            <tbody>
-                              <?php $a=0; foreach($data_user as $datasuser){$a++;?>
+                              <?php $a=0; foreach($data_registrasi as $datasuser){$a++;?>
                               <tr>
                                  <td><?=$a?></td>
                                  <td><label class="badge badge-info"><?=$level->name?></label><label class="badge badge-info"><?=$level->name?></label></td>
