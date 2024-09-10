@@ -67,6 +67,8 @@ $route['app/acc/user/newmember/(:any)'] = 'App/approveMember/$1';
 $route['app/add/member']['post'] = 'App/masterUser';
 $route['app/master/register-pamdi'] = 'App/masterRegform';
 
+$route['app/process/email/member/(:any)'] = 'App/prosesAccemail/$1';
+
 $route['management/view/register/(:any)'] = 'Preview/previewRegister/$1';
 
 $route['management/process/register/(:any)']['post'] = 'Preview/previewRegister/$1';
