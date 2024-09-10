@@ -20,7 +20,7 @@
     <script>
         const video = document.getElementById('player');
         //const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
-        const source = 'https://insighttv-vizio.amagi.tv/playlist.m3u8';
+        const source = 'https://jrtv-live.ercdn.net/jordansporthd/jordansporthd.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
