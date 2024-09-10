@@ -27,7 +27,13 @@
                                  <td><label class="badge badge-info">Acc</label><label class="badge badge-danger">Reject</label></td>
                                  <td><?=$datasuser['id_user']?></td>
                                  <td><?=$datasuser['email']?></td>
-                                 <td><?=$datasuser['is_active']?></td>
+                                 <td>
+                                    <?php if ($datasuser['is_active'] == 0){?>
+                                    <label class="badge badge-info">Approved</label>
+                                    <?php }else{?>
+                                    <label class="badge badge-warning "><?=$level->name?></label>
+                                    <?php }?>
+                                 </td>
                               </tr>
                               <?php }?>
                            </tbody>
