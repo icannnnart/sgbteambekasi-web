@@ -28,10 +28,12 @@
                                  <td><?php $getname = $this->M_db->Get_user_by_id('t_user','id',$datasuser['id_user']); echo $getname->name; ?></td>
                                  <td><?=$datasuser['email']?></td>
                                  <td>
-                                    <?php if ($datasuser['is_active'] == 0){?>
-                                    <a href="<?=site_url('app/process/email/member/'.$datasuser['id'])?>?px=62" id="acc" class="badge badge-info">Approved</a>
+                                    <?php if ($datasuser['is_active'] == 5){?>
+                                    <label class="badge badge-warning">Pending</label>
+                                    <?php }elseif ($datasuser['is_active'] == 1){?>
+                                    <label class="badge badge-danger ">Rejected</label>
                                     <?php }else{?>
-                                    <label class="badge badge-danger">Rejected</label>
+                                    <label class="badge badge-info ">Approved</label>
                                     <?php }?>
                                  </td>
                               </tr>
