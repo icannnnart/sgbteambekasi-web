@@ -159,15 +159,19 @@
               title: 'Success!',
               text: objsx.message,
               icon: 'success',
-              confirmButtonText: 'OK'
+              showConfirmButton: false,
+              timer: 10000
             });
+            window.location.reload()
         }else{
             Swal.fire({
               title: 'Error!',
               text:  objsx.message,
               icon: 'error',
-              confirmButtonText: 'OK'
+              showConfirmButton: false,
+              timer: 10000
             });
+            window.location.reload()
         }
       },
       error: function(xhr, status, error) {
