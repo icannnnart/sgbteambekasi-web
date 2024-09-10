@@ -12,9 +12,7 @@ $headers = array(
    "dnt: 1",
    "origin: https://t.fdcdn.xyz",
    "priority: u=1, i",
-   "sec-fetch-dest: empty",
-   "sec-fetch-mode: cors",
-   "sec-fetch-site: cross-site",
+   "referer: https://t.fdcdn.xyz/",
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
 //for debug only!
