@@ -201,14 +201,11 @@
                            }
                        });
         }else{
-            Swal.fire({
-              title: 'Error!',
-              text:  objsx.message,
-              icon: 'error',
-              showConfirmButton: false,
-              timer: 20000
-            });
-            window.location.reload()
+            Swal.fire('Error!', objsx.message, 'error').then((result) => {
+                           if (result.isConfirmed) {
+                               window.location.reload()
+                           }
+                       });
         }
       },
       error: function(xhr, status, error) {
