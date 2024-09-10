@@ -31,7 +31,7 @@
                                     <?php if ($datasuser['is_active'] == 0){?>
                                     <label class="badge badge-info">Approved</label>
                                     <?php }else{?>
-                                    <label class="badge badge-warning "><?=$level->name?></label>
+                                    <label class="badge badge-danger">Reject</label>
                                     <?php }?>
                                  </td>
                               </tr>
