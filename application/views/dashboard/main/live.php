@@ -3,9 +3,7 @@
    <div class="row">
       <div class="col-12">
          <div class="card">
-            <div class="card-title">
-               <h3>Indonesia vs Australia</h3>
-            </div>
+             <h4 class="card-title">Indonesia vs Australia</h4>
             <div class="card-body">
                <video id="player" controls></video>
             </div>
