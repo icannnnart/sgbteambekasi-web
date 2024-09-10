@@ -7,11 +7,6 @@ curl_setopt($curl, CURLOPT_URL, $url);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
 $headers = array(
-   "accept: */*",
-   "accept-language: en-US,en;q=0.9",
-   "dnt: 1",
-   "origin: https://t.fdcdn.xyz",
-   "priority: u=1, i",
    "referer: https://t.fdcdn.xyz/",
 );
 curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
