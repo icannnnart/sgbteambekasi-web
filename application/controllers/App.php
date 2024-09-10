@@ -167,7 +167,7 @@ class App extends CI_Controller {
 					if ($send) {
 						echo "sukses";
 					} else {
-						echo "gagall kirim";
+						print_r($send);
 					}
 					
 				} else {
