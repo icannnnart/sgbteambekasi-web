@@ -137,6 +137,16 @@ class App extends CI_Controller {
 		$this->load->view('dashboard/master/email');
 		$this->load->view('dashboard/layout/footer');
 	}
+	public function prosesAccemail($id)
+	{
+		$inf = htmlspecialchars($_GET['px']);
+		if ($inf==62) {
+			$info = $this->M_db->Get_user_by_id('t_emailsgb','id',$id);
+		} else {
+			// code...
+		}
+		
+	}
 	public function masterRegform()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
