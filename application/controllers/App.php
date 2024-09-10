@@ -110,7 +110,7 @@ class App extends CI_Controller {
 		$data['title'] = 'Master';
 		$data['sub_menu'] = 'Form';
 		$this->load->view('dashboard/layout/header',$data);
-		$this->load->view('dashboard/master/live');
+		$this->load->view('dashboard/main/live');
 		$this->load->view('dashboard/layout/footer');
 	}
 	public function uProfile()
