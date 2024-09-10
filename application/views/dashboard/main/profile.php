@@ -102,7 +102,7 @@
                                                 <div class="col-sm-9">
                                                   <div class="input-group">
                                                     <a href="#" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
-                                                    <input type="text" class="form-control" name="apikey" id="apikey" placeholder="<-- Generate Apikey" value="<?=$user->apikey?>" disabled>
+                                                    <input type="text" class="form-control" placeholder="<-- Generate Apikey" value="<?=$user->apikey?>" disabled>
                                                   </div>
                                                 </div>
                                             </div>
