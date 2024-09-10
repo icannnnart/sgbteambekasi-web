@@ -160,7 +160,7 @@
               text: objsx.message,
               icon: 'success',
               showConfirmButton: false,
-              timer: 10000
+              timer: 20000
             });
             window.location.reload()
         }else{
@@ -169,7 +169,7 @@
               text:  objsx.message,
               icon: 'error',
               showConfirmButton: false,
-              timer: 10000
+              timer: 20000
             });
             window.location.reload()
         }
