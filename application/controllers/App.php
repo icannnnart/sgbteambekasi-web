@@ -134,7 +134,7 @@ class App extends CI_Controller {
 		$data['sub_menu'] = 'Registrasi Form';
 		$data['data_registrasi'] = $this->M_db->get_All_data('t_register_form');
 		$this->load->view('dashboard/layout/header',$data);
-		$this->load->view('dashboard/master/register');
+		$this->load->view('dashboard/master/email');
 		$this->load->view('dashboard/layout/footer');
 	}
 	public function masterRegform()
