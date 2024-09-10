@@ -6,6 +6,7 @@
              
             <div class="card-body">
                <h4 class="card-title">Indonesia vs Australia</h4>
+               <code>19:00 WIB</code>
                <video id="player" controls></video>
             </div>
          </div>
