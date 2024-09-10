@@ -189,6 +189,18 @@ class App extends CI_Controller {
 		}
 		
 	}
+	public function chApi()
+	{
+		$apikey = 'SGB'.$this->acakC(35);
+		$data = array('apikey' => $apikey, );
+		$stes = $this->M_db->update_Data('t_user','id',$this->session->userdata('user_id'),$data);
+		if ($stes) {
+			echo json_encode(['status' => 1, 'message' => 'Generate API Successfully']);
+		} else {
+			echo json_encode(['status' => 2, 'message' => 'Generate API Unsuccessfully']);
+		}
+		
+	}
 	public function masterRegform()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
