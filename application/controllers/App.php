@@ -162,7 +162,13 @@ class App extends CI_Controller {
 				$dataregis = array('pwd' => $pwdnya,'is_active' => 0,'created_by' => $this->session->userdata('user_id'), );
 				$sts = $this->M_db->update_Data('t_emailsgb','id',$id,$dataregis);
 				if ($sts) {
-					echo $msghtml;
+					$send = $this->_sendEmail($infoakun->email,$msghtml);
+					if ($send) {
+						echo "sukses";
+					} else {
+						echo "gagall kirim";
+					}
+					
 				} else {
 					exit;
 				}
