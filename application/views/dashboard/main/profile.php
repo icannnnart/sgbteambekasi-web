@@ -117,7 +117,7 @@
                                             <div class="form-group row">
                                                 <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
                                                 <div class="col-sm-9">
-                                                    <input type="email" class="form-control" name="emailsgb" id="emailsgb" disabled placeholder="Request Email">
+                                                    <input type="email" class="form-control" name="emailsgb" id="emailsgb" disabled value="<?=$user->emailsgb?>">
                                                 </div>
                                             </div>
                                             <div class="form-group row">
