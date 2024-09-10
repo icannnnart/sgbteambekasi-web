@@ -19,7 +19,7 @@
 
     <script>
         const video = document.getElementById('player');
-        const source = 'https://www.youtube.com/watch?v=07BTQBu5oM4&t=2512s';
+        const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
