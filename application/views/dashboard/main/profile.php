@@ -90,7 +90,7 @@
                                <div class="card col-sm-12">
                                     <div class="card-body">
                                         <h4 class="card-title">Request Email Official SGB BEKASI</h4>
-                                        <form class="forms-sample">
+                                        <form  id="reqEmail"class="forms-sample">
                                             <div class="form-group row">
                                                 <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Email SGB</label>
                                                 <div class="col-sm-9">
@@ -144,7 +144,50 @@
       </div>
    </div>
 </div>
+<script>
+     $('#reqEmail').on('submit', function(e) {
+        e.preventDefault(); // Mencegah form submit secara normal
 
+        var formData = new FormData(this); // Mengambil data dari form
+
+        $.ajax({
+            url: '<?=site_url('app/action/pembayaran-kas')?>',  // Ganti dengan URL backend yang sesuai
+            type: 'POST',
+            data: formData,
+            contentType: false,
+            processData: false,
+            success: function(response) {
+                
+                const objsx = JSON.parse(response);
+                //console.log(objsx.status)
+                if (objsx.status == 200) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Berhasil!',
+                            text: objsx.message,
+                            showConfirmButton: false,
+                            timer: 10000
+                        });
+                        window.location.reload()
+                    } else {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Oops...',
+                            text: objsx.message,
+                        });
+                    }
+            },
+            error: function(xhr, status, error) {
+                // Tampilkan notifikasi SweetAlert2 jika gagal
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Ada masalah saat mengirim pembayaran. Coba lagi!',
+                });
+            }
+        });
+    });
+</script>
 <script>
   function changeApi() {
     var url = $('#uApi').data('url');
