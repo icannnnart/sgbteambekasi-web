@@ -4,7 +4,7 @@
       <div class="col-12">
          <div class="card">
             <div class="card-title">
-               <h5>Indonesia vs Australia</h5>
+               <h3>Indonesia vs Australia</h3>
             </div>
             <div class="card-body">
                <video id="player" controls></video>
