@@ -24,7 +24,7 @@
                               <?php $a=0; foreach($data_registrasi as $datasuser){$a++;?>
                               <tr>
                                  <td><?=$a?></td>
-                                 <td><label class="badge badge-info"><?=$level->name?></label><label class="badge badge-info"><?=$level->name?></label></td>
+                                 <td><label class="badge badge-info">ACC</label><label class="badge badge-info">Reject</label></td>
                                  <td><?=$datasuser['id_user']?></td>
                                  <td><?=$datasuser['email']?></td>
                                  <td><?=$datasuser['is_active']?></td>
