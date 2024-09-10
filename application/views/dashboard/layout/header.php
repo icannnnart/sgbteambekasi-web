@@ -54,11 +54,11 @@
                      <img src="https://ui-avatars.com/api/?name=<?=$user->name?>&amp;background=random" alt="profile" />
                      </a>
                      <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
-                        <a class="dropdown-item">
+                        <a href="<?=site_url('app/setting/profile')?>" class="dropdown-item">
                         <i class="ti-settings text-primary"></i>
                         Settings
                         </a>
-                        <a class="dropdown-item">
+                        <a href="<?=site_url('auth/logout')?>" class="dropdown-item">
                         <i class="ti-power-off text-primary"></i>
                         Logout
                         </a>
