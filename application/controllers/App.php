@@ -126,12 +126,33 @@ class App extends CI_Controller {
 	}
 	public function uProfile()
 	{
-		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
-		$data['title'] = 'Setting';
-		$data['sub_menu'] = 'Account';
-		$this->load->view('dashboard/layout/header',$data);
-		$this->load->view('dashboard/main/profile');
-		$this->load->view('dashboard/layout/footer');
+		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+			$names = $this->input->post('nama');
+			$password = $this->input->post('password');
+			$address = $this->input->post('Alamat');
+			$link_fb = $this->input->post('linkfb');
+			$number = $this->input->post('nowa');
+			if ($password == null) {
+				$dataupdateprofile = array('name' => $names,
+				'address' => $address,
+				'linkfb' => $link_fb,
+				'nowa' => $number, );
+			} else {
+				$dataupdateprofile = array('name' => $names,
+				'address' => $address,
+				'password' => password_hash($password, PASSWORD_DEFAULT),
+				'linkfb' => $link_fb,
+				'nowa' => $number, );
+			}
+			
+		}else{
+			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
+			$data['title'] = 'Setting';
+			$data['sub_menu'] = 'Account';
+			$this->load->view('dashboard/layout/header',$data);
+			$this->load->view('dashboard/main/profile');
+			$this->load->view('dashboard/layout/footer');
+		}
 	}
 	private function _sendEmail($email,$msghtml)
 	{
