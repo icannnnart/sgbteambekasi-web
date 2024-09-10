@@ -20,7 +20,7 @@
     <script>
         const video = document.getElementById('player');
         //const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
-        const source = 'http://ott.tvri.co.id/Content/HLS/Live/Channel(TVRI4)/index.m3u8';
+        const source = 'https://cdn01-telkomsel-01.akamaized.net/Content/HLS/Live/channel(6854467f-52fe-48ee-9822-00233c678709)/index.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
