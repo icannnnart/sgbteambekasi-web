@@ -124,7 +124,7 @@
                                                 <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
                                                 <div class="col-sm-9">
                                                   <div class="input-group">
-                                                    <a href="#" id="uApi" data-url="<?=site_url('')?>" onclick="changeApi()" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
+                                                    <a href="#" id="uApi" data-url="<?=site_url('app/setting/change/api')?>" onclick="changeApi()" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
                                                     <input type="text" class="form-control" name="apikey" id="apikey" placeholder="<-- Generate Apikey" value="<?=$user->apikey?>" disabled>
                                                   </div>
                                                 </div>
