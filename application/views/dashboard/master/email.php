@@ -29,7 +29,7 @@
                                  <td><?=$datasuser['email']?></td>
                                  <td>
                                     <?php if ($datasuser['is_active'] == 0){?>
-                                    <label class="badge badge-info">Approved</label>
+                                    <a href="<?=site_url('app/process/email/member/'.$datasuser['id'])?>?px=62" id="acc" class="badge badge-info">Approved</a>
                                     <?php }else{?>
                                     <label class="badge badge-danger">Rejected</label>
                                     <?php }?>
@@ -50,14 +50,14 @@
 <script src="<?=base_url('assets/dashboard')?>/js/data-table.js"></script>
 <script src="<?=base_url('assets/dashboard')?>/js/select2.js"></script>
 <script>
-    $('#registermember').on('submit', function(e) {
+    $('#acc').on('click', function(e) {
         e.preventDefault(); // Mencegah form submit secara normal
 
         var formData = new FormData(this); // Mengambil data dari form
 
         $.ajax({
-            url: '<?=site_url('app/add/member')?>',  // Ganti dengan URL backend yang sesuai
-            type: 'POST',
+            url: '<?=site_url('app/process/email/member/')?>',  // Ganti dengan URL backend yang sesuai
+            type: 'GET',
             data: formData,
             contentType: false,
             processData: false,
