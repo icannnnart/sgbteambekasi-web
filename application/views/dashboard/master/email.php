@@ -6,7 +6,7 @@
       <div class="col-md-12 grid-margin stretch-card">
          <div class="card position-relative">
             <div class="card-body">
-               <h6 class="card-title">LIST REQUEST EMAIL SGB BEKASI</h6>
+               <h6 class="card-title">LIST EMAIL SGB BEKASI</h6>
                <div class="row">
                   <div class="col-12">
                      <div class="table-responsive">
