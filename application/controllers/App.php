@@ -165,16 +165,16 @@ class App extends CI_Controller {
 				if ($sts) {
 					$send = $this->_sendEmail($infoakun->email,$msghtml);
 					if ($send) {
-						echo "<script>if(confirm('Email berhasil di approve!')) {window.location.href = ".site_url()."}</script>";
+						echo "<script>if(confirm('Email berhasil di approved!')) {window.location.href = '".site_url('app/email/member')."'}</script>";
 					} else {
-						echo "<script>alert('Email berhasil di approve!');</script>";
+						echo "<script>if(confirm('Email berhasil di approved!')) {window.location.href = '".site_url('app/email/member')."'}</script>";
 					}
 					
 				} else {
-					echo "<script>alert('Email gagal diapprove!');</script>";
+					echo "<script>if(confirm('Email tidak bisa di approve!')) {window.location.href = '".site_url('app/email/member')."'}</script>";
 				}
 			} else {
-				echo "<script>alert('Email sudah diapprove!');</script>";
+				echo "<script>if(confirm('Email sudah diapproved!')) {window.location.href = '".site_url('app/email/member')."'}</script>";
 			}
 		} else {
 			if ($info->is_active == 0) {
