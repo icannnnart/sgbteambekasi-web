@@ -161,20 +161,17 @@
                 const objsx = JSON.parse(response);
                 //console.log(objsx.status)
                 if (objsx.status == 1) {
-                        Swal.fire({
-                            icon: 'success',
-                            title: 'Berhasil!',
-                            text: objsx.message,
-                            showConfirmButton: false,
-                            timer: 50000
-                        });
-                        window.location.reload()
+                    Swal.fire('Berhasil!', objsx.message, 'success').then((result) => {
+                           if (result.isConfirmed) {
+                               window.location.reload()
+                           }
+                       });
                     } else {
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Oops...',
-                            text: objsx.message,
-                        });
+                        Swal.fire('Oops...', objsx.message, 'error').then((result) => {
+                           if (result.isConfirmed) {
+                               window.location.reload()
+                           }
+                       });
                     }
             },
             error: function(xhr, status, error) {
@@ -198,14 +195,11 @@
       success: function(response) {
         const objsx = JSON.parse(response);
         if (objsx.status === 1) {
-            Swal.fire({
-              title: 'Success!',
-              text: objsx.message,
-              icon: 'success',
-              showConfirmButton: false,
-              timer: 20000
-            });
-            window.location.reload()
+            Swal.fire('Berhasil!', objsx.message, 'success').then((result) => {
+                           if (result.isConfirmed) {
+                               window.location.reload()
+                           }
+                       });
         }else{
             Swal.fire({
               title: 'Error!',
