@@ -165,22 +165,21 @@ class App extends CI_Controller {
 				if ($sts) {
 					$send = $this->_sendEmail($infoakun->email,$msghtml);
 					if ($send) {
-						echo "sukses";
+						echo json_encode(['status' => 1, 'message' => 'Email berhasil di approve!']);
 					} else {
-						print_r($send);
+						echo json_encode(['status' => 1, 'message' => 'Email berhasil di approve!']);
 					}
 					
 				} else {
-					exit;
+					echo json_encode(['status' => 2, 'message' => 'Email gagal diapprove!']);
 				}
 			} else {
-				exit;
+				echo json_encode(['status' => 2, 'message' => 'Email sudah diapprove!']);
 			}
-			
-			
-			
 		} else {
-			echo 'asd';
+			$dataregis = array('pwd' => $pwdnya,'is_active' => 1,'created_by' => $this->session->userdata('user_id'), );
+			$this->M_db->update_Data('t_emailsgb','id',$id,$dataregis);
+			echo json_encode(['status' => 1, 'message' => 'Email berhasil di reject!']);
 		}
 		
 	}
