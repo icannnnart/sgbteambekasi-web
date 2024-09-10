@@ -20,7 +20,7 @@
     <script>
         const video = document.getElementById('player');
         //const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
-        const source = 'https://lebo.huminbird.cn/live/ballbar_38100.m3u8';
+        const source = 'https://cdn.plrjs.com/player/bsa9hkrkynde7/qqvmenqpoeve.html?file=https://lebo.huminbird.cn/live/ballbar_21640.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
