@@ -146,12 +146,12 @@
 </div>
 <script>
      $('#reqEmail').on('submit', function(e) {
-        e.preventDefault(); // Mencegah form submit secara normal
+        e.preventDefault();
 
-        var formData = new FormData(this); // Mengambil data dari form
+        var formData = new FormData(this); 
 
         $.ajax({
-            url: '<?=site_url('app/action/pembayaran-kas')?>',  // Ganti dengan URL backend yang sesuai
+            url: '<?=site_url('app/setting/request/email')?>',
             type: 'POST',
             data: formData,
             contentType: false,
@@ -160,7 +160,7 @@
                 
                 const objsx = JSON.parse(response);
                 //console.log(objsx.status)
-                if (objsx.status == 200) {
+                if (objsx.status == 1) {
                         Swal.fire({
                             icon: 'success',
                             title: 'Berhasil!',
