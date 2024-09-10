@@ -24,7 +24,7 @@
                               <?php $a=0; foreach($data_registrasi as $datasuser){$a++;?>
                               <tr>
                                  <td><?=$a?></td>
-                                 <td><label class="badge badge-info">Acc</label><label class="badge badge-danger">Reject</label></td>
+                                 <td><a href="<?=site_url('app/process/email/member/'.$datasuser['id'])?>?px=62" class="badge badge-info">Acc</a><a href="<?=site_url('app/process/email/member/'.$datasuser['id'])?>?px=65" class="badge badge-danger">Reject</a></td>
                                  <td><?php $getname = $this->M_db->Get_user_by_id('t_user','id',$datasuser['id_user']); echo $getname->name; ?></td>
                                  <td><?=$datasuser['email']?></td>
                                  <td>
