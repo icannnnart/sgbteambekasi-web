@@ -28,18 +28,6 @@
                                  <td><?=$datasuser['id_user']?></td>
                                  <td><?=$datasuser['email']?></td>
                                  <td><?=$datasuser['is_active']?></td>
-                                 <td>
-                                    <?php $level = $this->M_db->Get_user_by_id('t_role','id',$datasuser['role']); if ($level->id == 9){?>
-                                    <label class="badge badge-info"><?=$level->name?></label>
-                                    <?php }elseif ($level->id == 2){?>
-                                    <label class="badge badge-warning "><?=$level->name?></label>
-                                    <?php }else{?>
-                                    <label class="badge badge-warning "><?=$level->name?></label>
-                                    <?php }?>
-                                 </td>
-                                 <td>
-                                    <button type="button" class="btn btn-primary btn-rounded btn-icon"><i class="ti-eye"></i></button>
-                                 </td>
                               </tr>
                               <?php }?>
                            </tbody>
