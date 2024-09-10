@@ -2,6 +2,14 @@
 <div class="content-wrapper">
    <div class="row">
       <div class="col-12">
+         <div class="card">
+            <div class="card-title">
+               <h5>Indonesia vs Australia</h5>
+            </div>
+            <div class="card-body">
+               <video id="player" controls></video>
+            </div>
+         </div>
       </div>
    </div>
 </div>
