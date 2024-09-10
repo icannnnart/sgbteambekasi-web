@@ -19,11 +19,7 @@
                      <div class="border-bottom py-4">
                         <p>Badge</p>
                         <div>
-                           <label class="badge badge-outline-dark my-1">Chalk</label>
-                           <label class="badge badge-outline-dark my-1">Hand lettering</label>
-                           <label class="badge badge-outline-dark my-1">Information Design</label>
-                           <label class="badge badge-outline-dark my-1">Graphic Design</label>
-                           <label class="badge badge-outline-dark my-1">Web Design</label>
+                           <label class="badge badge-outline-dark my-1">Member Gacor</label>
                         </div>
                      </div>
                   </div>
