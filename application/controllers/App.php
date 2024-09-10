@@ -142,7 +142,7 @@ class App extends CI_Controller {
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
 		$data['title'] = 'Master';
-		$data['sub_menu'] = 'Registrasi Form';
+		$data['sub_menu'] = 'emails';
 		$data['data_registrasi'] = $this->M_db->get_All_data('t_emailsgb');
 		$this->load->view('dashboard/layout/header',$data);
 		$this->load->view('dashboard/master/email');
