@@ -166,7 +166,7 @@
                             title: 'Berhasil!',
                             text: objsx.message,
                             showConfirmButton: false,
-                            timer: 10000
+                            timer: 50000
                         });
                         window.location.reload()
                     } else {
