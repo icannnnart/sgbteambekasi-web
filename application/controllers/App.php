@@ -178,11 +178,11 @@ class App extends CI_Controller {
 			}
 		} else {
 			if ($info->is_active == 0) {
-				echo "<script>if(confirm('Email tidak bisa di reject!')) {window.location.href = ".site_url('app/email/member')."}</script>";
+				echo "<script>if(confirm('Email tidak bisa di reject!')) {window.location.href = '".site_url('app/email/member')."'}</script>";
 			}else{
 				$dataregis = array('pwd' => $pwdnya,'is_active' => 1,'created_by' => $this->session->userdata('user_id'), );
 				$this->M_db->update_Data('t_emailsgb','id',$id,$dataregis);
-				echo "<script>if(confirm('Email berhasil di reject!')) {window.location.href = ".site_url('app/email/member')."}</script>";
+				echo "<script>if(confirm('Email berhasil di reject!')) {window.location.href = '".site_url('app/email/member')."'}</script>";
 			}
 		}
 		
