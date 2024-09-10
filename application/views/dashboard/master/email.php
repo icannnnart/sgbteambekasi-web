@@ -24,10 +24,10 @@
                               <?php $a=0; foreach($data_user as $datasuser){$a++;?>
                               <tr>
                                  <td><?=$a?></td>
-                                 <td><?=$datasuser['name']?></td>
+                                 <td><label class="badge badge-info"><?=$level->name?></label><label class="badge badge-info"><?=$level->name?></label></td>
+                                 <td><?=$datasuser['id_user']?></td>
                                  <td><?=$datasuser['email']?></td>
-                                 <td><?=$datasuser['nowa']?></td>
-                                 <td><?=$datasuser['address']?></td>
+                                 <td><?=$datasuser['is_active']?></td>
                                  <td>
                                     <?php $level = $this->M_db->Get_user_by_id('t_role','id',$datasuser['role']); if ($level->id == 9){?>
                                     <label class="badge badge-info"><?=$level->name?></label>
