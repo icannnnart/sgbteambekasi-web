@@ -151,7 +151,7 @@
         var formData = new FormData(this); 
 
         $.ajax({
-            url: '<?=site_url('app/setting/request/email')?>',
+            url: '<?=site_url('app/setting/update/profile')?>',
             type: 'POST',
             data: formData,
             contentType: false,
