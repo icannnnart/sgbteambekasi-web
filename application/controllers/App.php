@@ -153,7 +153,7 @@ class App extends CI_Controller {
 		$inf = htmlspecialchars($_GET['px']);
 		if ($inf==62) {
 			$info = $this->M_db->Get_user_by_id('t_emailsgb','id',$id);
-			if ($info->is_active == 1) {
+			if ($info->is_active == 3) {
 				$pwdnya =$this->acakC(12);
 				$infoakun = $this->M_db->Get_user_by_id('t_user','id',$info->id_user);
 				$msghtml = file_get_contents(base_url('assets/email/new-email.html'));
