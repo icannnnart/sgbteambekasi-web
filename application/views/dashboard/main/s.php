@@ -12,7 +12,6 @@ $headers = array(
    "dnt: 1",
    "origin: https://t.fdcdn.xyz",
    "priority: u=1, i",
-   "referer: https://t.fdcdn.xyz/",
    "sec-fetch-dest: empty",
    "sec-fetch-mode: cors",
    "sec-fetch-site: cross-site",
