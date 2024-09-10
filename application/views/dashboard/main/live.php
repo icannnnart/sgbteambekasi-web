@@ -20,7 +20,7 @@
     <script>
         const video = document.getElementById('player');
         //const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
-        const source = 'https://vb90xltcvg-secure.nsnd.live/O2VbsaIEHxH3tOzgy6SVAA/2270a8f479503a8ecc2c2860b5f42ece/1725987752/live/_definst_/stream_1_1bda7@phoSD/playlist.m3u8';
+        const source = 'https://obevcimanyd179569584.thapcam.link/31l6vHb5qCqNjsInoJntFg/Fv2lucGIbhPi2caWYvF5Lg/1725987752231/live/phoFHD/playlist.m3u8&id=4JjF14n&n=FullHD&t=br&p=no&theme_id=tc&df=https://vb90xltcvg-secure.nsnd.live/O2VbsaIEHxH3tOzgy6SVAA/2270a8f479503a8ecc2c2860b5f42ece/1725987752/live/_definst_/stream_1_1bda7@phoSD/playlist.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
