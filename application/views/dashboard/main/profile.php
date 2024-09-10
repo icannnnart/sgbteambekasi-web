@@ -124,7 +124,7 @@
                                                 <label for="exampleInputUsername2" class="col-sm-3 col-form-label">Apikey</label>
                                                 <div class="col-sm-9">
                                                   <div class="input-group">
-                                                    <a href="#" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
+                                                    <a href="#" id="uApi" data-url="<?=site_url('')?>" onclick="changeApi()" class="input-group-text bg-primary text-white"><i class="las la-redo-alt"></i></a>
                                                     <input type="text" class="form-control" name="apikey" id="apikey" placeholder="<-- Generate Apikey" value="<?=$user->apikey?>" disabled>
                                                   </div>
                                                 </div>
@@ -143,3 +143,31 @@
       </div>
    </div>
 </div>
+
+<script>
+  function changeApi() {
+    var url = $('#uApi').data('url');
+    
+    $.ajax({
+      url: url,
+      type: 'GET',
+      success: function(response) {
+        const objsx = JSON.parse(response);
+        Swal.fire({
+          title: 'Success!',
+          text: 'Data berhasil diambil: ' + response.data,
+          icon: 'success',
+          confirmButtonText: 'OK'
+        });
+      },
+      error: function(xhr, status, error) {
+        Swal.fire({
+          title: 'Error!',
+          text: 'Terjadi kesalahan: ' + error,
+          icon: 'error',
+          confirmButtonText: 'OK'
+        });
+      }
+    });
+  }
+</script>
