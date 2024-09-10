@@ -155,7 +155,7 @@ class App extends CI_Controller {
 			$infoakun = $this->M_db->Get_user_by_id('t_user','id',$info->id_user);
 			$msghtml = file_get_contents(base_url('assets/email/new-email.html'));
 			$msghtml = str_replace('{{name}}', $infoakun->name, $msghtml);
-			$msghtml = str_replace('{{email}}', $infoakun->name, $msghtml);
+			$msghtml = str_replace('{{email}}', $info->email, $msghtml);
 			$msghtml = str_replace('{{pwd}}', $this->acakC(12), $msghtml);
 			echo $msghtml;
 			
