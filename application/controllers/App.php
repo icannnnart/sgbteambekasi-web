@@ -152,12 +152,18 @@ class App extends CI_Controller {
 		$inf = htmlspecialchars($_GET['px']);
 		if ($inf==62) {
 			$info = $this->M_db->Get_user_by_id('t_emailsgb','id',$id);
-			$infoakun = $this->M_db->Get_user_by_id('t_user','id',$info->id_user);
-			$msghtml = file_get_contents(base_url('assets/email/new-email.html'));
-			$msghtml = str_replace('{{name}}', $infoakun->name, $msghtml);
-			$msghtml = str_replace('{{email}}', $info->email, $msghtml);
-			$msghtml = str_replace('{{pwd}}', $this->acakC(12), $msghtml);
-			echo $msghtml;
+			if ($info->is_active == 1) {
+				$infoakun = $this->M_db->Get_user_by_id('t_user','id',$info->id_user);
+				$msghtml = file_get_contents(base_url('assets/email/new-email.html'));
+				$msghtml = str_replace('{{name}}', $infoakun->name, $msghtml);
+				$msghtml = str_replace('{{email}}', $info->email, $msghtml);
+				$msghtml = str_replace('{{pwd}}', $this->acakC(12), $msghtml);
+				echo $msghtml;
+			} else {
+				exit;
+			}
+			
+			
 			
 		} else {
 			echo 'asd';
