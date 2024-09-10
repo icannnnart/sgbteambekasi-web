@@ -159,8 +159,13 @@ class App extends CI_Controller {
 				$msghtml = str_replace('{{name}}', $infoakun->name, $msghtml);
 				$msghtml = str_replace('{{email}}', $info->email, $msghtml);
 				$msghtml = str_replace('{{pwd}}', $pwdnya , $msghtml);
-				$dataregis = array('pwd' => $pwdnya,'is_active' => 0, );
-				echo $msghtml;
+				$dataregis = array('pwd' => $pwdnya,'is_active' => 0,'created_by' => $this->session->userdata('user_id'), );
+				$sts = $this->M_db->update_Data('t_emailsgb','id',$id,$dataregis);
+				if ($sts) {
+					echo $msghtml;
+				} else {
+					exit;
+				}
 			} else {
 				exit;
 			}
