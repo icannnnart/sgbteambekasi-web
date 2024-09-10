@@ -25,7 +25,7 @@
                               <tr>
                                  <td><?=$a?></td>
                                  <td><label class="badge badge-info">Acc</label><label class="badge badge-danger">Reject</label></td>
-                                 <td><?=$datasuser['id_user']?></td>
+                                 <td><?php $getname = $this->M_db->Get_user_by_id('t_user','id',$datasuser['id_user']); echo $getname->name; ?></td>
                                  <td><?=$datasuser['email']?></td>
                                  <td>
                                     <?php if ($datasuser['is_active'] == 0){?>
