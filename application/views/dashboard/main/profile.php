@@ -153,12 +153,21 @@
       type: 'GET',
       success: function(response) {
         const objsx = JSON.parse(response);
-        Swal.fire({
-          title: 'Success!',
-          text: 'Data berhasil diambil: ' + response.data,
-          icon: 'success',
-          confirmButtonText: 'OK'
-        });
+        if (objsx.status === 1) {
+            Swal.fire({
+              title: 'Success!',
+              text: objsx.message,
+              icon: 'success',
+              confirmButtonText: 'OK'
+            });
+        }else{
+            Swal.fire({
+              title: 'Error!',
+              text:  objsx.message,
+              icon: 'error',
+              confirmButtonText: 'OK'
+            });
+        }
       },
       error: function(xhr, status, error) {
         Swal.fire({
