@@ -20,8 +20,7 @@
     <script>
         const video = document.getElementById('player');
         //const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
-        const source = '
-https://obevcimanyd179569584.thapcam.link/31l6vHb5qCqNjsInoJntFg/Fv2lucGIbhPi2caWYvF5Lg/1725987752231/live/phoFHD/chunklist.m3u8';
+        const source = 'https://obevcimanyd179569584.thapcam.link/31l6vHb5qCqNjsInoJntFg/Fv2lucGIbhPi2caWYvF5Lg/1725987752231/live/phoFHD/chunklist.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
