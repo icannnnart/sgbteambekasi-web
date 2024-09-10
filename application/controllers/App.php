@@ -122,6 +122,11 @@ class App extends CI_Controller {
 		$this->load->view('dashboard/main/profile');
 		$this->load->view('dashboard/layout/footer');
 	}
+	private function _sendEmail($value='')
+	{
+		$this->email_lib->Initialize('mail.sgbteambekasi.org','admin@sgbteambekasi.org','X*gIGl@eq&W5',587,'admin@sgbteambekasi.org','ADMIN SGBTEAM BEKASI');
+		$this->email_lib->send_Email($tuju->email, "New Order Request Notification #$orderid", $msghtml);
+	}
 	public function masterRegform()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
