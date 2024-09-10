@@ -6,7 +6,7 @@
              
             <div class="card-body">
                <h4 class="card-title">Indonesia vs Australia<code>19:00 WIB</code></h4>
-               <video class="jw-video jw-reset" jw-loaded="data" src="blob:https://t.fdcdn.xyz/843d9d2a-c921-4a0e-862e-1094b6a85b4c" jw-played=""></video>
+               <video id="player" controls></video>
             </div>
          </div>
       </div>
