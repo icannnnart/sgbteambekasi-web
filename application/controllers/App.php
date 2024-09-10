@@ -122,10 +122,10 @@ class App extends CI_Controller {
 		$this->load->view('dashboard/main/profile');
 		$this->load->view('dashboard/layout/footer');
 	}
-	private function _sendEmail($value='')
+	private function _sendEmail($email,$msghtml)
 	{
 		$this->email_lib->Initialize('mail.sgbteambekasi.org','admin@sgbteambekasi.org','X*gIGl@eq&W5',587,'admin@sgbteambekasi.org','ADMIN SGBTEAM BEKASI');
-		$this->email_lib->send_Email($tuju->email, "New Order Request Notification #$orderid", $msghtml);
+		$this->email_lib->send_Email($email, "Pembuatan Email Akun Official", $msghtml);
 	}
 	public function masterRegform()
 	{
