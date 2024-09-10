@@ -127,6 +127,16 @@ class App extends CI_Controller {
 		$this->email_lib->Initialize('mail.sgbteambekasi.org','admin@sgbteambekasi.org','X*gIGl@eq&W5',587,'admin@sgbteambekasi.org','ADMIN SGBTEAM BEKASI');
 		$this->email_lib->send_Email($email, "Pembuatan Email Akun Official", $msghtml);
 	}
+	public function masterAccemail()
+	{
+		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
+		$data['title'] = 'Master';
+		$data['sub_menu'] = 'Registrasi Form';
+		$data['data_registrasi'] = $this->M_db->get_All_data('t_register_form');
+		$this->load->view('dashboard/layout/header',$data);
+		$this->load->view('dashboard/master/register');
+		$this->load->view('dashboard/layout/footer');
+	}
 	public function masterRegform()
 	{
 		$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
