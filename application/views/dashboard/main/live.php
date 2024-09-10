@@ -20,7 +20,7 @@
     <script>
         const video = document.getElementById('player');
         //const source = 'https://lebo.huminbird.cn/live/ballbar_21360.m3u8';
-        const source = 'https://117.161.133.51:81/gitv_live/G_FENGSHANGZQ-CQ/G_FENGSHANGZQ-CQ.m3u8?p=GITV';
+        const source = 'http://103.199.161.254/Content/ddsports/Live/Channel(DDSPORTS)/index.m3u8';
 
         // Cek dukungan HLS di browser
         if (Hls.isSupported()) {
