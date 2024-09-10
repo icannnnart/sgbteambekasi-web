@@ -165,7 +165,7 @@ class App extends CI_Controller {
 				if ($sts) {
 					$send = $this->_sendEmail($infoakun->email,$msghtml);
 					if ($send) {
-						echo "<script>alert('Email berhasil di approve!');</script>";
+						echo "<script>if(confirm('Email berhasil di approve!')) {window.location.href = "site_url()"}</script>";
 					} else {
 						echo "<script>alert('Email berhasil di approve!');</script>";
 					}
@@ -179,7 +179,7 @@ class App extends CI_Controller {
 		} else {
 			$dataregis = array('pwd' => $pwdnya,'is_active' => 1,'created_by' => $this->session->userdata('user_id'), );
 			$this->M_db->update_Data('t_emailsgb','id',$id,$dataregis);
-			echo "<script>alert('Email berhasil di reject!');</script>";
+			echo "<script>if(confirm('Email berhasil di reject!')) {window.location.href = "site_url('app/email/member')"}</script>";
 		}
 		
 	}
