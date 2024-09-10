@@ -144,6 +144,13 @@ class App extends CI_Controller {
 				'linkfb' => $link_fb,
 				'nowa' => $number, );
 			}
+			$cekup = $this->M_db->update_Data('t_user','id',$this->session->userdata('user_id'),$dataupdateprofile);
+			if ($cekup) {
+				echo json_encode(['status' => 1, 'message' => 'Perubahan Data Berhasil']);
+			} else {
+				echo json_encode(['status' => 2, 'message' => 'Perubahan Data Tidak Berhasil']);
+			}
+			
 			
 		}else{
 			$data['user'] = $this->M_db->Get_user_by_id('t_user','id',$this->session->userdata('user_id'));
