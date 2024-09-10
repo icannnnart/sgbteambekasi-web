@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css" />
 <div class="content-wrapper">
    <div class="row">
-      <div class="col-12">
+      <div class="col-12 grid-margin stretch-card">
          <div class="card">
              <h4 class="card-title">Indonesia vs Australia</h4>
             <div class="card-body">
