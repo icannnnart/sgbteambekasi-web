@@ -4,6 +4,7 @@
       <!-- Required meta tags -->
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
       <title>SGBTEAM BEKASI - <?=$title?> <?=$sub_menu?></title>
       <!-- plugins:css -->
       <link rel="stylesheet" href="<?=base_url('assets/dashboard/')?>vendors/feather/feather.css">
